@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Valorisations | Quality/Value prospectif</title>
+<style>
+:root{--bg:#0d131a;--p:#18232f;--b:#2d4151;--fg:#eaf1f7;--muted:#9bafc1;--gold:#d8ba7e;--blue:#98c9ec}
+*{box-sizing:border-box}body{background:var(--bg);color:var(--fg);margin:0;font:14px/1.55 system-ui,Segoe UI,sans-serif}header,.layout,.foot{max-width:1450px;margin:auto;padding:24px}header{border-bottom:1px solid var(--b)}h1,h2,h3{font-family:Georgia,serif;font-weight:500;margin:6px 0 14px}h1{font-size:38px}h2{font-size:26px}h3{font-size:20px}a{color:var(--blue)}.topnav{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}.eyebrow{color:var(--gold);letter-spacing:2px;font-size:11px;font-weight:bold;text-transform:uppercase}.muted{color:var(--muted)}.mini{font-size:12px;color:var(--muted)}.notice{margin:15px 0;background:#25262c;border-left:3px solid var(--gold);padding:16px;color:#e8cf9e}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}.kpi,.card{border:1px solid var(--b);background:var(--p);border-radius:8px;padding:17px}.kpi b{font-size:30px;display:block}.columns{display:grid;grid-template-columns:minmax(225px,320px) minmax(0,1fr);gap:15px}.side,.article{background:var(--p);border:1px solid var(--b);border-radius:8px;min-width:0}.side input,.side select{display:block;width:calc(100% - 30px);margin:12px 15px;padding:10px;background:#111c27;color:white;border:1px solid var(--b);border-radius:5px}.side-list{max-height:750px;overflow:auto}.choice{display:block;padding:13px 16px;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--b);color:var(--fg);cursor:pointer}.choice:hover,.choice.sel{background:#293c4e}.choice small{display:block;color:var(--muted)}.article{padding:24px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}.stat{background:#111d29;border:1px solid var(--b);padding:14px;border-radius:6px}.stat small{display:block;color:var(--muted)}.stat b{display:block;font-size:22px;margin-top:8px}.inputs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.inputs label{font-size:11px;color:var(--muted)}.inputs input{display:block;width:100%;padding:9px;margin-top:5px;border-radius:5px;border:1px solid #475b6d;background:#121e29;color:white}.scroll{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap;font-size:12px}td,th{padding:10px;border-bottom:1px solid var(--b);text-align:left}th{color:#a8bdd0;background:#1d3040}.badge{padding:4px 8px;border:1px solid #695838;border-radius:5px;color:#f0c982;font-size:11px}.pill{font-size:11px;color:#9cc9d1}ul{padding-left:20px}.foot{font-size:11px;color:var(--muted)}@media(max-width:920px){.columns{grid-template-columns:1fr}.side-list{max-height:270px}}@media(max-width:600px){.kpis{grid-template-columns:repeat(2,1fr)}.inputs{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:1fr}h1{font-size:28px}header,.layout,.foot{padding:16px}}
+</style></head><body>
+<header><div class="topnav"><div><div class="eyebrow">Outil indépendant · Analyse par les flux</div><h1>Valeurs économiques · DCF indicatifs</h1><div class="muted">Historique par action, scénarios, sensibilités et traçabilité des limites.</div></div><div><a href="index.html">← Screener</a> · <a href="valorisations.json" target="_blank" rel="noopener">Données JSON</a></div></div></header>
+<div class="layout"><div class="kpis"><div class="kpi"><span class="mini">Sociétés examinées</span><b id="ku">—</b></div><div class="kpi"><span class="mini">Estimations indicatives</span><b id="ki">—</b></div><div class="kpi"><span class="mini">Méthode ou données insuffisantes</span><b id="kb">—</b></div><div class="kpi"><span class="mini">Valorisations validées</span><b id="kv">0</b></div></div>
+<div class="notice"><strong>Discipline méthodologique.</strong> Un DCF automatique construit sur des données agrégées et une base pondérée ne constitue pas une valeur intrinsèque auditée. Aucun prix d'achat, signal de renforcement ou recommandation de vente n'est émis sans normalisation, modèle sectoriel approprié et revue fondamentale documentée.</div>
+<div class="columns"><aside class="side"><input id="query" placeholder="Rechercher une société" aria-label="Rechercher une société"><select id="state"><option value="">Tous les statuts</option><option value="screen-grade">DCF indicatifs</option><option value="blocked">Calculs bloqués</option></select><div class="side-list" id="list"></div></aside><main class="article" id="detail"></main></div></div>
+<div class="foot">Provenance : comptes agrégés Yahoo Finance via yfinance (sources secondaires), sauf source primaire explicitement nommée. Hypothèse de rendement ETF Monde de 8 % non garantie, utilisée uniquement comme repère. <span id="asof"></span></div>
+<script>
+const DATA=__VALUATION_SNAPSHOT__;
+const E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+const F=(v,d=2)=>Number.isFinite(v)?v.toLocaleString('fr-FR',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
+const P=v=>Number.isFinite(v)?F(v*100,1)+' %':'—';
+const U=(v,c)=>Number.isFinite(v)?F(v)+' '+E(c||''):'—';
+const M=v=>Number.isFinite(v)?Math.abs(v)>1e9?F(v/1e9)+' Md':Math.abs(v)>1e6?F(v/1e6)+' M':F(v,0):'—';
+const safeLink=u=>{try{let x=new URL(u);return ['https:','http:'].includes(x.protocol)?x.href:null}catch{return null}};
+let selected=(DATA.models.find(x=>x.status==='screen-grade')||DATA.models[0]||{}).ticker;
+document.getElementById('ku').textContent=DATA.counts.universe;
+document.getElementById('ki').textContent=DATA.counts.indicative;
+document.getElementById('kb').textContent=DATA.counts.blocked;
+document.getElementById('kv').textContent=DATA.counts.decision_ready;
+document.getElementById('asof').textContent='Données calculées : '+DATA.generated_at;
+function dcf(b,g,r,t){if(![b,g,r,t].every(Number.isFinite)||b<=0||r<=t||t<=-1||g<=-1)return null;let f=b,v=0;for(let i=1;i<=10;i++){let gi=i<=5?g:g+(t-g)*(i-5)/5;f*=1+gi;v+=f/(1+r)**i}return v+f*(1+t)/(r-t)/(1+r)**10}
+function renderList(){
+ let q=document.getElementById('query').value.toLowerCase(),st=document.getElementById('state').value;
+ let found=DATA.models.filter(x=>(!q||[x.name,x.ticker,x.region,x.sector].join(' ').toLowerCase().includes(q))&&(!st||x.status===st));
+ document.getElementById('list').innerHTML=found.map(x=>'<button class="choice '+(selected===x.ticker?'sel':'')+'" data-t="'+E(x.ticker)+'"><strong>'+E(x.name)+'</strong><small>'+E(x.ticker)+' · '+E(x.region)+' · '+(x.status==='screen-grade'?'Étude indicative':'Étude suspendue')+'</small></button>').join('')||'<p class="mini">Aucun résultat.</p>';
+ document.querySelectorAll('.choice').forEach(el=>el.onclick=()=>{selected=el.dataset.t;renderList();renderDetail()});
+}
+function history(x){
+ let arr=x.historical||[];
+ if(!arr.length)return '<p class="mini">Aucun historique disponible.</p>';
+ return '<div class="scroll"><table><thead><tr><th>Exercice</th><th>CFO</th><th>CAPEX</th><th>SBC*</th><th>FCF conservé</th><th>FCF/action</th></tr></thead><tbody>'+arr.map(a=>'<tr><td>'+E(a.year_end)+'</td><td>'+M(a.cfo)+'</td><td>'+M(a.capex)+'</td><td>'+(a.sbc===null?'N/D':M(a.sbc))+'</td><td>'+M(a.fcf_after_sbc)+'</td><td>'+F(a.fcf_ps_historical)+'</td></tr>').join('')+'</tbody></table></div><p class="mini">*Lorsque le SBC est absent, le FCF conservé ne retranche pas ce coût ; le modèle est alors incomplet.</p>'
+}
+function renderDetail(){
+ const x=DATA.models.find(a=>a.ticker===selected);if(!x)return;
+ let h='<div class="eyebrow">'+E(x.ticker)+' · '+E(x.sector)+'</div><h2>'+E(x.name)+'</h2><p class="mini">Cours de référence : '+U(x.price,x.currency)+' · '+E(x.price_asof||'date inconnue')+' · <span class="badge">'+(x.status==='screen-grade'?'Estimation indicative':'Calcul bloqué')+'</span></p>';
+ if(x.status==='blocked'){
+  h+='<div class="notice"><strong>Calcul non publié.</strong> '+E(x.reason)+'</div><h3>Raisons du blocage</h3><ul>'+(x.warnings||[]).map(v=>'<li>'+E(v)+'</li>').join('')+'</ul><h3>Historique disponible</h3>'+history(x);
+  document.getElementById('detail').innerHTML=h;return
+ }
+ h+='<div class="stats"><div class="stat"><small>FCF/action de départ (proxy)</small><b>'+U(x.base_proxy_fcf_per_share,x.currency)+'</b></div><div class="stat"><small>VI indicative centrale</small><b>'+U(x.fair_value,x.currency)+'</b></div><div class="stat"><small>Écart VI / cours</small><b>'+P(x.potential)+'</b></div></div>';
+ h+='<p class="mini">'+x.years_available+' exercices pris en compte · Dernier exercice : '+E(x.financial_asof)+' · Rendement implicite du modèle : '+P(x.implied_discount_central)+' · Repère Monde hypothétique : '+P(DATA.world_reference)+'.</p>';
+ h+='<h3>Scénarios automatisés</h3><div class="scroll"><table><thead><tr><th>Scénario</th><th>g 1–5 ans</th><th>Actualisation</th><th>g terminal</th><th>VI d’étude</th><th>Potentiel</th></tr></thead><tbody>'+['prudent','central','optimiste'].map(k=>{let a=x.scenarios[k];return '<tr><td>'+E(k)+'</td><td>'+P(a.growth)+'</td><td>'+P(a.discount)+'</td><td>'+P(a.terminal)+'</td><td>'+U(a.value_per_share,x.currency)+'</td><td>'+P(a.potential)+'</td></tr>'}).join('')+'</tbody></table></div>';
+ h+='<h3>Simulation personnelle — calcul local</h3><div class="inputs"><label>FCF/action initial<input type="number" step="0.01" id="base" value="'+x.base_proxy_fcf_per_share+'"></label><label>Croissance 5 ans (%)<input type="number" step=".25" id="g" value="'+x.scenarios.central.growth*100+'"></label><label>Coût FP (%)<input type="number" step=".25" id="r" value="'+x.scenarios.central.discount*100+'"></label><label>g terminal (%)<input type="number" step=".25" id="t" value="'+x.scenarios.central.terminal*100+'"></label></div>';
+ h+='<div class="stats"><div class="stat"><small>VI simulée</small><b id="simv">—</b></div><div class="stat"><small>Potentiel calculé</small><b id="simu">—</b></div><div class="stat"><small>Marge de sécurité (1−cours/VI)</small><b id="simm">—</b></div></div><button id="reset" type="button">Réinitialiser</button>';
+ h+='<h3>Historique et source des flux</h3>'+history(x);
+ const u=safeLink(x.source_url);h+='<p class="mini">Source : '+E(x.financial_source)+' · '+(u?'<a href="'+E(u)+'" target="_blank" rel="noopener">Accéder à la source</a>':'Source non renseignée')+'</p>';
+ h+='<h3>Hypothèses et réserves méthodologiques</h3><ul>'+(x.notes||[]).concat(x.warnings||[]).map(v=>'<li>'+E(v)+'</li>').join('')+'</ul><div class="notice"><strong>Aucune décision de transaction validée.</strong> Les paramètres automatiques sont des hypothèses de travail, sans analyse du moat ni normalisation complète.</div>';
+ document.getElementById('detail').innerHTML=h;
+ const ids=['base','g','r','t'];
+ function calc(){const b=Number(document.getElementById('base').value),g=Number(document.getElementById('g').value)/100,r=Number(document.getElementById('r').value)/100,t=Number(document.getElementById('t').value)/100;let v=dcf(b,g,r,t);document.getElementById('simv').textContent=v===null?'Paramètres invalides':U(v,x.currency);document.getElementById('simu').textContent=v===null?'—':P(v/x.price-1);document.getElementById('simm').textContent=v===null?'—':P(1-x.price/v)}
+ ids.forEach(i=>document.getElementById(i).addEventListener('input',calc));document.getElementById('reset').onclick=renderDetail;calc();
+}
+document.getElementById('query').addEventListener('input',renderList);
+document.getElementById('state').addEventListener('change',renderList);
+renderList();renderDetail();
+</script></body></html>
