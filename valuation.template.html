@@ -35,16 +35,26 @@ function history(x){
  if(!arr.length)return '<p class="mini">Aucun historique disponible.</p>';
  return '<div class="scroll"><table><thead><tr><th>Exercice</th><th>CFO</th><th>CAPEX</th><th>SBC*</th><th>FCF conservé</th><th>FCF/action</th></tr></thead><tbody>'+arr.map(a=>'<tr><td>'+E(a.year_end)+'</td><td>'+M(a.cfo)+'</td><td>'+M(a.capex)+'</td><td>'+(a.sbc===null?'N/D':M(a.sbc))+'</td><td>'+M(a.fcf_after_sbc)+'</td><td>'+F(a.fcf_ps_historical)+'</td></tr>').join('')+'</tbody></table></div><p class="mini">*Lorsque le SBC est absent, le FCF conservé ne retranche pas ce coût ; le modèle est alors incomplet.</p>'
 }
+function dossier(x){
+ const d=x.documentary_research;if(!d)return '';
+ const u=safeLink(d.dossier_url);
+ const sources=(d.source_urls||[]).filter(safeLink);
+ return '<div class="notice"><strong>Revue fondamentale documentée : '+E(d.stage||'en cours')+'</strong><br>'+
+ E(d.thesis||'Note en constitution')+'<br><span class="mini">Date : '+E(d.date||'non renseignée')+
+ ' · Qualité : '+E(d.qualitative_status||'non conclue')+' · Dernière publication : '+E(d.publication_asof||'à vérifier')+
+ '</span><br>'+(u?'<a href="'+E(u)+'" target="_blank" rel="noopener">Lire l’étude détaillée</a>':'')+
+ (sources.length?' · '+sources.length+' source(s) liées':'')+'</div>'
+}
 function renderDetail(){
  const x=DATA.models.find(a=>a.ticker===selected);if(!x)return;
  let h='<div class="eyebrow">'+E(x.ticker)+' · '+E(x.sector)+'</div><h2>'+E(x.name)+'</h2><p class="mini">Cours de référence : '+U(x.price,x.currency)+' · '+E(x.price_asof||'date inconnue')+' · <span class="badge">'+(x.status==='screen-grade'?'Estimation indicative':'Calcul bloqué')+'</span></p>';
  if(x.status==='blocked'){
-  h+='<div class="notice"><strong>Calcul non publié.</strong> '+E(x.reason)+'</div><h3>Raisons du blocage</h3><ul>'+(x.warnings||[]).map(v=>'<li>'+E(v)+'</li>').join('')+'</ul><h3>Historique disponible</h3>'+history(x);
+  h+=dossier(x);h+='<div class="notice"><strong>Calcul non publié.</strong> '+E(x.reason)+'</div><h3>Raisons du blocage</h3><ul>'+(x.warnings||[]).map(v=>'<li>'+E(v)+'</li>').join('')+'</ul><h3>Historique disponible</h3>'+history(x);
   document.getElementById('detail').innerHTML=h;return
  }
  h+='<div class="stats"><div class="stat"><small>FCF/action de départ (proxy)</small><b>'+U(x.base_proxy_fcf_per_share,x.currency)+'</b></div><div class="stat"><small>VI indicative centrale</small><b>'+U(x.fair_value,x.currency)+'</b></div><div class="stat"><small>Écart VI / cours</small><b>'+P(x.potential)+'</b></div></div>';
  h+='<p class="mini">'+x.years_available+' exercices pris en compte · Dernier exercice : '+E(x.financial_asof)+' · Rendement implicite du modèle : '+P(x.implied_discount_central)+' · Repère Monde hypothétique : '+P(DATA.world_reference)+'.</p>';
- h+='<h3>Scénarios automatisés</h3><div class="scroll"><table><thead><tr><th>Scénario</th><th>g 1–5 ans</th><th>Actualisation</th><th>g terminal</th><th>VI d’étude</th><th>Potentiel</th></tr></thead><tbody>'+['prudent','central','optimiste'].map(k=>{let a=x.scenarios[k];return '<tr><td>'+E(k)+'</td><td>'+P(a.growth)+'</td><td>'+P(a.discount)+'</td><td>'+P(a.terminal)+'</td><td>'+U(a.value_per_share,x.currency)+'</td><td>'+P(a.potential)+'</td></tr>'}).join('')+'</tbody></table></div>';
+ h+=dossier(x);h+='<h3>Scénarios automatisés</h3><div class="scroll"><table><thead><tr><th>Scénario</th><th>g 1–5 ans</th><th>Actualisation</th><th>g terminal</th><th>VI d’étude</th><th>Potentiel</th></tr></thead><tbody>'+['prudent','central','optimiste'].map(k=>{let a=x.scenarios[k];return '<tr><td>'+E(k)+'</td><td>'+P(a.growth)+'</td><td>'+P(a.discount)+'</td><td>'+P(a.terminal)+'</td><td>'+U(a.value_per_share,x.currency)+'</td><td>'+P(a.potential)+'</td></tr>'}).join('')+'</tbody></table></div>';
  h+='<h3>Simulation personnelle — calcul local</h3><div class="inputs"><label>FCF/action initial<input type="number" step="0.01" id="base" value="'+x.base_proxy_fcf_per_share+'"></label><label>Croissance 5 ans (%)<input type="number" step=".25" id="g" value="'+x.scenarios.central.growth*100+'"></label><label>Coût FP (%)<input type="number" step=".25" id="r" value="'+x.scenarios.central.discount*100+'"></label><label>g terminal (%)<input type="number" step=".25" id="t" value="'+x.scenarios.central.terminal*100+'"></label></div>';
  h+='<div class="stats"><div class="stat"><small>VI simulée</small><b id="simv">—</b></div><div class="stat"><small>Potentiel calculé</small><b id="simu">—</b></div><div class="stat"><small>Marge de sécurité (1−cours/VI)</small><b id="simm">—</b></div></div><button id="reset" type="button">Réinitialiser</button>';
  h+='<h3>Historique et source des flux</h3>'+history(x);
