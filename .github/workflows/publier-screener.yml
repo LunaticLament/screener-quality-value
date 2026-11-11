@@ -64,10 +64,15 @@ jobs:
         run: |
           git config user.name "quality-value-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html valorisations.html data/snapshot.json data/run_report.json data/valuations.json data/model_events.json
+          git add data/snapshot.json data/run_report.json data/valuations.json data/model_events.json
           if ! git diff --cached --quiet; then
             git commit -m "Screener: daily data refresh [skip ci]"
-            git push
+            if ! git push origin HEAD:main; then
+              echo "Branche principale actualisée pendant l'exécution ; réconciliation des données"
+              git fetch origin main
+              git rebase -X theirs origin/main
+              git push origin HEAD:main
+            fi
           fi
       - name: Build public directory
         run: |
