@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T23:16:05+00:00",
+  "generated_at": "2026-11-11T23:21:10+00:00",
   "universe_count": 36,
   "objective": "PRE-VALORISATIONS AUTOMATIQUES; aucune valeur intrinsèque validée et aucun ordre de bourse",
   "benchmark_world_assumption": 0.07,
@@ -143,8 +143,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "DG.PA",
@@ -284,8 +284,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "SU.PA",
@@ -424,8 +424,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "SAP.DE",
@@ -566,8 +566,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "VIE.PA",
@@ -597,7 +597,7 @@
       "mos_example": 0.2,
       "assumptions_approval": "non approuvées",
       "normalization": "non réalisée",
-      "computed_at": "2026-11-11T23:16:05+00:00",
+      "computed_at": "2026-11-11T23:21:10+00:00",
       "financial_update_applied": false
     },
     {
@@ -737,8 +737,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "EL.PA",
@@ -878,8 +878,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "OR.PA",
@@ -1019,8 +1019,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "MC.PA",
@@ -1159,8 +1159,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "RMS.PA",
@@ -1300,8 +1300,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "PUB.PA",
@@ -1441,8 +1441,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "EF.PA",
@@ -1474,7 +1474,7 @@
       "assumptions_approval": "non approuvées",
       "normalization": "non réalisée",
       "annuals": [],
-      "computed_at": "2026-11-11T23:16:05+00:00",
+      "computed_at": "2026-11-11T23:21:10+00:00",
       "financial_update_applied": false
     },
     {
@@ -1505,7 +1505,7 @@
       "mos_example": 0.2,
       "assumptions_approval": "non approuvées",
       "normalization": "non réalisée",
-      "computed_at": "2026-11-11T23:16:05+00:00",
+      "computed_at": "2026-11-11T23:21:10+00:00",
       "financial_update_applied": false
     },
     {
@@ -1536,7 +1536,7 @@
       "mos_example": 0.2,
       "assumptions_approval": "non approuvées",
       "normalization": "non réalisée",
-      "computed_at": "2026-11-11T23:16:05+00:00",
+      "computed_at": "2026-11-11T23:21:10+00:00",
       "financial_update_applied": false
     },
     {
@@ -1567,7 +1567,7 @@
       "mos_example": 0.2,
       "assumptions_approval": "non approuvées",
       "normalization": "non réalisée",
-      "computed_at": "2026-11-11T23:16:05+00:00",
+      "computed_at": "2026-11-11T23:21:10+00:00",
       "financial_update_applied": false
     },
     {
@@ -1598,7 +1598,7 @@
       "mos_example": 0.2,
       "assumptions_approval": "non approuvées",
       "normalization": "non réalisée",
-      "computed_at": "2026-11-11T23:16:05+00:00",
+      "computed_at": "2026-11-11T23:21:10+00:00",
       "financial_update_applied": false
     },
     {
@@ -1738,8 +1738,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "ASML.AS",
@@ -1815,8 +1815,8 @@
           "sbc": 202300000.0
         }
       ],
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "ADYEN.AS",
@@ -1956,8 +1956,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "NESN.SW",
@@ -2097,8 +2097,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "ROG.SW",
@@ -2130,7 +2130,7 @@
       "assumptions_approval": "non approuvées",
       "normalization": "non réalisée",
       "annuals": [],
-      "computed_at": "2026-11-11T23:16:05+00:00",
+      "computed_at": "2026-11-11T23:21:10+00:00",
       "financial_update_applied": false
     },
     {
@@ -2270,8 +2270,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "MSFT",
@@ -2412,8 +2412,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "GOOGL",
@@ -2554,8 +2554,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "AMZN",
@@ -2696,8 +2696,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "V",
@@ -2837,8 +2837,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "MA",
@@ -2978,8 +2978,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "SPGI",
@@ -3119,8 +3119,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "BRK-B",
@@ -3150,7 +3150,7 @@
       "mos_example": 0.2,
       "assumptions_approval": "non approuvées",
       "normalization": "non réalisée",
-      "computed_at": "2026-11-11T23:16:05+00:00",
+      "computed_at": "2026-11-11T23:21:10+00:00",
       "financial_update_applied": false
     },
     {
@@ -3302,8 +3302,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "ADBE",
@@ -3444,8 +3444,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "DHR",
@@ -3585,8 +3585,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "TSM",
@@ -3662,8 +3662,8 @@
           "sbc": 1246100000.0
         }
       ],
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "005930.KS",
@@ -3739,8 +3739,8 @@
           "sbc": null
         }
       ],
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "6758.T",
@@ -3879,8 +3879,8 @@
           "terminal_growth": 0.025
         }
       },
-      "computed_at": "2026-11-11T23:16:05+00:00",
-      "financial_update_applied": true
+      "computed_at": "2026-11-11T23:21:10+00:00",
+      "financial_update_applied": false
     },
     {
       "ticker": "9984.T",
@@ -3910,7 +3910,7 @@
       "mos_example": 0.2,
       "assumptions_approval": "non approuvées",
       "normalization": "non réalisée",
-      "computed_at": "2026-11-11T23:16:05+00:00",
+      "computed_at": "2026-11-11T23:21:10+00:00",
       "financial_update_applied": false
     }
   ]

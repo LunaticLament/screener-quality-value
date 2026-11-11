@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T23:16:04+00:00",
+  "generated_at": "2026-11-11T23:21:10+00:00",
   "methodology": "Sélection préliminaire, sans recommandation de transaction",
   "universe_scope": "Liste initiale limitée de sociétés mondiales; non exhaustive",
   "data_feed": "Yahoo Finance via yfinance, source secondaire non rapprochée aux émetteurs",
