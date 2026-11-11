@@ -1,3 +1,21 @@
+# Screener autonome Quality/Value prospectif — exploitation automatisée
+
+## Statut opérationnel au 11 novembre 2026
+
+- **Site public indépendant** : https://lunaticlament.github.io/screener-quality-value/
+- **Valorisations et simulateur** : https://lunaticlament.github.io/screener-quality-value/valorisations.html
+- **Collecte quantitative** : GitHub Actions chaque jour à 23 h 15, heure de Paris (sauf retard/incident fournisseur). Mise à jour des cours, comptes agrégés disponibles, historiques par exercice, screening et DCF indicatifs.
+- **Recherche fondamentale documentaire** : tâche ChatGPT distincte « Valorisations Q/V autonomes » à 23 h 50, heure de Paris ; analyse progressive de la file de rotation et sauvegarde dans research/dossiers et research/registre.json, après collecte. La publication GitHub est relancée lors d'une modification de research.
+- **Historique** : data/snapshot.json, data/valuations.json, data/model_events.json, data/run_report.json. Contrôles : tests/test_valuation.py, exécutés avant publication.
+- **Portée réelle** : 36 sociétés initiales, non exhaustives mondialement. Premier lancement : 24 DCF indicatifs, 12 dossiers non valorisables en méthode standard. **Zéro recommandation validée.**
+- **Sources** : Yahoo Finance via yfinance pour la partie quantitative (secondaire), puis publications d'émetteurs utilisées pour dossiers détaillés. Cinq exercices et normalisation économique restent nécessaires avant tout prix d'achat valide.
+- **Méthode du DCF indicatif** : FCF économique proxy = moyenne pondérée des trois années récentes de CFO moins CAPEX et SBC lorsqu'il est connu ; flux par action, actualisation au coût des fonds propres ; pas de double retraitement de dette nette. Hypothèses génériques de croissance et de coût du capital. Ce n'est *pas* une normalisation d'entreprise.
+- **Indépendance** : aucun accès en écriture ni transfert vers le site personnel, ses dépôts, ou le portefeuille modèle.
+
+Cette version ne qualifie donc **jamais** un DCF indicatif d'opportunité d'achat. Les dossiers documentaires approfondis progressent séparément, en conservant les incertitudes et les sources.
+
+---
+
 # Screener Quality / Value prospectif — V1
 
 **Nature** : outil de présélection d'actions mondiales à partir de données sourcées et de règles explicables. **Ce n'est ni un moteur de recommandations d'achat, ni une valorisation DCF, ni un flux de cotation garanti.**
