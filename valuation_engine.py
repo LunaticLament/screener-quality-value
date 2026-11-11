@@ -1,241 +1,203 @@
-#!/usr/bin/env python3
-"""Screen-grade valuation engine. Not an investment recommendation.
-Computes DCF of *equity cash flows*, never subtracts net debt again.
-The FCF history is provider-standardized, not five audited and normalized years.
+"""Calculs de prévalorisation transparents. Aucune recommandation sans revue humaine.
+
+L'ancre FCF = une capacité illustrative de trésorerie liée aux flux reportés;
+ce n'est jamais une « normalisation » des FCF ni une valeur intrinsèque validée.
 """
 from __future__ import annotations
-import json
+
 import math
-import statistics
-from datetime import date, datetime, timezone
-from pathlib import Path
+from datetime import date
+from statistics import mean
 
-ROOT=Path(__file__).resolve().parent
-DATA=ROOT/"data"
-WORLD_BENCHMARK=0.08  # User's illustrative opportunity-cost assumption, NOT an ETF forecast
-CASE_DEFS={
- "prudent":{"growth":-0.01,"discount":0.125,"terminal":0.01},
- "central":{"growth":0.035,"discount":0.105,"terminal":0.02},
- "optimiste":{"growth":0.07,"discount":0.09,"terminal":0.025},
+ASSUMPTIONS = {
+    "prudent": {"growth": 0.00, "discount": 0.115, "terminal_growth": 0.01},
+    "central": {"growth": 0.03, "discount": 0.10, "terminal_growth": 0.02},
+    "optimiste": {"growth": 0.06, "discount": 0.09, "terminal_growth": 0.025},
 }
-# Years 6-10: interpolate early growth toward perpetual terminal growth.
-def dcf_equity(fcf_per_share:float,growth:float,discount:float,terminal:float,years:int=10)->float:
-    if not all(math.isfinite(v) for v in (fcf_per_share,growth,discount,terminal)):
-        raise ValueError("Entrée DCF non finie")
-    if fcf_per_share<=0 or discount<=terminal or discount<=0 or growth<=-1 or terminal<=-1:
-        raise ValueError("Paramètres DCF invalides")
-    current=fcf_per_share
-    pv=0.0
-    for t in range(1,years+1):
-        g=growth if t<=5 else growth+(terminal-growth)*(t-5)/5
-        current *= 1+g
-        pv += current/(1+discount)**t
-    pv += (current*(1+terminal)/(discount-terminal))/(1+discount)**years
-    return pv
+HORIZON = 10
+WORLD_REFERENCE = 0.07  # Hypothèse modifiable, non anticipation de marché.
+MOS_EXAMPLE = 0.20   # Sensibilité pure, à adapter au risque.
 
-def implied_discount(fcf_per_share,growth,terminal,price):
-    if price<=0: return None
-    low=max(terminal+0.0001,0.001)
-    high=0.8
-    try:
-        if dcf_equity(fcf_per_share,growth,low,terminal)<price:
-            return None
-        if dcf_equity(fcf_per_share,growth,high,terminal)>price:
-            return None
-        for _ in range(90):
-            mid=(low+high)/2
-            if dcf_equity(fcf_per_share,growth,mid,terminal)>price: low=mid
-            else: high=mid
-        return (low+high)/2
-    except (ValueError,OverflowError,ZeroDivisionError):
-        return None
 
-def number(x):
+def finite(value):
     try:
-        f=float(x)
+        f = float(value)
         return f if math.isfinite(f) else None
-    except (TypeError,ValueError,OverflowError):
+    except (ValueError, TypeError, OverflowError):
         return None
 
-def elapsed(iso):
-    try:return (date.today()-date.fromisoformat(str(iso)[:10])).days
-    except (TypeError,ValueError):return None
 
-def blocked(company,reason,warnings=None,history=None):
-    return {"ticker":company["ticker"],"name":company.get("name"),"region":company.get("region"),
-            "sector":company.get("sector"),"model":company.get("model"),
-            "price":number(company.get("price")),"price_asof":company.get("price_asof"),
-            "currency":company.get("currency"),"status":"blocked",
-            "method":"Méthode sectorielle ou données non suffisantes",
-            "reason":reason,"warnings":warnings or [],"historical":history or [],
-            "decision_ready":False,"validated_opportunity":False,
-            "fair_value":None,"scenarios":None}
+def positive(value):
+    f = finite(value)
+    return f if f is not None and f > 0 else None
 
-def analyze(company):
-    sector=company.get("model")
-    if sector!="corporate":
-        return blocked(company,"Banque, assurance, utility, foncière ou holding : un DCF standard du FCF ne serait pas pertinent.",
-                       ["Méthode sectorielle dédiée à développer (ROTE/TBV, capital distribuable, RAB, SOTP, AFFO selon activité)."])
-    history=sorted(company.get("financial_history") or [],key=lambda z:z.get("year_end") or "")
-    years=[h for h in history if number(h.get("cfo")) is not None and number(h.get("capex")) is not None]
-    if len(years)<3:
-        return blocked(company,"Moins de trois exercices avec CFO et CAPEX exploitables.",
-                       ["L'objectif de validation reste cinq exercices et le rapprochement aux publications primaires."],years)
-    price=number(company.get("price"))
-    fresh=elapsed(company.get("price_asof"))
-    if price is None or price<=0 or fresh is None or fresh<0 or fresh>10:
-        return blocked(company,"Cours absent ou daté de plus de dix jours.",[],years)
-    fin_currency=company.get("financial_currency")
-    if not fin_currency or not company.get("currency") or fin_currency!=company.get("currency"):
-        return blocked(company,"La devise des états financiers est différente de celle du cours, ou elle n'est pas vérifiable.",
-                       ["Conversion FX documentée nécessaire pour les ADR et autres cotations croisées."],years)
-    if not company.get("financial_source"):
-        return blocked(company,"La provenance des chiffres financiers manque.",[],years)
-    latest=years[-1]
-    age=elapsed(latest["year_end"])
-    if age is None or age<0 or age>550:
-        return blocked(company,"Dernier exercice financier trop ancien ou non daté.",[],years)
-    shares=number(company.get("shares_outstanding"))
-    if not shares or shares<=0:
-        shares=number(latest.get("diluted_shares"))
-    if not shares or shares<=0:
-        return blocked(company,"Nombre d'actions actuelles ou diluées manquant.",[],years)
-    warnings=[]
-    if len(years)<5: warnings.append(f"{len(years)} exercices disponibles seulement ; cinq ans non rapprochés.")
-    if not company.get("reference_url") or company.get("quality_grade") not in ("A","B"):
-        warnings.append("Filtre qualitatif durable non étayé par une étude documentée.")
-    if number(company.get("shares_outstanding")) is None:
-        warnings.append("Nombre d'actions issu du dernier exercice, pas du registre actuel.")
-    else:
-        d=number(latest.get("diluted_shares"))
-        if d and abs(shares/d-1)>.12: warnings.append("Écart >12 % entre actions actuelles et moyennes diluées ; effets de périmètre/actions à contrôler.")
-    raw=[]
-    for h in years:
-        cfo=number(h["cfo"]);capex=abs(number(h["capex"]))
-        sbc=number(h.get("sbc"))
-        wc=number(h.get("change_wc"))
-        before=cfo-capex
-        after=before-sbc if sbc is not None else before
-        if sbc is None: warnings.append("SBC absent pour "+h["year_end"]+" : le flux conservé peut surestimer la capacité actionnariale.")
-        raw.append({"year_end":h["year_end"],"cfo":cfo,"capex":capex,"sbc":sbc,
-                    "wc":wc,"fcf_before_sbc":before,"fcf_after_sbc":after,
-                    "fcf_ps_historical":after/number(h["diluted_shares"]) if number(h.get("diluted_shares")) and number(h["diluted_shares"])>0 else None,
-                    "source_type":h.get("source_type","fact_provider_standardized"),
-                    "source_name":h.get("source_name","Yahoo Finance via yfinance"),
-                    "source_url":h.get("source_url") or company.get("financial_url"),
-                    "currency":h.get("currency") or fin_currency})
-    last3=raw[-3:]
-    # This is intentionally a *statistical proxy*, never an approved FCF normalization.
-    weights=[.2,.3,.5]   # greater weight on recent years
-    basis=sum(w*x["fcf_after_sbc"] for w,x in zip(weights,last3))
-    if basis<=0:
-        return blocked(company,"FCF pondéré des trois derniers exercices non positif : le DCF de flux pérennes n'est pas fiable.",
-                       warnings,raw)
-    if any(x["fcf_after_sbc"]<=0 for x in last3):
-        warnings.append("Au moins un FCF annuel négatif : les scénarios requièrent une revue manuelle des besoins d'investissement.")
-    rev=number(latest.get("revenue"))
-    if not rev or rev<=0: warnings.append("CA récent indisponible ; conversion en trésorerie non contrôlée.")
-    fcfps=basis/shares
-    scenarios={}
-    for key,assumptions in CASE_DEFS.items():
-        val=dcf_equity(fcfps,**assumptions)
-        scenarios[key]={**assumptions,"value_per_share":val,
-                        "potential":val/price-1,"margin_of_safety":1-price/val if val>0 else None}
-    central=scenarios["central"]["value_per_share"]
-    inferred=implied_discount(fcfps,CASE_DEFS["central"]["growth"],CASE_DEFS["central"]["terminal"],price)
-    notes=["Base = 20 % FCF N−2 + 30 % N−1 + 50 % N, moins SBC lorsqu'elle est disponible.",
-           "Ceci n'est PAS une normalisation du BFR, du CAPEX, des acquisitions et du périmètre.",
-           "FCF/action traité comme flux revenant aux actionnaires après intérêts ; actualisé au coût des fonds propres.",
-           "La dette nette n'est donc pas soustraite une seconde fois ; la dette et ses échéances restent à vérifier.",
-           "Hypothèses de croissance et de rendement exigé génériques, NON fondées sur une analyse prospective de l'émetteur.",
-           "8 % pour l'ETF Monde = hypothèse de comparaison, pas une prévision observée."]
-    return {"ticker":company["ticker"],"name":company.get("name"),"region":company.get("region"),
-            "sector":company.get("sector"),"model":sector,
-            "price":price,"price_asof":company.get("price_asof"),"currency":company.get("currency"),
-            "financial_asof":latest["year_end"],"financial_source":company.get("financial_source"),
-            "source_url":company.get("financial_url"),"shares":shares,
-            "shares_source":company.get("shares_source") or "Actions diluées dernier exercice",
-            "years_available":len(raw),"historical":raw,
-            "base_proxy_fcf":basis,"base_proxy_fcf_per_share":fcfps,
-            "scenarios":scenarios,"fair_value":central,"potential":central/price-1,
-            "implied_discount_central":inferred,"world_reference":WORLD_BENCHMARK,
-            "status":"screen-grade","decision_ready":False,"validated_opportunity":False,
-            "method":"DCF indicatif sur FCF/action; 10 ans et valeur terminale Gordon",
-            "reason":"Valorisation automatique indicative exclusivement, non auditable à niveau décisionnel.",
-            "warnings":sorted(set(warnings)),
-            "notes":notes,"assumptions_type":"hypothèses génériques et base statistique non normalisée"}
 
-def generate(snapshot):
-    now=datetime.now(timezone.utc).isoformat(timespec="seconds")
-    rows=[analyze(c) for c in snapshot.get("companies",[])]
-    registry=ROOT/"research"/"registre.json"
-    dossier_index={}
-    if registry.exists():
+def dcf_per_share(base, growth, discount, terminal_growth, horizon=HORIZON):
+    """Proxy FCFE, sous hypothèse de dette stable; terminal cohérent avec r>g.
+
+    Calculs de flux pour actionnaires, pas EV/WACC, et non flux actualisés certifiés.
+    """
+    base = positive(base)
+    if base is None or not -0.75 < growth < 0.50 or not 0.02 < discount < 0.50 or not -0.05 < terminal_growth < discount - 0.015:
+        return None
+    projections = [base * (1 + growth) ** t for t in range(1, horizon + 1)]
+    terminal = projections[-1] * (1 + terminal_growth) / (discount - terminal_growth)
+    pv_flows = sum(v / (1 + discount) ** t for t, v in enumerate(projections, 1))
+    pv_terminal = terminal / (1 + discount) ** horizon
+    return {"value": pv_flows + pv_terminal, "annual_flows": projections,
+            "terminal_value": terminal, "pv_flows": pv_flows, "pv_terminal": pv_terminal,
+            "terminal_share": pv_terminal / (pv_flows + pv_terminal)}
+
+
+def implied_irr(price, flows, terminal):
+    price = positive(price)
+    if not price or not flows or terminal <= 0:
+        return None
+    def npv(rate):
+        return sum(v / (1 + rate) ** t for t, v in enumerate(flows, 1)) + terminal / (1 + rate) ** len(flows) - price
+    lo, hi = -0.80, 1.00
+    if npv(lo) * npv(hi) > 0:
+        return None
+    for _ in range(75):
+        mid = (lo + hi) / 2
+        if npv(mid) > 0:
+            lo = mid
+        else:
+            hi = mid
+    return (lo + hi) / 2
+
+
+def reverse_growth(price, base, discount=0.10, terminal_growth=0.02):
+    price = positive(price)
+    if price is None or positive(base) is None:
+        return None
+    lo, hi = -0.3, 0.4
+    def model(g):
+        res = dcf_per_share(base, g, discount, terminal_growth)
+        return res["value"] if res else None
+    a,b=model(lo),model(hi)
+    if a is None or b is None or not a <= price <= b:
+        return None
+    for _ in range(75):
+        mid=(lo+hi)/2
+        if model(mid) < price:
+            lo=mid
+        else:
+            hi=mid
+    return (lo+hi)/2
+
+
+def annual_metric_rows(periods):
+    rows=[]
+    for period, v in sorted(periods.items()):
+        cfo=finite(v.get("cfo"))
+        capex=finite(v.get("capex"))
+        shares=positive(v.get("diluted_shares"))
+        rev=positive(v.get("revenue"))
+        fcf=(cfo-abs(capex)) if cfo is not None and capex is not None else None
+        fcfps=fcf/shares if fcf is not None and shares else None
+        rows.append({"period": period, "cfo": cfo, "capex": abs(capex) if capex is not None else None,
+                     "fcf": fcf, "diluted_shares": shares, "fcf_per_share": fcfps,
+                     "revenue": rev, "fcf_margin": fcf/rev if fcf is not None and rev else None,
+                     "sbc": finite(v.get("sbc"))})
+    return rows[-8:]
+
+
+def calculate(company, history, cfg=None):
+    cfg = cfg or {}
+    name=company.get("name") or company.get("ticker")
+    ticker=company.get("ticker")
+    model=company.get("model")
+    result={"ticker":ticker,"name":name,"model":model,"region":company.get("region"),
+            "currency":company.get("currency"),"price":finite(company.get("price")),
+            "price_asof":company.get("price_asof"),"market_url":company.get("market_url"),
+            "status":"non_modélisable","validation":"Aucune recommandation",
+            "source_url":history.get("source_url"),"source_type":history.get("source_type"),
+            "source_name":history.get("source_name"),"last_fetch":history.get("fetched_at"),
+            "financial_asof":None,"coverage_years":0,"scenarios":{},"warnings":[],
+            "quality_grade":company.get("quality_grade"),"quality_reference":company.get("reference_url"),
+            "method":"DCF actionnaire indicatif (proxy FCF après CAPEX)",
+            "world_reference": WORLD_REFERENCE,"mos_example":MOS_EXAMPLE,
+            "assumptions_approval":"non approuvées","normalization":"non réalisée"}
+    warnings=result["warnings"]
+    if model!="corporate":
+        result["status"]="modèle_sectoriel_requis"
+        result["method"]={"bank":"ROE / P-TBV et capital distribuable",
+                          "insurance":"Capital distribuable / solvabilité",
+                          "utility":"DCF régulé, dette et CAPEX de maintenance",
+                          "reit":"EPRA NTA / AFFO", "holding":"Somme des parties"}.get(model,"Méthode spécifique")
+        warnings.append("Aucune valorisation automatique générique autorisée pour ce secteur.")
+        return result
+    periods=history.get("annual",{})
+    rows=annual_metric_rows(periods)
+    rows=rows[-5:]
+    result["annuals"]=rows
+    result["coverage_years"]=len([x for x in rows if x["fcf_per_share"] is not None])
+    result["financial_asof"]=rows[-1]["period"] if rows else None
+    if not rows:
+        warnings.append("Historique CFO, CAPEX et actions diluées indisponible.")
+        return result
+    if company.get("currency")!=history.get("currency"):
+        warnings.append("Devise des comptes différente de la devise de cotation; conversion non effectuée.")
+        return result
+    last=[x for x in rows if x["fcf_per_share"] is not None]
+    if len(last)<3:
+        warnings.append("Moins de trois exercices de FCF par action exploitables.")
+        return result
+    positives=[x for x in last[-3:] if x["fcf_per_share"]>0]
+    if len(positives)<3:
+        warnings.append("Les trois derniers FCF par action ne sont pas tous positifs; pas d'extrapolation automatique.")
+        return result
+    recent=last[-3:]
+    anchor=min(recent[-1]["fcf_per_share"],mean(x["fcf_per_share"] for x in recent))
+    if not positive(anchor):
+        warnings.append("Ancre de FCF par action non positive.")
+        return result
+    result["anchor_fcfps"]=anchor
+    result["anchor_formula"]="min(dernier FCF/action publié, moyenne des 3 derniers FCF/action) — approximation mécanique, pas une normalisation"
+    result["coverage_years"]=len(last)
+    if len(last)<5:
+        warnings.append("Historique inférieur aux cinq exercices exigés pour une validation fondamentale complète.")
+    if not company.get("quality_grade") or not company.get("reference_url"):
+        warnings.append("Moat et avenir économique à dix ans non documentés : statut indicatif uniquement.")
+    if history.get("source_type")!="primary":
+        warnings.append("États financiers agrégés d'une source secondaire; rapprochement aux comptes annuels requis.")
+    if result["price"] is None:
+        warnings.append("Cours indisponible : calcul du rendement implicite impossible.")
+    if result["price_asof"]:
         try:
-            doc=json.loads(registry.read_text(encoding="utf-8"))
-            dossier_index={d["ticker"]:d for d in doc.get("dossiers",[]) if d.get("ticker")}
-        except (ValueError,OSError,KeyError,TypeError):
-            dossier_index={}
-    for entry in rows:
-        d=dossier_index.get(entry["ticker"])
-        if d:
-            path=d.get("dossier_path")
-            if not isinstance(path,str) or not path.startswith("research/dossiers/") or ".." in path:
-                path=None
-            entry["documentary_research"]={
-                "date":d.get("date"),"stage":d.get("stage"),"qualitative_status":d.get("qualitative_status"),
-                "thesis":d.get("thesis"),"method":d.get("method"),
-                "publication_asof":d.get("publication_asof"),
-                "source_urls":[u for u in d.get("source_urls",[]) if isinstance(u,str) and u.startswith("https://")][:20],
-                "dossier_url":"https://github.com/LunaticLament/screener-quality-value/blob/main/"+path if path else None,
-                "last_review_reason":d.get("last_review_reason")
-            }
-    counts={"universe":len(rows),"indicative":sum(x["status"]=="screen-grade" for x in rows),
-            "blocked":sum(x["status"]=="blocked" for x in rows),"decision_ready":0}
-    counts["dossiers_documentaires"]=sum(bool(x.get("documentary_research")) for x in rows)
-    return {"schema_version":"1.0","generated_at":now,"coverage":"Univers suivi uniquement, non mondial exhaustif",
-            "world_reference":WORLD_BENCHMARK,"scenarios_default":CASE_DEFS,
-            "disclaimer":"Scénarios mécaniques non validés, pas de recommandation d'achat ni cours cible approuvé.",
-            "methodology":"DCF equity cash-flow sur base proxy 3 exercices, sans normalisation complète. Validation fondamentale impossible sans sources primaires, cinq ans, CAPEX/BFR/risques et prospective.",
-            "counts":counts,"models":rows}
-
-def append_revision_events(previous,new):
-    path=DATA/"model_events.json"
-    old=[]
-    if path.exists():
-        try:old=json.loads(path.read_text(encoding="utf-8"))
-        except (ValueError,OSError):old=[]
-    prevs={x["ticker"]:x for x in (previous or {}).get("models",[])}
-    events=list(old)
-    for x in new["models"]:
-        oldx=prevs.get(x["ticker"])
-        if not oldx:
-            events.append({"at":new["generated_at"],"ticker":x["ticker"],"event":"initial","status":x["status"],
-                           "financial_asof":x.get("financial_asof")})
+            age=(date.today()-date.fromisoformat(result["price_asof"][:10])).days
+            if age>10: warnings.append("Cours antérieur de plus de dix jours : rendement implicite à revalider.")
+        except ValueError: warnings.append("Date de cotation invalide")
+    if rows[-1]["sbc"] is not None and rows[-1]["fcf"] is not None and rows[-1]["fcf"]>0:
+        ratio=abs(rows[-1]["sbc"])/rows[-1]["fcf"]
+        result["sbc_to_fcf"]=ratio
+        if ratio>=0.15: warnings.append("Rémunération en actions significative (≥15 % du FCF brut); coût économique non ajusté.")
+    assumptions={}
+    for scenario,defaults in ASSUMPTIONS.items():
+        custom={key:finite(cfg.get(f"{scenario}_{key}")) for key in ("growth","discount","terminal_growth")}
+        a={key:custom[key] if custom[key] is not None else defaults[key] for key in defaults}
+        assumptions[scenario]=a
+        output=dcf_per_share(anchor,**a)
+        if output is None:
+            warnings.append(f"Hypothèses du scénario {scenario} invalides")
             continue
-        changes=[]
-        if x.get("status")!=oldx.get("status"):changes.append("statut")
-        if x.get("financial_asof")!=oldx.get("financial_asof"):changes.append("nouvel exercice")
-        a=number(x.get("base_proxy_fcf_per_share"));b=number(oldx.get("base_proxy_fcf_per_share"))
-        if a and b and abs(a/b-1)>=0.03:changes.append("base FCF/action variation ≥3 %")
-        if changes:events.append({"at":new["generated_at"],"ticker":x["ticker"],"event":", ".join(changes),
-                                   "status":x["status"],"financial_asof":x.get("financial_asof")})
-    events=events[-500:]
-    path.write_text(json.dumps(events,ensure_ascii=False,indent=2),encoding="utf-8")
-    return events
-
-def main():
-    snap=json.loads((DATA/"snapshot.json").read_text(encoding="utf-8"))
-    old_path=DATA/"valuations.json"
-    previous=json.loads(old_path.read_text(encoding="utf-8")) if old_path.exists() else None
-    doc=generate(snap)
-    DATA.mkdir(exist_ok=True)
-    append_revision_events(previous,doc)
-    old_path.write_text(json.dumps(doc,ensure_ascii=False,indent=2),encoding="utf-8")
-    # Store a portable static page: one JSON payload injected in the HTML template.
-    template=(ROOT/"valuation.template.html").read_text(encoding="utf-8")
-    if "__VALUATION_SNAPSHOT__" not in template:raise ValueError("Balise valuation manquante")
-    payload=json.dumps(doc,ensure_ascii=False,separators=(",",":")).replace("<","\\u003c")
-    (ROOT/"valorisations.html").write_text(template.replace("__VALUATION_SNAPSHOT__",payload),encoding="utf-8")
-    print("DCF indicative:",doc["counts"])
-if __name__=="__main__":main()
+        model_result={k:output[k] for k in ("value","pv_flows","pv_terminal","terminal_value","terminal_share")}
+        model_result.update(a)
+        model_result["irr"]=implied_irr(result["price"],output["annual_flows"],output["terminal_value"])
+        result["scenarios"][scenario]=model_result
+    cen=result["scenarios"].get("central")
+    if cen:
+        result["reverse_growth"]=reverse_growth(result["price"],anchor,cen["discount"],cen["terminal_growth"])
+        result["theoretical_fair_price"]=cen["value"]
+        result["theoretical_safety_price"]=cen["value"]*(1-MOS_EXAMPLE)
+        if positive(result["price"]):
+            result["margin_safety_at_price"]=1-result["price"]/cen["value"]
+            result["upside_to_model"]=cen["value"]/result["price"]-1
+            irr=cen["irr"]
+            result["world_spread"]=irr-WORLD_REFERENCE if irr is not None else None
+    result["assumptions"]=assumptions
+    result["status"]="prévalorisation_indicative"
+    warnings.append("DCF fondé sur FCF brut CFO-CAPEX: BFR, CAPEX soutenables, acquisitions, dette, fiscalité et dilution futurs non normalisés.")
+    warnings.append("Taux de croissance, d'actualisation et marge de sécurité sont des hypothèses de sensibilité, non des estimations approuvées.")
+    return result

@@ -1,22 +1,24 @@
-name: Screener autonome - mise a jour et publication
+name: Screener autonome - screening et prevalorisations
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 23 * * *'
-      timezone: Europe/Paris
+    - cron: "15 23 * * *"
+      timezone: "Europe/Paris"
   push:
     branches: [main]
     paths:
-      - '.github/workflows/**'
-      - 'refresh.py'
-      - 'valuation_engine.py'
-      - 'valuation.template.html'
-      - 'research/**'
-      - 'tests/**'
-      - 'requirements.txt'
-      - 'universe.csv'
-      - 'research.csv'
-      - 'index.html'
+      - ".github/workflows/**"
+      - "refresh.py"
+      - "valuation_engine.py"
+      - "valuation_sources.py"
+      - "build_valuations.py"
+      - "valuation_assumptions.csv"
+      - "tests/**"
+      - "requirements.txt"
+      - "universe.csv"
+      - "research.csv"
+      - "index.html"
+      - "valorisations.html"
 permissions:
   contents: write
   pages: write
@@ -28,71 +30,64 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 55
+    env:
+      SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
           cache: pip
       - name: Install dependencies
-        run: pip install -r requirements.txt
-      - name: Run valuation and safety tests
-        run: python -m unittest discover -s tests -v
-      - name: Refresh screener and generate report
+        run: pip install -r requirements.txt pytest
+      - name: Validate valuation computations
+        run: python -m pytest -q tests/test_valuation_engine.py
+      - name: Refresh screener
         run: python refresh.py
-      - name: Build automatic valuation studies
-        run: python valuation_engine.py
-      - name: Validate output
+      - name: Refresh financial histories and create valuations
+        run: python build_valuations.py
+      - name: Validate screens, sources and valuation outputs
         run: |
           python - <<'PY'
-          import json, pathlib
-          d=json.loads(pathlib.Path('data/snapshot.json').read_text())
-          r=json.loads(pathlib.Path('data/run_report.json').read_text())
-          h=pathlib.Path('index.html').read_text()
-          assert d['coverage_count']==len(d['companies'])>0
-          assert d['coverage_count']==r['universe_count']
-          assert 'const embedded={' in h
-          assert '__EMBEDDED_SNAPSHOT__' not in h
-          assert all(x.get('triage',{}).get('status') for x in d['companies'])
-          v=json.loads(pathlib.Path('data/valuations.json').read_text())
-          assert v['counts']['universe']==len(d['companies'])
-          assert v['counts']['indicative']+v['counts']['blocked']==v['counts']['universe']
-          assert v['counts']['decision_ready']==0
-          assert all(not x['decision_ready'] for x in v['models'])
-          assert 'const DATA={' in pathlib.Path('valorisations.html').read_text()
-          print('Validated',len(d['companies']),'companies',r['status'])
+          import json
+          from pathlib import Path
+          screen=json.loads(Path('data/snapshot.json').read_text(encoding='utf-8'))
+          values=json.loads(Path('data/models.json').read_text(encoding='utf-8'))
+          sreport=json.loads(Path('data/run_report.json').read_text(encoding='utf-8'))
+          report=json.loads(Path('data/valuation_run_report.json').read_text(encoding='utf-8'))
+          html=Path('index.html').read_text(encoding='utf-8')
+          page=Path('valorisations.html').read_text(encoding='utf-8')
+          assert screen['coverage_count']==len(screen['companies'])>0
+          assert values['universe_count']==len(values['models'])==len(screen['companies'])
+          assert sreport['universe_count']==screen['coverage_count']
+          assert report['companies']==values['universe_count']
+          assert all(x.get('triage',{}).get('status') for x in screen['companies'])
+          assert all(x.get('validation')=='Aucune recommandation' for x in values['models'])
+          assert all(x['status']!='prévalorisation_indicative' or x.get('scenarios',{}).get('central') for x in values['models'])
+          assert 'const embedded={' in html and 'valorisations.html' in html
+          assert 'models.json' in page and 'simulationResult' in page
+          print('Screener:',len(screen['companies']),'Valorizations:',report['indicative_models'],'Other:',report['sector_blocked']+report['without_model'])
           PY
-      - name: Preserve traceable history
+      - name: Commit data and audit trail
         run: |
-          cp index.html "$RUNNER_TEMP/index.html.generated"
-          cp valorisations.html "$RUNNER_TEMP/valorisations.html.generated"
-          git restore -- index.html
-          git restore -- valorisations.html || true
           git config user.name "quality-value-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/snapshot.json data/run_report.json data/valuations.json data/model_events.json
+          git add index.html data/snapshot.json data/run_report.json data/models.json data/financial_history.json data/valuation_run_report.json
           if ! git diff --cached --quiet; then
-            git commit -m "Screener: daily data refresh [skip ci]"
-            if ! git push origin HEAD:main; then
-              echo "Branche principale actualisée pendant l'exécution ; réconciliation des données"
-              git fetch origin main
-              git rebase -X theirs origin/main
-              git push origin HEAD:main
-            fi
+            git commit -m "Screener: cours et prevalorisations actualises [skip ci]"
+            git push
           fi
-          cp "$RUNNER_TEMP/index.html.generated" index.html
-          cp "$RUNNER_TEMP/valorisations.html.generated" valorisations.html
-      - name: Build public directory
+      - name: Build public output
         run: |
           mkdir -p public
           cp index.html public/index.html
           cp valorisations.html public/valorisations.html
-          cp data/valuations.json public/valorisations.json
-          cp data/model_events.json public/historique-modeles.json
           cp data/run_report.json public/rapport.json
           cp data/snapshot.json public/instantane.json
+          cp data/models.json public/models.json
+          cp data/valuation_run_report.json public/rapport-valorisations.json
           touch public/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
