@@ -12,6 +12,7 @@ on:
       - 'valuation_engine.py'
       - 'valuation.template.html'
       - 'research/**'
+      - 'tests/**'
       - 'requirements.txt'
       - 'universe.csv'
       - 'research.csv'
@@ -37,6 +38,8 @@ jobs:
           cache: pip
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Run valuation and safety tests
+        run: python -m unittest discover -s tests -v
       - name: Refresh screener and generate report
         run: python refresh.py
       - name: Build automatic valuation studies
