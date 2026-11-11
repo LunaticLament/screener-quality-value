@@ -108,6 +108,27 @@ def main():
         result['financial_update_applied']=ticker in refreshed_symbols
         summaries.append(result)
         logging.info('[%02d/%02d] %-12s %s (%d exercices)',i,len(companies),ticker,result['status'],result['coverage_years'])
+    # Expert research is separate from mechanically calculated screen-grade models.
+    registry=load(ROOT/'research'/'registre.json',{'cases':[]})
+    current_cases={item.get('ticker'):item for item in registry.get('cases',[])
+                   if isinstance(item,dict) and item.get('ticker')}
+    for item in summaries:
+        case=current_cases.get(item['ticker'])
+        if not case:
+            continue
+        saved={key:case.get(key) for key in ('ticker','status','updated_at','latest_publication','notes')}
+        for name,prefix in (('dossier_path','research/dossiers/'),('model_path','research/modeles/')):
+            path=case.get(name)
+            if isinstance(path,str) and path.startswith(prefix) and '..' not in path:
+                if (ROOT/path).is_file():
+                    saved[name]=path
+        model_path=saved.get('model_path')
+        if model_path:
+            research_model=load(ROOT/model_path,{})
+            if research_model.get('ticker')==item['ticker']:
+                saved['fundamental_model']={k:research_model.get(k) for k in
+                    ('review_level','model_updated_at','assumptions_asof','three_scenarios','benchmark_world','reverse_valuation')}
+        item['deep_research']=saved
     out={'schema_version':'1.0','generated_at':now,'universe_count':len(summaries),
          'objective':'PRE-VALORISATIONS AUTOMATIQUES; aucune valeur intrinsèque validée et aucun ordre de bourse',
          'benchmark_world_assumption':0.07,

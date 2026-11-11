@@ -19,6 +19,7 @@ on:
       - "research.csv"
       - "index.html"
       - "valorisations.html"
+      - "research/**"
 permissions:
   contents: write
   pages: write
@@ -88,6 +89,7 @@ jobs:
           cp data/snapshot.json public/instantane.json
           cp data/models.json public/models.json
           cp data/valuation_run_report.json public/rapport-valorisations.json
+          cp -R research public/research
           touch public/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
