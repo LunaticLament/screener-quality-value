@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T22:59:45+00:00",
+  "generated_at": "2026-11-11T23:07:19+00:00",
   "coverage": "Univers suivi uniquement, non mondial exhaustif",
   "world_reference": 0.08,
   "scenarios_default": {
@@ -26,7 +26,8 @@
     "universe": 36,
     "indicative": 24,
     "blocked": 12,
-    "decision_ready": 0
+    "decision_ready": 0,
+    "dossiers_documentaires": 0
   },
   "models": [
     {
@@ -35,8 +36,8 @@
       "region": "Europe",
       "sector": "Industrie",
       "model": "corporate",
-      "price": 192.16000366210938,
-      "price_asof": "2026-11-11",
+      "price": 190.33999633789062,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -110,29 +111,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 34.1982089224995,
-          "potential": -0.8220326380580582,
-          "margin_of_safety": -4.619007828672704
+          "potential": -0.8203309363220171,
+          "margin_of_safety": -4.565788453109987
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 56.09681072116278,
-          "potential": -0.7080723894041843,
-          "margin_of_safety": -2.425506747919559
+          "potential": -0.7052810139725967,
+          "margin_of_safety": -2.3930627051866242
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 87.62412930554278,
-          "potential": -0.5440043316213741,
-          "margin_of_safety": -1.1930032878506909
+          "potential": -0.5396441578679404,
+          "margin_of_safety": -1.172232669772736
         }
       },
       "fair_value": 56.09681072116278,
-      "potential": -0.7080723894041843,
-      "implied_discount_central": 0.04515989508921969,
+      "potential": -0.7052810139725967,
+      "implied_discount_central": 0.04539884485541096,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -164,7 +165,7 @@
       "sector": "Infrastructures",
       "model": "corporate",
       "price": 114.75,
-      "price_asof": "2026-11-11",
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -287,8 +288,8 @@
       "region": "Europe",
       "sector": "Industrie",
       "model": "corporate",
-      "price": 242.5,
-      "price_asof": "2026-11-11",
+      "price": 235.35000610351562,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -362,29 +363,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 60.08709750054825,
-          "potential": -0.7522181546369144,
-          "margin_of_safety": -3.035808186570958
+          "potential": -0.744690478256798,
+          "margin_of_safety": -2.9168143560498696
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 98.56348158206265,
-          "potential": -0.5935526532698447,
-          "margin_of_safety": -1.4603432844252535
+          "potential": -0.5812046780287281,
+          "margin_of_safety": -1.3878012660050603
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 153.95775880879035,
-          "potential": -0.36512264408746253,
-          "margin_of_safety": -0.5751073663080257
+          "potential": -0.3458349062414129,
+          "margin_of_safety": -0.5286660959764382
         }
       },
       "fair_value": 98.56348158206265,
-      "potential": -0.5935526532698447,
-      "implied_discount_central": 0.05494036690045234,
+      "potential": -0.5812046780287281,
+      "implied_discount_central": 0.055992237055096844,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -415,8 +416,8 @@
       "region": "Europe",
       "sector": "Logiciels",
       "model": "corporate",
-      "price": 210.9499969482422,
-      "price_asof": "2026-11-11",
+      "price": 209.9499969482422,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -490,29 +491,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 31.737170629358737,
-          "potential": -0.8495512155084523,
-          "margin_of_safety": -5.646780187553994
+          "potential": -0.8488346220972667,
+          "margin_of_safety": -5.615271392656099
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 52.05986248154253,
-          "potential": -0.7532123098616791,
-          "margin_of_safety": -3.052065965849085
+          "potential": -0.7520368504964705,
+          "margin_of_safety": -3.0328573096534504
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 81.31835059903922,
-          "potential": -0.614513620405545,
-          "margin_of_safety": -1.5941253775348287
+          "potential": -0.6126775337887422,
+          "margin_of_safety": -1.5818280302247394
         }
       },
       "fair_value": 52.05986248154253,
-      "potential": -0.7532123098616791,
-      "implied_discount_central": 0.041291782963124496,
+      "potential": -0.7520368504964705,
+      "implied_discount_central": 0.041392606775323304,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -539,8 +540,8 @@
       "region": "Europe",
       "sector": "Services collectifs",
       "model": "utility",
-      "price": 34.29999923706055,
-      "price_asof": "2026-11-11",
+      "price": 34.290000915527344,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "status": "blocked",
       "method": "Méthode sectorielle ou données non suffisantes",
@@ -560,8 +561,8 @@
       "region": "Europe",
       "sector": "Industrie",
       "model": "corporate",
-      "price": 138.60000610351562,
-      "price_asof": "2026-11-11",
+      "price": 135.60000610351562,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -635,29 +636,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 41.34646732353003,
-          "potential": -0.7016849530825435,
-          "margin_of_safety": -2.3521607787913523
+          "potential": -0.6950850629610845,
+          "margin_of_safety": -2.279603189372033
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 67.82241013536932,
-          "potential": -0.5106608430831159,
-          "margin_of_safety": -1.0435724095749266
+          "potential": -0.49983475602800187,
+          "margin_of_safety": -0.9993392424844003
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 105.93970600316459,
-          "potential": -0.23564429049128732,
-          "margin_of_safety": -0.30829139831080354
+          "potential": -0.21873376670579703,
+          "margin_of_safety": -0.2799734039234074
         }
       },
       "fair_value": 67.82241013536932,
-      "potential": -0.5106608430831159,
-      "implied_discount_central": 0.061991968410400736,
+      "potential": -0.49983475602800187,
+      "implied_discount_central": 0.06291131207369119,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -688,8 +689,8 @@
       "region": "Europe",
       "sector": "Santé et consommation",
       "model": "corporate",
-      "price": 182.5500030517578,
-      "price_asof": "2026-11-11",
+      "price": 187.60000610351562,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -763,29 +764,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 57.59039070223173,
-          "potential": -0.6845226527555668,
-          "margin_of_safety": -2.169799697932657
+          "potential": -0.6930149849224739,
+          "margin_of_safety": -2.2574879908957763
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 94.46802474077597,
-          "potential": -0.4825087747931083,
-          "margin_of_safety": -0.9323999157670788
+          "potential": -0.49643911691213083,
+          "margin_of_safety": -0.9858571894384107
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 147.5605887163595,
-          "potential": -0.19167030265936447,
-          "margin_of_safety": -0.23711896679034572
+          "potential": -0.21342972326484266,
+          "margin_of_safety": -0.2713422176982485
         }
       },
       "fair_value": 94.46802474077597,
-      "potential": -0.4825087747931083,
-      "implied_discount_central": 0.06438185929386375,
+      "potential": -0.49643911691213083,
+      "implied_discount_central": 0.06319959156187407,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -812,8 +813,8 @@
       "region": "Europe",
       "sector": "Consommation",
       "model": "corporate",
-      "price": 446.6499938964844,
-      "price_asof": "2026-11-11",
+      "price": 443.8500061035156,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -887,29 +888,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 97.71204197085981,
-          "potential": -0.7812335311628694,
-          "margin_of_safety": -3.5710844322513147
+          "potential": -0.7798534625950388,
+          "margin_of_safety": -3.54242892842095
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 160.28131578585072,
-          "potential": -0.6411478384056633,
-          "margin_of_safety": -1.786662885231403
+          "potential": -0.638884051860372,
+          "margin_of_safety": -1.7691936763018372
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 250.36201807429245,
-          "potential": -0.4394670961703486,
-          "margin_of_safety": -0.7840165905834224
+          "potential": -0.4359310248248538,
+          "margin_of_safety": -0.7728328342992008
         }
       },
       "fair_value": 160.28131578585072,
-      "potential": -0.6411478384056633,
-      "implied_discount_central": 0.05088110743382901,
+      "potential": -0.638884051860372,
+      "implied_discount_central": 0.05107435579442199,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -936,8 +937,8 @@
       "region": "Europe",
       "sector": "Luxe",
       "model": "corporate",
-      "price": 403.1000061035156,
-      "price_asof": "2026-11-11",
+      "price": 401.0,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -1011,29 +1012,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 214.01438437700665,
-          "potential": -0.46907868733187763,
-          "margin_of_safety": -0.8835182844224934
+          "potential": -0.46629829332417294,
+          "margin_of_safety": -0.8737058313501043
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 351.0571105992781,
-          "potential": -0.12910666017423222,
-          "margin_of_safety": -0.14824623667470171
+          "potential": -0.12454585885466818,
+          "margin_of_safety": -0.14226428661554835
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 548.3569075911228,
-          "potential": 0.36034953929101476,
-          "margin_of_safety": 0.26489481481268506
+          "potential": 0.36747358501526883,
+          "margin_of_safety": 0.2687244485319734
         }
       },
       "fair_value": 351.0571105992781,
-      "potential": -0.12910666017423222,
-      "implied_discount_central": 0.0941896796307925,
+      "potential": -0.12454585885466818,
+      "implied_discount_central": 0.09457222666448814,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -1064,8 +1065,8 @@
       "region": "Europe",
       "sector": "Luxe",
       "model": "corporate",
-      "price": 1353.5,
-      "price_asof": "2026-11-11",
+      "price": 1345.5,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -1139,29 +1140,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 294.8857094757056,
-          "potential": -0.7821309867190945,
-          "margin_of_safety": -3.5899138429138056
+          "potential": -0.7808355931061274,
+          "margin_of_safety": -3.562784688319561
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 483.7138654343721,
-          "potential": -0.6426199738201905,
-          "margin_of_safety": -1.7981418287122395
+          "potential": -0.6404950832892069,
+          "margin_of_safety": -1.781603125624173
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 755.568912863622,
-          "potential": -0.4417665955939254,
-          "margin_of_safety": -0.791365389650835
+          "potential": -0.43844748207831885,
+          "margin_of_safety": -0.7807773415405972
         }
       },
       "fair_value": 483.7138654343721,
-      "potential": -0.6426199738201905,
-      "implied_discount_central": 0.050755428880409514,
+      "potential": -0.6404950832892069,
+      "implied_discount_central": 0.05093683176716088,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -1188,8 +1189,8 @@
       "region": "Europe",
       "sector": "Services",
       "model": "corporate",
-      "price": 104.5999984741211,
-      "price_asof": "2026-11-11",
+      "price": 103.94999694824219,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -1263,29 +1264,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 71.49655765582726,
-          "potential": -0.31647649427532165,
-          "margin_of_safety": -0.4630074776137949
+          "potential": -0.3122024073610492,
+          "margin_of_safety": -0.4539161094809694
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 117.27891572107835,
-          "potential": 0.1212133597697338,
-          "margin_of_safety": 0.10810909334386432
+          "potential": 0.12822433058341276,
+          "margin_of_safety": 0.11365144954559447
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 183.19157085486103,
-          "potential": 0.7513534754035789,
-          "margin_of_safety": 0.4290130381763386
+          "potential": 0.7623047256660727,
+          "margin_of_safety": 0.432561244695043
         }
       },
       "fair_value": 117.27891572107835,
-      "potential": 0.1212133597697338,
-      "implied_discount_central": 0.11511586555812436,
+      "potential": 0.12822433058341276,
+      "implied_discount_central": 0.11570002873758425,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -1333,8 +1334,8 @@
       "region": "Europe",
       "sector": "Banque",
       "model": "bank",
-      "price": 95.7699966430664,
-      "price_asof": "2026-11-11",
+      "price": 95.66000366210938,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "status": "blocked",
       "method": "Méthode sectorielle ou données non suffisantes",
@@ -1354,8 +1355,8 @@
       "region": "Europe",
       "sector": "Banque",
       "model": "bank",
-      "price": 67.61000061035156,
-      "price_asof": "2026-11-11",
+      "price": 67.47000122070312,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "status": "blocked",
       "method": "Méthode sectorielle ou données non suffisantes",
@@ -1375,8 +1376,8 @@
       "region": "Europe",
       "sector": "Assurance",
       "model": "insurance",
-      "price": 46.119998931884766,
-      "price_asof": "2026-11-11",
+      "price": 46.08000183105469,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "status": "blocked",
       "method": "Méthode sectorielle ou données non suffisantes",
@@ -1396,8 +1397,8 @@
       "region": "Europe",
       "sector": "Services collectifs",
       "model": "utility",
-      "price": 24.760000228881836,
-      "price_asof": "2026-11-11",
+      "price": 24.639999389648438,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "status": "blocked",
       "method": "Méthode sectorielle ou données non suffisantes",
@@ -1417,8 +1418,8 @@
       "region": "Europe",
       "sector": "Santé",
       "model": "corporate",
-      "price": 86.61000061035156,
-      "price_asof": "2026-11-11",
+      "price": 85.94999694824219,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -1492,29 +1493,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 45.314089970166236,
-          "potential": -0.4768030290863393,
-          "margin_of_safety": -0.9113260504044904
+          "potential": -0.4727854382885702,
+          "margin_of_safety": -0.8967609634184357
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 74.33067427065617,
-          "potential": -0.14177723418960197,
-          "margin_of_safety": -0.16519864053679045
+          "potential": -0.13518700512093096,
+          "margin_of_safety": -0.15631934987266782
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 116.1057202705293,
-          "potential": 0.34055789692088334,
-          "margin_of_safety": 0.25404191620750427
+          "potential": 0.35085194174522716,
+          "margin_of_safety": 0.2597264221954225
         }
       },
       "fair_value": 74.33067427065617,
-      "potential": -0.14177723418960197,
-      "implied_discount_central": 0.09312664463437426,
+      "potential": -0.13518700512093096,
+      "implied_discount_central": 0.09367959968922923,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -1545,8 +1546,8 @@
       "region": "Europe",
       "sector": "Semi-conducteurs",
       "model": "corporate",
-      "price": 1403.800048828125,
-      "price_asof": "2026-11-11",
+      "price": 1361.0,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "status": "blocked",
       "method": "Méthode sectorielle ou données non suffisantes",
@@ -1566,8 +1567,8 @@
       "region": "Europe",
       "sector": "Paiements",
       "model": "corporate",
-      "price": 874.5999755859375,
-      "price_asof": "2026-11-11",
+      "price": 872.7000122070312,
+      "price_asof": "2026-11-10",
       "currency": "EUR",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -1641,29 +1642,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 315.9481226190282,
-          "potential": -0.6387512789405705,
-          "margin_of_safety": -1.7681758901936395
+          "potential": -0.6379648009629275,
+          "margin_of_safety": -1.7621623606206303
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 518.2634585463829,
-          "potential": -0.40742799792651174,
-          "margin_of_safety": -0.6875586367578403
+          "potential": -0.4061379038649138,
+          "margin_of_safety": -0.683892618350455
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 809.5359383572592,
-          "potential": -0.07439290995302017,
-          "margin_of_safety": -0.08037201827099705
+          "potential": -0.07237776207889823,
+          "margin_of_safety": -0.07802503984930809
         }
       },
       "fair_value": 518.2634585463829,
-      "potential": -0.40742799792651174,
-      "implied_discount_central": 0.07074377749462729,
+      "potential": -0.4061379038649138,
+      "implied_discount_central": 0.07085294582930038,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -1690,8 +1691,8 @@
       "region": "Europe",
       "sector": "Consommation",
       "model": "corporate",
-      "price": 85.91000366210938,
-      "price_asof": "2026-11-11",
+      "price": 86.41000366210938,
+      "price_asof": "2026-11-10",
       "currency": "CHF",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -1765,29 +1766,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 32.4740424558229,
-          "potential": -0.6219992891218373,
-          "margin_of_safety": -1.6454976703002036
+          "potential": -0.6241865399889723,
+          "margin_of_safety": -1.6608945831015647
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 53.26858541403861,
-          "potential": -0.379948979823723,
-          "margin_of_safety": -0.6127705099424006
+          "potential": -0.383536822630679,
+          "margin_of_safety": -0.6221569052467564
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 83.20639544811397,
-          "potential": -0.03147023744323074,
-          "margin_of_safety": -0.03249279336564137
+          "potential": -0.03707450617086583,
+          "margin_of_safety": -0.03850194683644381
         }
       },
       "fair_value": 53.26858541403861,
-      "potential": -0.379948979823723,
-      "implied_discount_central": 0.0730680175544699,
+      "potential": -0.383536822630679,
+      "implied_discount_central": 0.07276467336026238,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
@@ -1835,8 +1836,8 @@
       "region": "Europe",
       "sector": "Santé",
       "model": "corporate",
-      "price": 272.70001220703125,
-      "price_asof": "2026-11-11",
+      "price": 271.5,
+      "price_asof": "2026-11-10",
       "currency": "DKK",
       "financial_asof": "2025-12-31",
       "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
@@ -1910,29 +1911,29 @@
           "discount": 0.125,
           "terminal": 0.01,
           "value_per_share": 114.91351890296308,
-          "potential": -0.5786083103812925,
-          "margin_of_safety": -1.3730890395699094
+          "potential": -0.5767457867294178,
+          "margin_of_safety": -1.3626462977716653
         },
         "central": {
           "growth": 0.035,
           "discount": 0.105,
           "terminal": 0.02,
           "value_per_share": 188.49764716657953,
-          "potential": -0.30877286861478426,
-          "margin_of_safety": -0.44670247245070516
+          "potential": -0.30571768999418225,
+          "margin_of_safety": -0.44033628048454876
         },
         "optimiste": {
           "growth": 0.07,
           "discount": 0.09,
           "terminal": 0.025,
           "value_per_share": 294.4363858974938,
-          "potential": 0.07970800409777934,
-          "margin_of_safety": 0.07382366695001452
+          "potential": 0.08448024271636756,
+          "margin_of_safety": 0.07789929165031573
         }
       },
       "fair_value": 188.49764716657953,
-      "potential": -0.30877286861478426,
-      "implied_discount_central": 0.079078281702332,
+      "potential": -0.30571768999418225,
+      "implied_discount_central": 0.07933595299605944,
       "world_reference": 0.08,
       "status": "screen-grade",
       "decision_ready": false,
