@@ -73,6 +73,8 @@ def fetch(ticker,model):
     data["currency"]=info.get("currency")
     data["market_cap"]=number(info.get("marketCap"))
     data["financial_currency"]=info.get("financialCurrency")
+    data["shares_outstanding"]=number(info.get("sharesOutstanding"))
+    data["shares_source"]="Yahoo Finance / sharesOutstanding, agrégé" if data["shares_outstanding"] else None
     if model in ("corporate","utility"):
         try:
             cf=stock.cashflow
@@ -82,7 +84,16 @@ def fetch(ticker,model):
             rev=annual_series(inc,["Total Revenue","Operating Revenue"])
             ebit=annual_series(inc,["Operating Income"])
             shares=annual_series(inc,["Diluted Average Shares"])
+            sbc=annual_series(cf,["Stock Based Compensation"])
+            wc=annual_series(cf,["Change In Working Capital","Change In Working Capital Ex Other"])
             years=sorted(set(cfo)&set(capex))
+            data["financial_history"]=[
+                {"year_end":y,"cfo":cfo[y],"capex":abs(capex[y]),"sbc":sbc.get(y),
+                 "change_wc":wc.get(y),"diluted_shares":shares.get(y),"revenue":rev.get(y),
+                 "source_type":"fact_provider_standardized","source_name":"Yahoo Finance via yfinance",
+                 "source_url":yahoo,"currency":data.get("financial_currency")}
+                for y in years
+            ]
             if years:
                 latest=years[-1]
                 fcf={y:cfo[y]-abs(capex[y]) for y in years}
@@ -161,6 +172,9 @@ def main():
         item={k:seed.get(k) for k in ("ticker","name","region","sector","model","currency","origin")}
         last=old.get(ticker,{})
         item.update({k:last[k] for k in MARKET+FINANCIAL if last.get(k) is not None})
+        if last.get("financial_history"): item["financial_history"]=last["financial_history"]
+        if last.get("shares_outstanding"): item["shares_outstanding"]=last["shares_outstanding"]
+        if last.get("shares_source"): item["shares_source"]=last["shares_source"]
         item.update(ideas.get(ticker,{}))
         if not args.offline:
             try:
