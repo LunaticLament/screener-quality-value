@@ -11,6 +11,7 @@ on:
       - 'refresh.py'
       - 'valuation_engine.py'
       - 'valuation.template.html'
+      - 'research/**'
       - 'requirements.txt'
       - 'universe.csv'
       - 'research.csv'
