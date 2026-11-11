@@ -1,0 +1,1363 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-11T22:44:24+00:00",
+  "methodology": "Sélection préliminaire, sans recommandation de transaction",
+  "universe_scope": "Liste initiale limitée de sociétés mondiales; non exhaustive",
+  "data_feed": "Yahoo Finance via yfinance, source secondaire non rapprochée aux émetteurs",
+  "run_mode": "network",
+  "source_success_count": 34,
+  "source_failure_count": 2,
+  "coverage_count": 36,
+  "companies": [
+    {
+      "ticker": "AI.PA",
+      "name": "Air Liquide",
+      "region": "Europe",
+      "sector": "Industrie",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/AI.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/AI.PA/",
+      "price": 192.16000366210938,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.025619145154361256,
+      "return_1m": 0.13704144178762934,
+      "return_3m": 0.14204213678553557,
+      "market_cap": 122630479872.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 2675000000.0,
+      "fcf_previous": 2797100000.0,
+      "revenue_latest": 26940200000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.09929399187830826,
+      "operating_margin": 0.19429328661257156,
+      "fcf_yield": 0.02181350022271892,
+      "fcfps_cagr_3y": 0.049257790959771564,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "DG.PA",
+      "name": "Vinci",
+      "region": "Europe",
+      "sector": "Infrastructures",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/DG.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/DG.PA/",
+      "price": 114.75,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.02960971863723194,
+      "return_1m": 0.0764540491795358,
+      "return_3m": -0.05047578445296674,
+      "market_cap": 63123685376.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 8013000000.0,
+      "fcf_previous": 7662000000.0,
+      "revenue_latest": 75702000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.10584925101054134,
+      "operating_margin": 0.1189400544239254,
+      "fcf_yield": 0.12694125750532603,
+      "fcfps_cagr_3y": 0.11067515719508414,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "FCF yield historique ≥6 % (non normalisé)"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "SU.PA",
+      "name": "Schneider Electric",
+      "region": "Europe",
+      "sector": "Industrie",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/SU.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/SU.PA/",
+      "price": 242.5,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.04728998835640086,
+      "return_1m": -0.08282902572629591,
+      "return_3m": -0.20855089807238258,
+      "market_cap": 142520729600.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 4588000000.0,
+      "fcf_previous": 4161000000.0,
+      "revenue_latest": 40152000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.11426578999800757,
+      "operating_margin": 0.17458657103008568,
+      "fcf_yield": 0.03219180825748453,
+      "fcfps_cagr_3y": 0.12247533914620279,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "SAP.DE",
+      "name": "SAP",
+      "region": "Europe",
+      "sector": "Logiciels",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/SAP.DE/",
+      "financial_url": "https://finance.yahoo.com/quote/SAP.DE/",
+      "price": 210.9499969482422,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.01563231943914878,
+      "return_1m": 0.06929236746517997,
+      "return_3m": 0.17103362752850226,
+      "market_cap": 243479396352.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 8417000000.0,
+      "fcf_previous": 4410000000.0,
+      "revenue_latest": 36800000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.22872282608695652,
+      "operating_margin": 0.2614130434782609,
+      "fcf_yield": 0.034569660209899156,
+      "fcfps_cagr_3y": 0.2083541271347813,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "VIE.PA",
+      "name": "Veolia",
+      "region": "Europe",
+      "sector": "Services collectifs",
+      "model": "utility",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/VIE.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/VIE.PA/",
+      "price": 34.29999923706055,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.015093172764575113,
+      "return_1m": 0.07929510685863472,
+      "return_3m": 0.007934189463677965,
+      "market_cap": 25107535872.0,
+      "financial_currency": "EUR",
+      "retrieval_warning": "Flux de trésorerie/CAPEX annuels comparables absents",
+      "triage": {
+        "status": "Analyse sectorielle",
+        "priority": "C",
+        "why": "Étude économique spécifique requise",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Comptes non sourcés",
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "LR.PA",
+      "name": "Legrand",
+      "region": "Europe",
+      "sector": "Industrie",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/LR.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/LR.PA/",
+      "price": 138.60000610351562,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.08535637757055925,
+      "return_1m": 0.008366745586080082,
+      "return_3m": -0.014925308388592629,
+      "market_cap": 36326604800.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 1328100000.0,
+      "fcf_previous": 1283700000.0,
+      "revenue_latest": 9480600000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.14008607050186697,
+      "operating_margin": 0.19075796890492164,
+      "fcf_yield": 0.036559981515255725,
+      "fcfps_cagr_3y": 0.0907379450233865,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "EL.PA",
+      "name": "EssilorLuxottica",
+      "region": "Europe",
+      "sector": "Santé et consommation",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/EL.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/EL.PA/",
+      "price": 182.5500030517578,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.034637772820442225,
+      "return_1m": 0.24777853208366318,
+      "return_3m": 0.1230390625931379,
+      "market_cap": 83676561408.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 3766000000.0,
+      "fcf_previous": 3352000000.0,
+      "revenue_latest": 28491000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.13218209259064265,
+      "operating_margin": 0.1185286581727563,
+      "fcf_yield": 0.04500662953437218,
+      "fcfps_cagr_3y": 0.03998971711008026,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Hausse ≥15 % sur un mois"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "OR.PA",
+      "name": "L'Oréal",
+      "region": "Europe",
+      "sector": "Consommation",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/OR.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/OR.PA/",
+      "price": 446.6499938964844,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.004272049233241981,
+      "return_1m": 0.15368720376606548,
+      "return_3m": 0.1769433304255188,
+      "market_cap": 238205124608.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 7161600000.0,
+      "fcf_previous": 6644300000.0,
+      "revenue_latest": 44052000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.16257150640152546,
+      "operating_margin": 0.20185008626169074,
+      "fcf_yield": 0.03006484437219988,
+      "fcfps_cagr_3y": 0.1337320212234705,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Hausse ≥15 % sur un mois"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "MC.PA",
+      "name": "LVMH",
+      "region": "Europe",
+      "sector": "Luxe",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/MC.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/MC.PA/",
+      "price": 403.1000061035156,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.031591576928491016,
+      "return_1m": 0.049602965541080124,
+      "return_3m": -0.1206369732314101,
+      "market_cap": 197773033472.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 14205000000.0,
+      "fcf_previous": 13373000000.0,
+      "revenue_latest": 80807000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.17578922618090018,
+      "operating_margin": 0.21864442436917594,
+      "fcf_yield": 0.07182475664464687,
+      "fcfps_cagr_3y": 0.03970281234610451,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "FCF yield historique ≥6 % (non normalisé)"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "RMS.PA",
+      "name": "Hermès International",
+      "region": "Europe",
+      "sector": "Luxe",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/RMS.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/RMS.PA/",
+      "price": 1353.5,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.013843351548269545,
+      "return_1m": 0.05371739976644618,
+      "return_3m": -0.14118020304568524,
+      "market_cap": 141759561728.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 4213000000.0,
+      "fcf_previous": 4072000000.0,
+      "revenue_latest": 16001000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.26329604399725015,
+      "operating_margin": 0.4184113492906693,
+      "fcf_yield": 0.02971933567404546,
+      "fcfps_cagr_3y": 0.04710440289818707,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "PUB.PA",
+      "name": "Publicis Groupe",
+      "region": "Europe",
+      "sector": "Services",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/PUB.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/PUB.PA/",
+      "price": 104.5999984741211,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.0014361084754577202,
+      "return_1m": 0.036156529333530196,
+      "return_3m": 0.02750486579985356,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 2693000000.0,
+      "fcf_previous": 2063000000.0,
+      "revenue_latest": 17399000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.15477901028794758,
+      "operating_margin": 0.14868670613253634,
+      "fcfps_cagr_3y": 0.0670126026081932,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "EF.PA",
+      "name": "Eiffage",
+      "region": "Europe",
+      "sector": "Infrastructures",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/EF.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/EF.PA/",
+      "retrieval_warning": "Flux de trésorerie/CAPEX annuels comparables absents",
+      "triage": {
+        "status": "À vérifier",
+        "priority": "C",
+        "why": "Cours indisponible ou ancien",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Cours manquant ou périmé",
+          "Comptes non sourcés",
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "BNP.PA",
+      "name": "BNP Paribas",
+      "region": "Europe",
+      "sector": "Banque",
+      "model": "bank",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/BNP.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/BNP.PA/",
+      "price": 95.7699966430664,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.04438385856350058,
+      "return_1m": 0.0613985712071583,
+      "return_3m": -0.1456735241153867,
+      "market_cap": 104963915776.0,
+      "financial_currency": "EUR",
+      "financial_note": "Ratios FCF génériques inadaptés; méthode sectorielle requise.",
+      "triage": {
+        "status": "Analyse sectorielle",
+        "priority": "C",
+        "why": "Étude économique spécifique requise",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Comptes non sourcés",
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "GLE.PA",
+      "name": "Société Générale",
+      "region": "Europe",
+      "sector": "Banque",
+      "model": "bank",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/GLE.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/GLE.PA/",
+      "price": 67.61000061035156,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.05822509400909226,
+      "return_1m": 0.04272061117995807,
+      "return_3m": -0.17909179080489368,
+      "market_cap": 48454062080.0,
+      "financial_currency": "EUR",
+      "financial_note": "Ratios FCF génériques inadaptés; méthode sectorielle requise.",
+      "triage": {
+        "status": "Analyse sectorielle",
+        "priority": "B",
+        "why": "Étude économique spécifique requise",
+        "triggers": [
+          "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
+        ],
+        "warnings": [
+          "Comptes non sourcés",
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "CS.PA",
+      "name": "AXA",
+      "region": "Europe",
+      "sector": "Assurance",
+      "model": "insurance",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/CS.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/CS.PA/",
+      "price": 46.119998931884766,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.02080563568746374,
+      "return_1m": 0.097833867521125,
+      "return_3m": 0.02375138097547347,
+      "market_cap": 96441393152.0,
+      "financial_currency": "EUR",
+      "financial_note": "Ratios FCF génériques inadaptés; méthode sectorielle requise.",
+      "triage": {
+        "status": "Analyse sectorielle",
+        "priority": "C",
+        "why": "Étude économique spécifique requise",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Comptes non sourcés",
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "ENGI.PA",
+      "name": "Engie",
+      "region": "Europe",
+      "sector": "Services collectifs",
+      "model": "utility",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/ENGI.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/ENGI.PA/",
+      "price": 24.760000228881836,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.02866641224785682,
+      "return_1m": 0.07558643512239094,
+      "return_3m": -0.03732500428078156,
+      "market_cap": 62905454592.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": -8743000000.0,
+      "fcf_previous": 3759000000.0,
+      "revenue_latest": 71944000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": -0.12152507505837874,
+      "operating_margin": 0.12587568108528857,
+      "fcf_yield": -0.13898635749008467,
+      "triage": {
+        "status": "Analyse sectorielle",
+        "priority": "C",
+        "why": "Étude économique spécifique requise",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "SAN.PA",
+      "name": "Sanofi",
+      "region": "Europe",
+      "sector": "Santé",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Portefeuille / watchlist",
+      "market_url": "https://finance.yahoo.com/quote/SAN.PA/",
+      "financial_url": "https://finance.yahoo.com/quote/SAN.PA/",
+      "price": 86.61000061035156,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.02984544805910838,
+      "return_1m": 0.22434270887517327,
+      "return_3m": 0.14684857600961432,
+      "market_cap": 103764738048.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 7212000000.0,
+      "fcf_previous": 5886000000.0,
+      "revenue_latest": 46716000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.15437965579244797,
+      "operating_margin": 0.2054328281530953,
+      "fcf_yield": 0.06950337981544209,
+      "fcfps_cagr_3y": -0.04231415155147111,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Hausse ≥15 % sur un mois",
+          "FCF yield historique ≥6 % (non normalisé)"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "ASML.AS",
+      "name": "ASML Holding",
+      "region": "Europe",
+      "sector": "Semi-conducteurs",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/ASML.AS/",
+      "financial_url": "https://finance.yahoo.com/quote/ASML.AS/",
+      "price": 1403.800048828125,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.04949168245400748,
+      "return_1m": -0.07008474328886183,
+      "return_3m": -0.11129395383321727,
+      "market_cap": 541049421824.0,
+      "financial_currency": "EUR",
+      "retrieval_warning": "Flux de trésorerie/CAPEX annuels comparables absents",
+      "triage": {
+        "status": "À compléter",
+        "priority": "C",
+        "why": "Données financières insuffisantes",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Comptes non sourcés",
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "ADYEN.AS",
+      "name": "Adyen",
+      "region": "Europe",
+      "sector": "Paiements",
+      "model": "corporate",
+      "currency": "EUR",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/ADYEN.AS/",
+      "financial_url": "https://finance.yahoo.com/quote/ADYEN.AS/",
+      "price": 874.5999755859375,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.024121751271589664,
+      "return_1m": -0.06199061273560946,
+      "return_3m": -0.17614921279249984,
+      "market_cap": 27608213504.0,
+      "financial_currency": "EUR",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 904629000.0,
+      "fcf_previous": 1603527000.0,
+      "revenue_latest": 2646897000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.34176962684985474,
+      "operating_margin": 0.4141706307423372,
+      "fcf_yield": 0.03276666198879306,
+      "fcfps_cagr_3y": -0.226755512585746,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "NESN.SW",
+      "name": "Nestlé",
+      "region": "Europe",
+      "sector": "Consommation",
+      "model": "corporate",
+      "currency": "CHF",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/NESN.SW/",
+      "financial_url": "https://finance.yahoo.com/quote/NESN.SW/",
+      "price": 85.91000366210938,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.00011643930212801301,
+      "return_1m": 0.11138422083355626,
+      "return_3m": 0.06048637694934045,
+      "market_cap": 220979429376.0,
+      "financial_currency": "CHF",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 10993000000.0,
+      "fcf_previous": 10712000000.0,
+      "revenue_latest": 89885000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.12230071758357902,
+      "operating_margin": 0.15554319408132614,
+      "fcf_yield": 0.04974671185929816,
+      "fcfps_cagr_3y": 0.20869208201581269,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "ROG.SW",
+      "name": "Roche Holding",
+      "region": "Europe",
+      "sector": "Santé",
+      "model": "corporate",
+      "currency": "CHF",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/ROG.SW/",
+      "financial_url": "https://finance.yahoo.com/quote/ROG.SW/",
+      "retrieval_warning": "Flux de trésorerie/CAPEX annuels comparables absents",
+      "triage": {
+        "status": "À vérifier",
+        "priority": "C",
+        "why": "Cours indisponible ou ancien",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Cours manquant ou périmé",
+          "Comptes non sourcés",
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "NOVO-B.CO",
+      "name": "Novo Nordisk",
+      "region": "Europe",
+      "sector": "Santé",
+      "model": "corporate",
+      "currency": "DKK",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/NOVO-B.CO/",
+      "financial_url": "https://finance.yahoo.com/quote/NOVO-B.CO/",
+      "price": 272.70001220703125,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.04382889012966118,
+      "return_1m": 0.06253660117763493,
+      "return_3m": -0.07465218557420572,
+      "market_cap": 1202158567424.0,
+      "financial_currency": "DKK",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 28989000000.0,
+      "fcf_previous": 69659000000.0,
+      "revenue_latest": 309064000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.09379610695519375,
+      "operating_margin": 0.4130471358682991,
+      "fcf_yield": 0.02411412336570373,
+      "fcfps_cagr_3y": -0.2269744104700966,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "region": "Amérique du Nord",
+      "sector": "Logiciels",
+      "model": "corporate",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/MSFT/",
+      "financial_url": "https://finance.yahoo.com/quote/MSFT/",
+      "price": 521.125,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.06238752888545385,
+      "return_1m": -0.04108015770643936,
+      "return_3m": 0.04879446723340286,
+      "market_cap": 3869975511040.0,
+      "financial_currency": "USD",
+      "financial_asof": "2026-06-30",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 66987000000.0,
+      "fcf_previous": 71611000000.0,
+      "revenue_latest": 331839000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.20186596512164032,
+      "operating_margin": 0.4678081840892722,
+      "fcf_yield": 0.017309411857750544,
+      "fcfps_cagr_3y": 0.04131772657557686,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "region": "Amérique du Nord",
+      "sector": "Internet",
+      "model": "corporate",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/GOOGL/",
+      "financial_url": "https://finance.yahoo.com/quote/GOOGL/",
+      "price": 293.45001220703125,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.015643995590039372,
+      "return_1m": -0.17052967036133115,
+      "return_3m": -0.15276006288898103,
+      "market_cap": 3607674224640.0,
+      "financial_currency": "USD",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 73266000000.0,
+      "fcf_previous": 72764000000.0,
+      "revenue_latest": 402836000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.18187550268595656,
+      "operating_margin": 0.32032638592380025,
+      "fcf_yield": 0.02030837471399209,
+      "fcfps_cagr_3y": 0.09517306331192632,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Baisse ≥10 % sur un mois"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "region": "Amérique du Nord",
+      "sector": "Distribution et cloud",
+      "model": "corporate",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/AMZN/",
+      "financial_url": "https://finance.yahoo.com/quote/AMZN/",
+      "price": 266.1700134277344,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.0005263115027627219,
+      "return_1m": 0.02935272352699103,
+      "return_3m": 0.003922636162517978,
+      "market_cap": 2878132977664.0,
+      "financial_currency": "USD",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 7695000000.0,
+      "fcf_previous": 32878000000.0,
+      "revenue_latest": 716924000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.010733355278941701,
+      "operating_margin": 0.11155296795755199,
+      "fcf_yield": 0.002673608224400232,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "V",
+      "name": "Visa",
+      "region": "Amérique du Nord",
+      "sector": "Paiements",
+      "model": "corporate",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/V/",
+      "financial_url": "https://finance.yahoo.com/quote/V/",
+      "price": 425.54998779296875,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.025242273510250546,
+      "return_1m": 0.07445839119365294,
+      "return_3m": 0.16445470947717533,
+      "market_cap": 793991184384.0,
+      "financial_currency": "USD",
+      "financial_asof": "2026-09-30",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 22057000000.0,
+      "fcf_previous": 21577000000.0,
+      "revenue_latest": 45903000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.4805132562141908,
+      "operating_margin": 0.6508071367884452,
+      "fcf_yield": 0.027779905411811873,
+      "fcfps_cagr_3y": 0.10063217838621985,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "MA",
+      "name": "Mastercard",
+      "region": "Amérique du Nord",
+      "sector": "Paiements",
+      "model": "corporate",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/MA/",
+      "financial_url": "https://finance.yahoo.com/quote/MA/",
+      "price": 660.72998046875,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.017764780188417095,
+      "return_1m": 0.09247684160821579,
+      "return_3m": 0.16522644975992917,
+      "market_cap": 575612190720.0,
+      "financial_currency": "USD",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 16433000000.0,
+      "fcf_previous": 13586000000.0,
+      "revenue_latest": 32791000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.5011436064773871,
+      "operating_margin": 0.5951023146595102,
+      "fcf_yield": 0.028548735181311763,
+      "fcfps_cagr_3y": 0.2036654811654206,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "SPGI",
+      "name": "S&P Global",
+      "region": "Amérique du Nord",
+      "sector": "Services financiers",
+      "model": "corporate",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/SPGI/",
+      "financial_url": "https://finance.yahoo.com/quote/SPGI/",
+      "price": 475.1099853515625,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.013660273322040006,
+      "return_1m": 0.1588331341454483,
+      "return_3m": 0.12406835180606923,
+      "market_cap": 137734389760.0,
+      "financial_currency": "USD",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 5456000000.0,
+      "fcf_previous": 5565000000.0,
+      "revenue_latest": 15336000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.3557642149191445,
+      "operating_margin": 0.4027777777777778,
+      "fcf_yield": 0.039612474484455144,
+      "fcfps_cagr_3y": 0.31330349577302874,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Hausse ≥15 % sur un mois"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "BRK-B",
+      "name": "Berkshire Hathaway",
+      "region": "Amérique du Nord",
+      "sector": "Assurance et holding",
+      "model": "holding",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/BRK-B/",
+      "financial_url": "https://finance.yahoo.com/quote/BRK-B/",
+      "price": 588.239990234375,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.015800588776483826,
+      "return_1m": 0.12994863498929043,
+      "return_3m": 0.16039689648151767,
+      "market_cap": 1249727217664.0,
+      "financial_currency": "USD",
+      "financial_note": "Ratios FCF génériques inadaptés; méthode sectorielle requise.",
+      "triage": {
+        "status": "Analyse sectorielle",
+        "priority": "C",
+        "why": "Étude économique spécifique requise",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Comptes non sourcés",
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale",
+      "region": "Amérique du Nord",
+      "sector": "Distribution",
+      "model": "corporate",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/COST/",
+      "financial_url": "https://finance.yahoo.com/quote/COST/",
+      "price": 1087.6099853515625,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.03931313444264006,
+      "return_1m": 0.1393000217765774,
+      "return_3m": 0.1307480511074659,
+      "market_cap": 481951907840.0,
+      "financial_currency": "USD",
+      "financial_asof": "2026-08-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 9382000000.0,
+      "fcf_previous": 7837000000.0,
+      "revenue_latest": 303154000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.03094796703985433,
+      "operating_margin": 0.03854476602650798,
+      "fcf_yield": 0.019466672602351576,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe",
+      "region": "Amérique du Nord",
+      "sector": "Logiciels",
+      "model": "corporate",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/ADBE/",
+      "financial_url": "https://finance.yahoo.com/quote/ADBE/",
+      "price": 237.60000610351562,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.043786179214013954,
+      "return_1m": 0.0055866232056811516,
+      "return_3m": -0.12159408968280405,
+      "market_cap": 92473925632.0,
+      "financial_currency": "USD",
+      "financial_asof": "2025-11-30",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 9852000000.0,
+      "fcf_previous": 7873000000.0,
+      "revenue_latest": 23769000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.41448946106272877,
+      "operating_margin": 0.36627540073204595,
+      "fcf_yield": 0.106538139617929,
+      "fcfps_cagr_3y": 0.13682636583794383,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "FCF yield historique ≥6 % (non normalisé)"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "DHR",
+      "name": "Danaher",
+      "region": "Amérique du Nord",
+      "sector": "Santé",
+      "model": "corporate",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/DHR/",
+      "financial_url": "https://finance.yahoo.com/quote/DHR/",
+      "price": 235.30999755859375,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.0016175239205704628,
+      "return_1m": 0.05595943917444224,
+      "return_3m": 0.15410269391829967,
+      "market_cap": 165547835392.0,
+      "financial_currency": "USD",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 5260000000.0,
+      "fcf_previous": 5296000000.0,
+      "revenue_latest": 24568000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.2140996418104852,
+      "operating_margin": 0.19089873005535657,
+      "fcf_yield": 0.03177329372833459,
+      "fcfps_cagr_3y": -0.09892761342501322,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "TSM",
+      "name": "TSMC ADR",
+      "region": "Asie",
+      "sector": "Semi-conducteurs",
+      "model": "corporate",
+      "currency": "USD",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/TSM/",
+      "financial_url": "https://finance.yahoo.com/quote/TSM/",
+      "price": 413.3500061035156,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.0444725359532927,
+      "return_1m": -0.07137398760374203,
+      "return_3m": -0.03981505846750988,
+      "market_cap": 2143828574208.0,
+      "financial_currency": "TWD",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 992378400000.0,
+      "fcf_previous": 861195500000.0,
+      "revenue_latest": 3809054300000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.2605314395229283,
+      "operating_margin": 0.5082877395578215,
+      "triage": {
+        "status": "À analyser",
+        "priority": "C",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Aucun déclencheur quantitatif vérifié"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "005930.KS",
+      "name": "Samsung Electronics",
+      "region": "Asie",
+      "sector": "Semi-conducteurs",
+      "model": "corporate",
+      "currency": "KRW",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/005930.KS/",
+      "financial_url": "https://finance.yahoo.com/quote/005930.KS/",
+      "price": 206000.0,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.05504587155963303,
+      "return_1m": -0.11206896551724133,
+      "return_3m": -0.10822510822510822,
+      "market_cap": 1341457067671552.0,
+      "financial_currency": "KRW",
+      "financial_asof": "2025-12-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 33161999000000.0,
+      "fcf_previous": 19240982000000.0,
+      "revenue_latest": 333605938000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.09940470244267655,
+      "operating_margin": 0.1306962677624761,
+      "fcf_yield": 0.024720879854590712,
+      "fcfps_cagr_3y": 0.5481196642596249,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
+          "Baisse ≥10 % sur un mois"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "6758.T",
+      "name": "Sony Group",
+      "region": "Asie",
+      "sector": "Technologie et loisirs",
+      "model": "corporate",
+      "currency": "JPY",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/6758.T/",
+      "financial_url": "https://finance.yahoo.com/quote/6758.T/",
+      "price": 4200.0,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": 0.06788710907704032,
+      "return_1m": 0.1012060828526482,
+      "return_3m": 0.1583011583011582,
+      "market_cap": 24478664884224.0,
+      "financial_currency": "JPY",
+      "financial_asof": "2026-03-31",
+      "financial_source": "Yahoo Finance via yfinance, comptes agrégés non vérifiés",
+      "fcf_latest": 1487936000000.0,
+      "fcf_previous": 1700690000000.0,
+      "revenue_latest": 12479620000000.0,
+      "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
+      "fcf_margin": 0.11922927140409724,
+      "operating_margin": 0.12449818183566487,
+      "fcf_yield": 0.060785014502933304,
+      "triage": {
+        "status": "À analyser",
+        "priority": "B",
+        "why": "Moat et avenir économique à examiner",
+        "triggers": [
+          "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
+          "FCF yield historique ≥6 % (non normalisé)"
+        ],
+        "warnings": [
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    },
+    {
+      "ticker": "9984.T",
+      "name": "SoftBank Group",
+      "region": "Asie",
+      "sector": "Holding",
+      "model": "holding",
+      "currency": "JPY",
+      "origin": "Univers initial",
+      "market_url": "https://finance.yahoo.com/quote/9984.T/",
+      "financial_url": "https://finance.yahoo.com/quote/9984.T/",
+      "price": 3855.0,
+      "price_asof": "2026-11-11",
+      "market_source": "Yahoo Finance via yfinance",
+      "return_5d": -0.09697821503865078,
+      "return_1m": -0.3356884370153369,
+      "return_3m": -0.3230904302019315,
+      "market_cap": 21969835655168.0,
+      "financial_currency": "JPY",
+      "financial_note": "Ratios FCF génériques inadaptés; méthode sectorielle requise.",
+      "triage": {
+        "status": "Analyse sectorielle",
+        "priority": "B",
+        "why": "Étude économique spécifique requise",
+        "triggers": [
+          "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
+          "Baisse ≥10 % sur un mois"
+        ],
+        "warnings": [
+          "Comptes non sourcés",
+          "Filtre qualitatif à documenter"
+        ]
+      }
+    }
+  ]
+}

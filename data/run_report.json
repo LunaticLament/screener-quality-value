@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-11-11T22:44:24+00:00",
+  "universe_count": 36,
+  "updated_price_count": 34,
+  "failed_price_count": 2,
+  "signals": [
+    {
+      "ticker": "DG.PA",
+      "triggers": [
+        "FCF yield historique ≥6 % (non normalisé)"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "LR.PA",
+      "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "EL.PA",
+      "triggers": [
+        "Hausse ≥15 % sur un mois"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "OR.PA",
+      "triggers": [
+        "Hausse ≥15 % sur un mois"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "MC.PA",
+      "triggers": [
+        "FCF yield historique ≥6 % (non normalisé)"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "GLE.PA",
+      "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "SAN.PA",
+      "triggers": [
+        "Hausse ≥15 % sur un mois",
+        "FCF yield historique ≥6 % (non normalisé)"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "MSFT",
+      "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "GOOGL",
+      "triggers": [
+        "Baisse ≥10 % sur un mois"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "SPGI",
+      "triggers": [
+        "Hausse ≥15 % sur un mois"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "ADBE",
+      "triggers": [
+        "FCF yield historique ≥6 % (non normalisé)"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "005930.KS",
+      "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
+        "Baisse ≥10 % sur un mois"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "6758.T",
+      "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
+        "FCF yield historique ≥6 % (non normalisé)"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "9984.T",
+      "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
+        "Baisse ≥10 % sur un mois"
+      ],
+      "date": "2026-11-11"
+    }
+  ],
+  "status": "partial",
+  "validated_opportunities": 0,
+  "caveat": "Signaux de recherche exclusivement. Sources secondaires non auditées; pas de valorisation ni ordre automatique."
+}
