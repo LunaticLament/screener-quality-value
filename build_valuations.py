@@ -98,6 +98,30 @@ def main():
                 errors[ticker]=str(ex)[:180]
                 logging.warning('%s données indisponibles: %s',ticker,str(ex)[:180])
         result=calculate(c,old,params.get(ticker))
+        screening=c.get('triage',{}) or {}
+        signals=[x for x in screening.get('triggers',[]) if x!='Aucun déclencheur quantitatif vérifié']
+        source=c.get('market_source')
+        grade=c.get('quality_grade')
+        reference=c.get('reference_url')
+        result['screening_evidence'] = {
+            'why_examined': screening.get('why') or 'À examiner selon les critères du screener',
+            'signals': signals,
+            'market_asof': c.get('price_asof'),
+            'market_source': source,
+            'market_url': c.get('market_url'),
+            'return_5d': c.get('return_5d'),
+            'return_1m': c.get('return_1m'),
+            'fcf_yield': c.get('fcf_yield'),
+            'quality_grade': grade,
+            'quality_source_url': reference,
+            'quality_verification': 'Documentée partiellement' if grade in ('A','B') and reference else 'Non vérifiée',
+            'opportunity_conclusion': 'Opportunité d’achat non démontrée — étude économique et valorisation validée requises',
+            'evidence_limitations': [
+                'Une variation boursière ou un rendement historique de FCF n’établit pas une décote économique.',
+                'Le DCF automatique ne constitue ni un FCF économiquement normalisé ni une valeur intrinsèque validée.',
+                'La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner.'
+            ]
+        }
         if ticker in errors:result['warnings'].append('Dernière collecte en échec : '+errors[ticker])
         prior=previous_models.get(ticker,{})
         earlier=prior.get('scenarios',{}).get('central',{}).get('value')

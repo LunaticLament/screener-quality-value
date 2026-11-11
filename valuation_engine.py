@@ -155,6 +155,10 @@ def calculate(company, history, cfg=None):
         return result
     result["anchor_fcfps"]=anchor
     result["anchor_formula"]="min(dernier FCF/action publié, moyenne des 3 derniers FCF/action) — approximation mécanique, pas une normalisation"
+    result["anchor_bridge"] = {"latest_fcfps": recent[-1]["fcf_per_share"],
+                               "mean_last_three_fcfps": mean(x["fcf_per_share"] for x in recent),
+                               "selected_fcfps": anchor, "normalization_adjustments": None,
+                               "normalization_status": "Non réalisée : FCF brut historique uniquement"}
     result["coverage_years"]=len(last)
     if len(last)<5:
         warnings.append("Historique inférieur aux cinq exercices exigés pour une validation fondamentale complète.")
@@ -184,6 +188,16 @@ def calculate(company, history, cfg=None):
             continue
         model_result={k:output[k] for k in ("value","pv_flows","pv_terminal","terminal_value","terminal_share")}
         model_result.update(a)
+        cumulative = 0.0
+        schedule = []
+        for year, flow in enumerate(output["annual_flows"], start=1):
+            factor = (1 + a["discount"]) ** year
+            present = flow / factor
+            cumulative += present
+            schedule.append({"year": year, "fcf_per_share": flow,
+                             "discount_factor": factor, "pv_fcf_per_share": present,
+                             "cumulative_pv": cumulative})
+        model_result["projection"] = schedule
         model_result["irr"]=implied_irr(result["price"],output["annual_flows"],output["terminal_value"])
         result["scenarios"][scenario]=model_result
     cen=result["scenarios"].get("central")

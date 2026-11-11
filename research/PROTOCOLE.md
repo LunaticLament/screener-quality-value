@@ -55,3 +55,13 @@ Le champ `status` doit être `en_cours`, `étude_achevée`, `non_conforme` ou `e
 ## Affichage
 
 La page `valorisations.html` affiche le lien et le statut de chaque dossier approfondi. Les prix des modèles automatiques restent identifiés comme « indicatifs ». Les scénarios d'un dossier approfondi sont présentés distinctement lorsqu'ils existent; ne jamais les substituer silencieusement aux modèles quantitatifs.
+
+## Transparence du moteur de prévalorisation (affichage du 12 novembre 2026)
+
+- `data/models.json[].screening_evidence` : motif d'inscription dans la liste, déclencheurs, date et provenance de la cotation, niveau de preuve de l'avantage concurrentiel, décision explicite « opportunité non démontrée » par défaut. Ces signaux **ne sont pas des raisons d'acheter**.
+- `data/models.json[].annuals` : données CFO, CAPEX, FCF brut, chiffre d'affaires, actions diluées, rémunération en actions, FCF par action et marge, avec source et date de collecte.
+- `data/models.json[].anchor_bridge` : dernier FCF/action, moyenne sur trois ans et valeur retenue par une règle **mécanique**. L'absence de normalisation est explicitement enregistrée (`normalization_adjustments: null`).
+- `data/models.json[].scenarios[scénario].projection` : dix années projetées de FCF/action, facteur d'actualisation, valeur actuelle du flux et somme cumulée; les montants se réconcilient avec la valeur terminale actualisée et la valeur DCF indicative. Le taux est ici un rendement exigé sur fonds propres, **pas un WACC applicable à la valeur d'entreprise**.
+- `valorisations.html?ticker=SYMBOLE` : lien direct depuis une fiche du screening vers l'historique, les hypothèses, les flux projetés, leur actualisation et les motifs de sélection. Les simulations manuelles ne modifient pas la base publiée.
+
+Une opportunité d'achat ne pourra être affichée comme validée que si un **dossier de recherche complet** fournit séparément les preuves du moat, une normalisation économique sourcée, une valorisation sectorielle et un rendement espéré compétitif avec le World. Un écart positif entre un cours et une *prévalorisation indicative* ne saurait justifier une opportunité.

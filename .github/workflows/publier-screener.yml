@@ -44,7 +44,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt pytest
       - name: Validate valuation computations
-        run: python -m pytest -q tests/test_valuation_engine.py
+        run: python -m pytest -q tests/test_valuation_engine.py tests/test_dcf_transparency.py
       - name: Refresh screener
         run: python refresh.py
       - name: Refresh financial histories and create valuations
@@ -65,6 +65,8 @@ jobs:
           assert sreport['universe_count']==screen['coverage_count']
           assert report['companies']==values['universe_count']
           assert all(x.get('triage',{}).get('status') for x in screen['companies'])
+          assert all('screening_evidence' in x for x in values['models'])
+          assert all(len(s.get('projection',[]))==10 for x in values['models'] for s in x.get('scenarios',{}).values())
           assert all(x.get('validation')=='Aucune recommandation' for x in values['models'])
           assert all(x['status']!='prévalorisation_indicative' or x.get('scenarios',{}).get('central') for x in values['models'])
           assert 'const embedded={' in html and 'valorisations.html' in html
