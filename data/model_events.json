@@ -1,0 +1,254 @@
+[
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "AI.PA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "DG.PA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "SU.PA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "SAP.DE",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "VIE.PA",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "LR.PA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "EL.PA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "OR.PA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "MC.PA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "RMS.PA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "PUB.PA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "EF.PA",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "BNP.PA",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "GLE.PA",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "CS.PA",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "ENGI.PA",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "SAN.PA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "ASML.AS",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "ADYEN.AS",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "NESN.SW",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "ROG.SW",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "NOVO-B.CO",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "MSFT",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2026-06-30"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "GOOGL",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "AMZN",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "V",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2026-09-30"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "MA",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "SPGI",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "BRK-B",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "COST",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2026-08-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "ADBE",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-11-30"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "DHR",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "TSM",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "005930.KS",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2025-12-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "6758.T",
+    "event": "initial",
+    "status": "screen-grade",
+    "financial_asof": "2026-03-31"
+  },
+  {
+    "at": "2026-11-11T22:58:39+00:00",
+    "ticker": "9984.T",
+    "event": "initial",
+    "status": "blocked",
+    "financial_asof": null
+  }
+]

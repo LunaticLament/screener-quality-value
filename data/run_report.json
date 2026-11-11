@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T22:52:05+00:00",
+  "generated_at": "2026-11-11T22:58:38+00:00",
   "universe_count": 36,
   "updated_price_count": 34,
   "failed_price_count": 2,
@@ -34,6 +34,13 @@
     },
     {
       "ticker": "MC.PA",
+      "triggers": [
+        "FCF yield historique ≥6 % (non normalisé)"
+      ],
+      "date": "2026-11-11"
+    },
+    {
+      "ticker": "PUB.PA",
       "triggers": [
         "FCF yield historique ≥6 % (non normalisé)"
       ],

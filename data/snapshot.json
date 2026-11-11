@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T22:52:05+00:00",
+  "generated_at": "2026-11-11T22:58:38+00:00",
   "methodology": "Sélection préliminaire, sans recommandation de transaction",
   "universe_scope": "Liste initiale limitée de sociétés mondiales; non exhaustive",
   "data_feed": "Yahoo Finance via yfinance, source secondaire non rapprochée aux émetteurs",
@@ -37,8 +37,6 @@
       "operating_margin": 0.19429328661257156,
       "revenue_latest": 26940200000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 638168550.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -93,6 +91,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 638168550.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -133,8 +133,6 @@
       "operating_margin": 0.1189400544239254,
       "revenue_latest": 75702000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 550097470.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -189,6 +187,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 550097470.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -229,8 +229,6 @@
       "operating_margin": 0.17458657103008568,
       "revenue_latest": 40152000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 587714371.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -285,6 +283,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 587714371.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -325,8 +325,6 @@
       "operating_margin": 0.2614130434782609,
       "revenue_latest": 36800000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 1154204232.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -381,6 +379,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 1154204232.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -456,8 +456,6 @@
       "operating_margin": 0.19075796890492164,
       "revenue_latest": 9480600000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 262096701.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -512,6 +510,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 262096701.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -552,8 +552,6 @@
       "operating_margin": 0.1185286581727563,
       "revenue_latest": 28491000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 458376127.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -608,6 +606,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 458376127.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -648,8 +648,6 @@
       "operating_margin": 0.20185008626169074,
       "revenue_latest": 44052000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 533314966.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -704,6 +702,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 533314966.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -744,8 +744,6 @@
       "operating_margin": 0.21864442436917594,
       "revenue_latest": 80807000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 490630174.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -800,6 +798,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 490630174.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -840,8 +840,6 @@
       "operating_margin": 0.4184113492906693,
       "revenue_latest": 16001000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 104735548.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -896,6 +894,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 104735548.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -988,12 +988,16 @@
           "currency": "EUR"
         }
       ],
+      "market_cap": 26120822784.0,
+      "shares_outstanding": 249721079.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
+      "fcf_yield": 0.10309782437824146,
       "triage": {
         "status": "À analyser",
-        "priority": "C",
+        "priority": "B",
         "why": "Moat et avenir économique à examiner",
         "triggers": [
-          "Aucun déclencheur quantitatif vérifié"
+          "FCF yield historique ≥6 % (non normalisé)"
         ],
         "warnings": [
           "Filtre qualitatif à documenter"
@@ -1155,8 +1159,6 @@
       "operating_margin": 0.12587568108528857,
       "revenue_latest": 71944000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 2540607984.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -1211,6 +1213,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 2540607984.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "Analyse sectorielle",
         "priority": "C",
@@ -1251,8 +1255,6 @@
       "operating_margin": 0.2054328281530953,
       "revenue_latest": 46716000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 1198068685.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -1307,6 +1309,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 1198068685.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -1383,8 +1387,6 @@
       "operating_margin": 0.4141706307423372,
       "revenue_latest": 2646897000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 31566677.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -1439,6 +1441,8 @@
           "currency": "EUR"
         }
       ],
+      "shares_outstanding": 31566677.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -1479,8 +1483,6 @@
       "operating_margin": 0.15554319408132614,
       "revenue_latest": 89885000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 2572220000.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -1535,6 +1537,8 @@
           "currency": "CHF"
         }
       ],
+      "shares_outstanding": 2572220000.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -1601,8 +1605,6 @@
       "operating_margin": 0.4130471358682991,
       "revenue_latest": 309064000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 3333483124.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -1657,6 +1659,8 @@
           "currency": "DKK"
         }
       ],
+      "shares_outstanding": 3333483124.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -1697,8 +1701,6 @@
       "operating_margin": 0.4678081840892722,
       "revenue_latest": 331839000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 7426194552.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2023-06-30",
@@ -1753,6 +1755,8 @@
           "currency": "USD"
         }
       ],
+      "shares_outstanding": 7426194552.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -1793,8 +1797,6 @@
       "operating_margin": 0.32032638592380025,
       "revenue_latest": 402836000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 5888000000.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -1849,6 +1851,8 @@
           "currency": "USD"
         }
       ],
+      "shares_outstanding": 5888000000.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -1888,8 +1892,6 @@
       "operating_margin": 0.11155296795755199,
       "revenue_latest": 716924000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 10813138306.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -1944,6 +1946,8 @@
           "currency": "USD"
         }
       ],
+      "shares_outstanding": 10813138306.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -1984,8 +1988,6 @@
       "operating_margin": 0.6508071367884452,
       "revenue_latest": 45903000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 1724473215.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2023-09-30",
@@ -2040,6 +2042,8 @@
           "currency": "USD"
         }
       ],
+      "shares_outstanding": 1724473215.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -2080,8 +2084,6 @@
       "operating_margin": 0.5951023146595102,
       "revenue_latest": 32791000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 864657109.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -2136,6 +2138,8 @@
           "currency": "USD"
         }
       ],
+      "shares_outstanding": 864657109.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -2176,8 +2180,6 @@
       "operating_margin": 0.4027777777777778,
       "revenue_latest": 15336000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 289900000.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -2232,6 +2234,8 @@
           "currency": "USD"
         }
       ],
+      "shares_outstanding": 289900000.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -2305,8 +2309,6 @@
       "operating_margin": 0.03854476602650798,
       "revenue_latest": 303154000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 443129349.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2023-08-31",
@@ -2361,6 +2363,8 @@
           "currency": "USD"
         }
       ],
+      "shares_outstanding": 443129349.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -2401,8 +2405,6 @@
       "operating_margin": 0.36627540073204595,
       "revenue_latest": 23769000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 389200000.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-11-30",
@@ -2457,6 +2459,8 @@
           "currency": "USD"
         }
       ],
+      "shares_outstanding": 389200000.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -2497,8 +2501,6 @@
       "operating_margin": 0.19089873005535657,
       "revenue_latest": 24568000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 703530815.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -2553,6 +2555,8 @@
           "currency": "USD"
         }
       ],
+      "shares_outstanding": 703530815.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -2591,8 +2595,6 @@
       "operating_margin": 0.5082877395578215,
       "revenue_latest": 3809054300000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 5186472994.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -2647,6 +2649,8 @@
           "currency": "TWD"
         }
       ],
+      "shares_outstanding": 5186472994.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "C",
@@ -2687,8 +2691,6 @@
       "operating_margin": 0.1306962677624761,
       "revenue_latest": 333605938000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 5709556199.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2022-12-31",
@@ -2743,6 +2745,8 @@
           "currency": "KRW"
         }
       ],
+      "shares_outstanding": 5709556199.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
@@ -2783,8 +2787,6 @@
       "operating_margin": 0.12449818183566487,
       "revenue_latest": 12479620000000.0,
       "financial_note": "FCF brut = CFO - CAPEX, non normalisé; aucun modèle de valeur intrinsèque validé.",
-      "shares_outstanding": 5828253872.0,
-      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "financial_history": [
         {
           "year_end": "2023-03-31",
@@ -2839,6 +2841,8 @@
           "currency": "JPY"
         }
       ],
+      "shares_outstanding": 5828253872.0,
+      "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
         "priority": "B",
