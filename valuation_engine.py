@@ -168,8 +168,31 @@ def analyze(company):
 def generate(snapshot):
     now=datetime.now(timezone.utc).isoformat(timespec="seconds")
     rows=[analyze(c) for c in snapshot.get("companies",[])]
+    registry=ROOT/"research"/"registre.json"
+    dossier_index={}
+    if registry.exists():
+        try:
+            doc=json.loads(registry.read_text(encoding="utf-8"))
+            dossier_index={d["ticker"]:d for d in doc.get("dossiers",[]) if d.get("ticker")}
+        except (ValueError,OSError,KeyError,TypeError):
+            dossier_index={}
+    for entry in rows:
+        d=dossier_index.get(entry["ticker"])
+        if d:
+            path=d.get("dossier_path")
+            if not isinstance(path,str) or not path.startswith("research/dossiers/") or ".." in path:
+                path=None
+            entry["documentary_research"]={
+                "date":d.get("date"),"stage":d.get("stage"),"qualitative_status":d.get("qualitative_status"),
+                "thesis":d.get("thesis"),"method":d.get("method"),
+                "publication_asof":d.get("publication_asof"),
+                "source_urls":[u for u in d.get("source_urls",[]) if isinstance(u,str) and u.startswith("https://")][:20],
+                "dossier_url":"https://github.com/LunaticLament/screener-quality-value/blob/main/"+path if path else None,
+                "last_review_reason":d.get("last_review_reason")
+            }
     counts={"universe":len(rows),"indicative":sum(x["status"]=="screen-grade" for x in rows),
             "blocked":sum(x["status"]=="blocked" for x in rows),"decision_ready":0}
+    counts["dossiers_documentaires"]=sum(bool(x.get("documentary_research")) for x in rows)
     return {"schema_version":"1.0","generated_at":now,"coverage":"Univers suivi uniquement, non mondial exhaustif",
             "world_reference":WORLD_BENCHMARK,"scenarios_default":CASE_DEFS,
             "disclaimer":"Scénarios mécaniques non validés, pas de recommandation d'achat ni cours cible approuvé.",
