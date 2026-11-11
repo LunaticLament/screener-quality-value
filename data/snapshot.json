@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T22:58:38+00:00",
+  "generated_at": "2026-11-11T22:59:45+00:00",
   "methodology": "Sélection préliminaire, sans recommandation de transaction",
   "universe_scope": "Liste initiale limitée de sociétés mondiales; non exhaustive",
   "data_feed": "Yahoo Finance via yfinance, source secondaire non rapprochée aux émetteurs",
@@ -920,6 +920,7 @@
       "price_asof": "2026-11-11",
       "market_source": "Yahoo Finance via yfinance",
       "market_url": "https://finance.yahoo.com/quote/PUB.PA/",
+      "market_cap": 26120822784.0,
       "return_5d": 0.0014361084754577202,
       "return_1m": 0.036156529333530196,
       "return_3m": 0.02750486579985356,
@@ -929,6 +930,7 @@
       "financial_url": "https://finance.yahoo.com/quote/PUB.PA/",
       "fcf_latest": 2693000000.0,
       "fcf_previous": 2063000000.0,
+      "fcf_yield": 0.10309782437824146,
       "fcfps_cagr_3y": 0.0670126026081932,
       "fcf_margin": 0.15477901028794758,
       "operating_margin": 0.14868670613253634,
@@ -988,10 +990,8 @@
           "currency": "EUR"
         }
       ],
-      "market_cap": 26120822784.0,
       "shares_outstanding": 249721079.0,
       "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
-      "fcf_yield": 0.10309782437824146,
       "triage": {
         "status": "À analyser",
         "priority": "B",
