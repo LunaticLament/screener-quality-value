@@ -66,6 +66,10 @@ jobs:
           PY
       - name: Preserve traceable history
         run: |
+          cp index.html "$RUNNER_TEMP/index.html.generated"
+          cp valorisations.html "$RUNNER_TEMP/valorisations.html.generated"
+          git restore -- index.html
+          git restore -- valorisations.html || true
           git config user.name "quality-value-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/snapshot.json data/run_report.json data/valuations.json data/model_events.json
@@ -78,6 +82,8 @@ jobs:
               git push origin HEAD:main
             fi
           fi
+          cp "$RUNNER_TEMP/index.html.generated" index.html
+          cp "$RUNNER_TEMP/valorisations.html.generated" valorisations.html
       - name: Build public directory
         run: |
           mkdir -p public
