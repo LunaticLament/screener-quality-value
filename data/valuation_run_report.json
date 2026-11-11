@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-11-11T23:16:05+00:00",
+  "companies": 36,
+  "financials_refreshed": 27,
+  "indicative_models": 24,
+  "sector_blocked": 7,
+  "without_model": 5,
+  "model_changes": [],
+  "data_errors": {
+    "EF.PA": "Aucun historique financier agrégé",
+    "ROG.SW": "Aucun historique financier agrégé"
+  },
+  "validated_opportunities": 0,
+  "method": "DCF proxy par action, scénarios illustratifs non approuvés; modèles sectoriels bloqués",
+  "sec_enabled": false,
+  "sec_note": "SEC require SEC_USER_AGENT nominal avec contact valide, à définir dans GitHub Secrets"
+}
