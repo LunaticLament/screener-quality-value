@@ -1,0 +1,37 @@
+ticker,name,region,sector,model,currency,origin
+AI.PA,Air Liquide,Europe,Industrie,corporate,EUR,Portefeuille / watchlist
+DG.PA,Vinci,Europe,Infrastructures,corporate,EUR,Portefeuille / watchlist
+SU.PA,Schneider Electric,Europe,Industrie,corporate,EUR,Portefeuille / watchlist
+SAP.DE,SAP,Europe,Logiciels,corporate,EUR,Portefeuille / watchlist
+VIE.PA,Veolia,Europe,Services collectifs,utility,EUR,Portefeuille / watchlist
+LR.PA,Legrand,Europe,Industrie,corporate,EUR,Portefeuille / watchlist
+EL.PA,EssilorLuxottica,Europe,Santé et consommation,corporate,EUR,Portefeuille / watchlist
+OR.PA,L'Oréal,Europe,Consommation,corporate,EUR,Portefeuille / watchlist
+MC.PA,LVMH,Europe,Luxe,corporate,EUR,Portefeuille / watchlist
+RMS.PA,Hermès International,Europe,Luxe,corporate,EUR,Portefeuille / watchlist
+PUB.PA,Publicis Groupe,Europe,Services,corporate,EUR,Portefeuille / watchlist
+EF.PA,Eiffage,Europe,Infrastructures,corporate,EUR,Portefeuille / watchlist
+BNP.PA,BNP Paribas,Europe,Banque,bank,EUR,Portefeuille / watchlist
+GLE.PA,Société Générale,Europe,Banque,bank,EUR,Portefeuille / watchlist
+CS.PA,AXA,Europe,Assurance,insurance,EUR,Portefeuille / watchlist
+ENGI.PA,Engie,Europe,Services collectifs,utility,EUR,Portefeuille / watchlist
+SAN.PA,Sanofi,Europe,Santé,corporate,EUR,Portefeuille / watchlist
+ASML.AS,ASML Holding,Europe,Semi-conducteurs,corporate,EUR,Univers initial
+ADYEN.AS,Adyen,Europe,Paiements,corporate,EUR,Univers initial
+NESN.SW,Nestlé,Europe,Consommation,corporate,CHF,Univers initial
+ROG.SW,Roche Holding,Europe,Santé,corporate,CHF,Univers initial
+NOVO-B.CO,Novo Nordisk,Europe,Santé,corporate,DKK,Univers initial
+MSFT,Microsoft,Amérique du Nord,Logiciels,corporate,USD,Univers initial
+GOOGL,Alphabet,Amérique du Nord,Internet,corporate,USD,Univers initial
+AMZN,Amazon,Amérique du Nord,Distribution et cloud,corporate,USD,Univers initial
+V,Visa,Amérique du Nord,Paiements,corporate,USD,Univers initial
+MA,Mastercard,Amérique du Nord,Paiements,corporate,USD,Univers initial
+SPGI,S&P Global,Amérique du Nord,Services financiers,corporate,USD,Univers initial
+BRK-B,Berkshire Hathaway,Amérique du Nord,Assurance et holding,holding,USD,Univers initial
+COST,Costco Wholesale,Amérique du Nord,Distribution,corporate,USD,Univers initial
+ADBE,Adobe,Amérique du Nord,Logiciels,corporate,USD,Univers initial
+DHR,Danaher,Amérique du Nord,Santé,corporate,USD,Univers initial
+TSM,TSMC ADR,Asie,Semi-conducteurs,corporate,USD,Univers initial
+005930.KS,Samsung Electronics,Asie,Semi-conducteurs,corporate,KRW,Univers initial
+6758.T,Sony Group,Asie,Technologie et loisirs,corporate,JPY,Univers initial
+9984.T,SoftBank Group,Asie,Holding,holding,JPY,Univers initial

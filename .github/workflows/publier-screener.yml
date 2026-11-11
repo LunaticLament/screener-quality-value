@@ -1,0 +1,81 @@
+name: Screener autonome - mise a jour et publication
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 23 * * *'
+      timezone: Europe/Paris
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - 'refresh.py'
+      - 'requirements.txt'
+      - 'universe.csv'
+      - 'research.csv'
+      - 'index.html'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: screener-quality-value-autonome
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Refresh screener and generate report
+        run: python refresh.py
+      - name: Validate output
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          d=json.loads(pathlib.Path('data/snapshot.json').read_text())
+          r=json.loads(pathlib.Path('data/run_report.json').read_text())
+          h=pathlib.Path('index.html').read_text()
+          assert d['coverage_count']==len(d['companies'])>0
+          assert d['coverage_count']==r['universe_count']
+          assert 'const embedded={' in h
+          assert '__EMBEDDED_SNAPSHOT__' not in h
+          assert all(x.get('triage',{}).get('status') for x in d['companies'])
+          print('Validated',len(d['companies']),'companies',r['status'])
+          PY
+      - name: Preserve traceable history
+        run: |
+          git config user.name "quality-value-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/snapshot.json data/run_report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Screener: daily data refresh [skip ci]"
+            git push
+          fi
+      - name: Build public directory
+        run: |
+          mkdir -p public
+          cp index.html public/index.html
+          cp data/run_report.json public/rapport.json
+          cp data/snapshot.json public/instantane.json
+          touch public/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
