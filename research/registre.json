@@ -1,6 +1,23 @@
 {
   "schema_version": "1.0",
   "rotation_next": "V",
-  "last_update": null,
-  "cases": []
+  "last_update": "2026-11-12",
+  "cases": [
+    {
+      "ticker": "V",
+      "status": "en_cours",
+      "updated_at": "2026-11-12",
+      "dossier_path": "research/dossiers/V.md",
+      "latest_publication": "2026-11-05",
+      "notes": "FY2022–FY2026 CFO/CAPEX/FCF et actions diluées réconciliés aux 10-K SEC 2024 et 2026 ; dernier 10-Q 30/06/2026 et résultats Q4 27/10/2026 étudiés. Écart critique actions Yahoo 2 105,56 M vs SEC 1 907 M. Normalisation BFR/incitations/litiges/CAPEX maintenance/acquisitions/taxes et guidance primaire à achever ; pas de valeur intrinsèque ni d'ordre."
+    },
+    {
+      "ticker": "REL.L",
+      "status": "en_cours",
+      "updated_at": "2026-11-12",
+      "dossier_path": "research/dossiers/REL.L.md",
+      "latest_publication": "2026-07-23",
+      "notes": "Prospection mondiale HORS des 36 tickers ; 6-K H1 2026 et rapport annuel 2025 consultés. Pas de cours ni cinq exercices rapprochés ; non validée, pas de modèle. Visa reste prioritaire."
+    }
+  ]
 }
