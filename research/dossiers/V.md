@@ -125,3 +125,93 @@ Pour un DCF actionnaire/FCFE cohérent (et non un EV/WACC), il faut encore : (i)
 5. Seulement ensuite : scénarios propres à Visa, prix raisonnable, marge de sécurité, rendement implicite dix ans, comparaison World 7–8 % + prime de risque et critères de réfutation chiffrés.
 
 **Statut de recherche : en_cours. Prochaine rotation prioritaire : V tant que la normalisation ne permet pas une étude achevée.** Les autres variations de marché ≥5 % détectées par le screener constituent des **alertes**, pas des valeurs intrinsèques validées.
+
+
+---
+
+## 9. Complément documentaire du 13 novembre 2026 — gouvernance, incitations et pont de trésorerie
+
+**Nature du complément :** prolongement de l'étude de Visa, sans remplacer les cinq exercices déjà rapprochés et sans transformer le DCF automatique en valeur intrinsèque. Toutes les sommes sont en **millions USD** sauf indication contraire. La source de cours de travail demeure le **snapshot interne du 12/11/2026 à 420,31 USD** : aucune nouvelle clôture du 13/11 n'est postulée.
+
+### 9.1. Nouvelles pièces primaires contrôlées et localisation
+
+- **Visa, DEF 14A / Proxy Statement 2026, déposé à la SEC le 8 décembre 2025** : [texte original SEC](https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm). Gouvernance et indépendance **p. 6 et 29** ; architecture des incitations **p. 51–52** ; objectifs et réalisations **p. 58–59**. Les rémunérations décrites concernent **FY2025**, et non les primes FY2026.
+- **Visa, FY2026 Form 10-K, SEC, déposé le 5 novembre 2026** : [texte original](https://www.sec.gov/Archives/edgar/data/1403161/000140316126000134/v-20260930.htm). Composition du CA et incitations **p. 42** ; retraitements non-GAAP **p. 46–47** ; flux de trésorerie **p. 64** ; reconnaissance des incitations **Note 1, p. 69** ; litiges, dette, fiscalité et actions : notes déjà citées dans la section 1.
+- **Visa, résultats Q4/FY2026 du 27 octobre 2026, Exhibit 99.1 joint au 8-K SEC** : [pièce originale](https://www.sec.gov/Archives/edgar/data/1403161/000140316126000126/q42026earningsrelease.htm). Faits saillants et guidance non chiffrée **p. 2–4** ; résultat et nombre d'actions **p. 8** ; flux de trésorerie **p. 9**.
+- **Guidance FY2027 détaillée** : les propos du CFO relatifs aux renouvellements (~25 % des volumes), à la croissance du CA ajusté en bas de la fourchette à deux chiffres et à la fiscalité autour de 19 % sont repris dans la [transcription de la conférence du 27 octobre 2026](https://stockanalysis.com/stocks/v/transcripts/706676-q4-2026/) ; **transcription secondaire**, non encore vérifiée contre l'audio original. L'exhibit 8-K ne constitue pas, à lui seul, la preuve de ces objectifs chiffrés.
+
+### 9.2. Prix et pouvoir de négociation : incitations client rapportées aux revenus avant incitations
+
+La Note 3 et l'Item 7 présentent les revenus bruts par catégories avant la ligne d'incitations, puis le CA net. **Le ratio ci-dessous est une mesure analytique d'intensité des incitations, et non un take-rate contractuel ni une mesure autonome de pouvoir de prix.**
+
+| FY | Revenus avant incitations (CA net + incitations) | Incitations reconnues en réduction du CA | CA net | Incitations / revenus avant incitations |
+|---|---:|---:|---:|---:|
+| 2024 | 49 690 | 13 764 | 35 926 | 27,70 % |
+| 2025 | 55 751 | 15 751 | 40 000 | 28,25 % |
+| 2026 | 64 220 | 18 317 | 45 903 | 28,52 % |
+
+**Calcul vérifiable :** 2026, 18 317 / (45 903 + 18 317) = **28,52 %**, contre 27,70 % en 2024, soit **+0,82 point** en deux ans. Entre 2025 et 2026, les incitations reconnues augmentent de **16,3 %** (2 566 / 15 751) alors que le CA net augmente de **14,8 %** (5 903 / 40 000). Les services à valeur ajoutée progressent à **14,2 Md$** en 2026 (10,9 Md$ en 2025), mais ces données ne permettent pas de ventiler la marge incrémentale nette des incitations par segment.
+
+**Interprétation :** le réseau bénéficie d'une forte demande et de services additionnels, mais les partenaires captent une fraction légèrement croissante du revenu avant incitations. Cette tendance n'établit pas une érosion structurelle du moat : il faut comparer les contrats renouvelés, le mix produit et le revenu net par unité de volume. Le 10-K précise que les incitations peuvent être fixes ou variables, que les versements initiaux sont capitalisés puis amortis sur la durée du contrat et que les passifs d'incitations sont estimés en fonction des performances futures. Ne pas confondre **charges reconnues en réduction du CA** et **cash effectivement versé**.
+
+### 9.3. Réconciliation plus granulaire des variations de trésorerie 2024–2026
+
+Les lignes ci-dessous sont **déjà comprises dans le CFO publié** (10-K 2026, p. 64). Elles sont isolées pour comprendre la volatilité et ne sont **pas** des ajustements à déduire une seconde fois. Les montants sont signés comme dans l'état de flux.
+
+| Variation dans le CFO | FY2024 | FY2025 | FY2026 |
+|---|---:|---:|---:|
+| Incitations : réintégration non-cash | +13 764 | +15 751 | +18 317 |
+| Incitations : flux de trésorerie / passifs | −14 067 | −15 314 | −17 705 |
+| **Effet net incitations sur le CFO** | **−303** | **+437** | **+612** |
+| Créances de règlement | −2 175 | +374 | +2 115 |
+| Dettes de règlement | +1 841 | −847 | −1 833 |
+| **Effet net règlements** | **−334** | **−473** | **+282** |
+| Créances commerciales | −237 | −542 | −587 |
+| Autres actifs | −199 | +160 | −582 |
+| Fournisseurs | +109 | +67 | +1 |
+| Autres dettes et charges à payer | −676 | −373 | +772 |
+| **Variation des passifs de litiges** | **−28** | **+1 303** | **−2 040** |
+| **Somme des variations listées** | **−1 668** | **+579** | **−1 542** |
+| CFO publié | 19 950 | 23 059 | 23 728 |
+| **CFO avant ces variations (arithmétique, NON normalisé)** | **21 618** | **22 480** | **25 270** |
+| CAPEX effectivement décaissé | −1 257 | −1 482 | −1 671 |
+| **FCF brut publié/reconstitué** | **18 693** | **21 577** | **22 057** |
+
+**Contrôle FY2026 :** (+18 317 −17 705) + (2 115 −1 833) −587 −582 +1 +772 −2 040 = **−1 542 M$** ; 23 728 − (−1 542) = **25 270 M$**. Le montant 25 270 ne correspond ni à un CFO « récurrent » démontré ni à un FCFE ; il comprend notamment les effets de charges et provisions déjà présents dans le résultat, la SBC non décaissée, la fiscalité et les investissements nécessaires.
+
+**Effet litiges isolé, simple sensibilité :** le CFO hors seule ligne de variation du passif de litiges aurait été de **19 978 / 21 756 / 25 768 M$** en 2024/2025/2026. L'écart FY2026–FY2025 est **+4 012 M$**, contre **+669 M$** sur le CFO publié. Cette comparaison **ne prouve pas** que la variation du passif de litiges est non récurrente ni qu'elle peut être ajoutée aux flux futurs. Les provisions inscrites au résultat FY2026 (**1 764 M$**) et FY2025 (**2 562 M$**) ne doivent pas être ajoutées à cette variation comme s'il s'agissait de décaissements distincts. Les mécanismes d'escrow et de conversion des classes B/C exigent une analyse juridique et économique séparée.
+
+**Fiscalité :** FY2026, les **5 684 M$ d'impôts cash** comprennent **1 900 M$ d'achats de crédits d'impôt énergie propre**, comme FY2025 (**4 541 M$**, également avec 1 900 M$ de crédits achetés). Les crédits génèrent une contrepartie fiscale : ni leur achat ni leur économie future ne peuvent être isolés sans une réconciliation complète des cash taxes. Le taux effectif GAAP FY2026 est **16,3 %**, contre **17,9 % ajusté** selon l'exhibit SEC ; le 19 % prospectif reste un propos de conférence à vérifier en source primaire audio.
+
+### 9.4. Deuxième pont de cash par action : sensibilité historique, pas flux distribuable
+
+| Élément | FY2024 | FY2025 | FY2026 |
+|---|---:|---:|---:|
+| CFO − CAPEX (M$) | 18 693 | 21 577 | 22 057 |
+| Moins SBC, sensibilité économique (M$) | −850 | −897 | −928 |
+| Moins acquisitions nettes cash de l'exercice (M$) | −915 | −887 | −705 |
+| **Solde analytique après SBC et acquisitions (M$)** | **16 928** | **19 793** | **20 424** |
+| Dénominateur SEC : actions A diluées équivalentes (millions) | 2 029 | 1 966 | 1 907 |
+| **Solde analytique/action (USD)** | **8,34** | **10,07** | **10,71** |
+
+FY2026 : **(23 728 − 1 671 − 928 − 705) / 1 907 = 10,71 USD/action**. Au cours de référence interne de 420,31 USD du 12/11/2026, cela correspond à **2,55 % de rendement historique analytique**, ou **39,24×** ce flux. Le rendement de 2,55 % n'est **pas comparable directement** au rendement total prospectif du MSCI World estimé à 7–8 % : croissance future, dette, acquisitions, inflation, réinvestissements et risque juridique doivent être projetés. Les 705 M$ d'acquisitions FY2026 ne sont pas un budget normatif de croissance externe, et la SBC ne peut pas être simultanément déduite ici et intégralement pénalisée par une dilution future explicite.
+
+**Allocation du capital :** le 8-K du 27/10/2026 précise **20,5 Md$** de rachats (61 M d'actions A au prix moyen de 335,49 USD), **5,112 Md$** de dividendes payés et **24,4 Md$** d'autorisation de rachat restante au 30/09/2026. La sortie totale de **25,563 Md$** excède de **3,506 Md$** le FCF brut FY2026 (22,057 Md$) ; elle ne peut pas être répétée sans financement, liquidités ou croissance supplémentaire. Les rachats ne sont pas un CAPEX et ne doivent pas être déduits une seconde fois du flux à actualiser.
+
+### 9.5. Gouvernance : vérification du proxy 2026, sans préjuger de FY2026
+
+Le **proxy publié le 08/12/2025**, pour l'assemblée du 27/01/2026, indique **10 administrateurs indépendants sur 11 (91 %)**, une **présidence indépendante distincte du CEO**, et des comités entièrement indépendants (p. 6, 29). Ces éléments sont favorables à l'encadrement formel de la gouvernance, sans démontrer la qualité des acquisitions ou la discipline de prix des rachats.
+
+Pour les rémunérations **FY2025**, la direction indique que **95 % de la rémunération directe cible du CEO** est variable, avec incitations annuelles basées notamment sur la croissance du CA net, du résultat net et de l'EPS ajustés ; les actions de performance reposent sur **l'EPS ajusté et le TSR relatif sur trois ans** (proxy p. 51–52). La prime annuelle FY2025 a été fixée à **140 % de la cible** et les actions de performance arrivées à échéance à **162,7 % de la cible** (proxy p. 52). Le tableau p. 59 montre des objectifs ajustés 2025 de **9,8 % de croissance du CA**, **8,2 % du résultat net** et **12,2 % de l'EPS**, contre des réalisations respectives de **11,2 %**, **11,5 %** et **15,1 %**.
+
+**Risque d'incitation à surveiller :** ces métriques publiées privilégient croissance, EPS et TSR ; elles ne constituent pas une mesure directe du **FCF économiquement distribuable après acquisitions, litiges et dilution** ni du ROIC économique. Cela crée un point de vigilance sur les rachats au regard de leur prix et les opérations de croissance externe, **pas une preuve de mauvaise gouvernance**. Les termes FY2026/FY2027 de rémunération doivent être étudiés lorsqu'ils seront publiés.
+
+### 9.6. Décision et réfutation à date
+
+- **Moat :** réseau, échelle et diversification documentés ; **pricing power net des incitations encore à quantifier**, particulièrement pour les renouvellements FY2027.
+- **Qualité du cash :** flux historiques réconciliés ; **FCF économiquement distribuable non normalisé**, notamment en raison des litiges, incitations, taxes et CAPEX maintenance.
+- **ROIC/solvabilité :** bilan et dette documentés, mais ROIC économique après goodwill et actifs acquis, garanties de règlement et cash restreint non reconstitué.
+- **Valorisation :** **aucun DCF fondamental, aucun prix raisonnable, aucune MOS validée et aucun rendement prospectif à dix ans**. Le modèle indicatif de \`data/models.json\` demeure séparé et non actionnable.
+- **Prochain contrôle prioritaire :** réconcilier cash taxes et provisions de litiges/escrow ; identifier CAPEX de maintenance, CAPEX de croissance et investissement acquisitif normatif ; résoudre le dénominateur d'actions agrégé ; vérifier la guidance contre l'audio/les slides originaux ; reconstruire un ROIC économique. **Statut maintenu : en_cours ; rotation_next = V.**
+
+**Surveillance secondaire du snapshot (13/11/2026, données de marché de dates différentes) :** Legrand \`LR.PA\` **+8,54 % sur cinq séances**, Alphabet \`GOOGL\` **+5,71 %**, TSMC ADR \`TSM\` **+14,84 %**, Samsung \`005930.KS\` **+12,08 %**, Société Générale \`GLE.PA\` **+5,82 %**. Ce sont des **signaux à investiguer**, non des qualifications fondamentales ; leurs cours proviennent du snapshot du screener et ne sont pas revalidés ici. Le dossier mondial **REL.L**, hors univers initial, reste en cours ; aucun nouveau ticker n'est déclaré étudié en profondeur au-delà de Visa dans cette mise à jour.
