@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
   "rotation_next": "V",
-  "last_update": "2026-11-13",
+  "last_update": "2026-11-14",
   "cases": [
     {
       "ticker": "V",
       "status": "en_cours",
-      "updated_at": "2026-11-13",
+      "updated_at": "2026-11-14",
       "dossier_path": "research/dossiers/V.md",
       "latest_publication": "2026-11-05",
-      "notes": "Complément 13/11 : proxy SEC 2026 (indépendance, rémunérations 2025), incitations 2024–2026 / revenus bruts, réconciliation détaillée CFO par variations de cash, litiges et fiscalité, sensibilité SBC/acquisitions/action. Base FCF économique et ROIC non normalisés ; guidance FY2027 encore secondaire, CAPEX maintenance et litiges non résolus. Aucun DCF fondamental ni ordre."
+      "notes": "Contrôle 14/11 du 10-K FY2026 : liquidité de règlement réservée 9,9 Md$, escrow 628 M$, dépôts 1,3 Md$, provisions litiges 1,6 Md$ ; montants non cumulables avec CFO. Cours snapshot 425,76 $ au 13/11. FCF normalisé, cash excédentaire, risque juridique et CAPEX maintenance non déterminés ; pas de DCF fondamental."
     },
     {
       "ticker": "REL.L",
