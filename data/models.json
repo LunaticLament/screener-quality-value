@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-13T22:51:35+00:00",
+  "generated_at": "2026-11-14T02:28:36+00:00",
   "universe_count": 36,
   "objective": "PRE-VALORISATIONS AUTOMATIQUES; aucune valeur intrinsèque validée et aucun ordre de bourse",
   "benchmark_world_assumption": 0.07,
@@ -12,8 +12,8 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 193.32000732421875,
-      "price_asof": "2026-11-13",
+      "price": 192.83999633789062,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/AI.PA/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
@@ -105,7 +105,7 @@
               "cumulative_pv": 26.031907874700657
             }
           ],
-          "irr": -0.09179612370500961
+          "irr": -0.09152945081573088
         },
         "central": {
           "value": 61.8170219420559,
@@ -188,7 +188,7 @@
               "cumulative_pv": 32.00073293169657
             }
           ],
-          "irr": -0.04542171072768625
+          "irr": -0.04514540994017996
         },
         "optimiste": {
           "value": 92.67515326054763,
@@ -271,7 +271,7 @@
               "cumulative_pv": 38.83550782524013
             }
           ],
-          "irr": -0.0016825258876895233
+          "irr": -0.001396499533950768
         }
       },
       "warnings": [
@@ -343,12 +343,12 @@
         "normalization_adjustments": null,
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
-      "reverse_growth": 0.1869115532301696,
+      "reverse_growth": 0.1865681034522958,
       "theoretical_fair_price": 61.8170219420559,
       "theoretical_safety_price": 49.453617553644726,
-      "margin_safety_at_price": -2.1272940890848315,
-      "upside_to_model": -0.680234742395897,
-      "world_spread": -0.11542171072768626,
+      "margin_safety_at_price": -2.1195290597895338,
+      "upside_to_model": -0.679438793217247,
+      "world_spread": -0.11514540994017997,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -369,11 +369,11 @@
       "screening_evidence": {
         "why_examined": "Moat et avenir économique à examiner",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/AI.PA/",
-        "return_5d": 0.029502655133325506,
-        "return_1m": 0.11719842131842673,
+        "return_5d": 0.016445261949782353,
+        "return_1m": 0.1320887664889252,
         "fcf_yield": 0.021682611162214427,
         "quality_grade": null,
         "quality_source_url": null,
@@ -385,7 +385,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -394,8 +394,8 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 115.5,
-      "price_asof": "2026-11-13",
+      "price": 115.19999694824219,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/DG.PA/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
@@ -487,7 +487,7 @@
               "cumulative_pv": 76.81135719848564
             }
           ],
-          "irr": 0.1214739870261431
+          "irr": 0.1219238958306631
         },
         "central": {
           "value": 182.4011277311145,
@@ -570,7 +570,7 @@
               "cumulative_pv": 94.42334152614053
             }
           ],
-          "irr": 0.17384264848213105
+          "irr": 0.1743014107596571
         },
         "optimiste": {
           "value": 273.4530382784009,
@@ -653,7 +653,7 @@
               "cumulative_pv": 114.59045099219047
             }
           ],
-          "irr": 0.22396902764501914
+          "irr": 0.22443812303108734
         }
       },
       "warnings": [
@@ -726,12 +726,12 @@
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
       "sbc_to_fcf": 0.039685511044552604,
-      "reverse_growth": -0.0347939722031258,
+      "reverse_growth": -0.03517104755323336,
       "theoretical_fair_price": 182.4011277311145,
       "theoretical_safety_price": 145.92090218489162,
-      "margin_safety_at_price": 0.3667802308203729,
-      "upside_to_model": 0.5792305431265325,
-      "world_spread": 0.10384264848213104,
+      "margin_safety_at_price": 0.36842497422459175,
+      "upside_to_model": 0.5833431646101943,
+      "world_spread": 0.1043014107596571,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -754,11 +754,11 @@
         "signals": [
           "FCF yield historique ≥6 % (non normalisé)"
         ],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/DG.PA/",
-        "return_5d": 0.03494625070970114,
-        "return_1m": 0.07292148966885037,
+        "return_5d": 0.01992031926331994,
+        "return_1m": 0.08270672270829738,
         "fcf_yield": 0.12611696245634446,
         "quality_grade": null,
         "quality_source_url": null,
@@ -770,7 +770,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -779,15 +779,15 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 243.4499969482422,
-      "price_asof": "2026-11-13",
+      "price": 244.8000030517578,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/SU.PA/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
       "source_url": "https://finance.yahoo.com/quote/SU.PA/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-13T22:51:36+00:00",
+      "last_fetch": "2026-11-14T02:28:38+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -872,7 +872,7 @@
               "cumulative_pv": 45.36331260642936
             }
           ],
-          "irr": -0.05569886864896251
+          "irr": -0.056335943573423475
         },
         "central": {
           "value": 107.72260351617548,
@@ -955,7 +955,7 @@
               "cumulative_pv": 55.76461235967334
             }
           ],
-          "irr": -0.00806603540437717
+          "irr": -0.008724519530344754
         },
         "optimiste": {
           "value": 161.4961134789786,
@@ -1038,7 +1038,7 @@
               "cumulative_pv": 67.67491995536494
             }
           ],
-          "irr": 0.03695348546634125
+          "irr": 0.036273051307944226
         }
       },
       "warnings": [
@@ -1110,12 +1110,12 @@
         "normalization_adjustments": null,
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
-      "reverse_growth": 0.14221313155849546,
+      "reverse_growth": 0.1429718804940049,
       "theoretical_fair_price": 107.72260351617548,
       "theoretical_safety_price": 86.17808281294039,
-      "margin_safety_at_price": -1.2599713430773707,
-      "upside_to_model": -0.5575165131791829,
-      "world_spread": -0.07806603540437718,
+      "margin_safety_at_price": -1.272503588487805,
+      "upside_to_model": -0.5599566904686688,
+      "world_spread": -0.07872451953034476,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -1138,11 +1138,11 @@
         "signals": [
           "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
         ],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/SU.PA/",
-        "return_5d": 0.06472776491067012,
-        "return_1m": -0.05639536066572792,
+        "return_5d": 0.0743910313548184,
+        "return_1m": -0.07413007298479812,
         "fcf_yield": 0.03206618694657977,
         "quality_grade": null,
         "quality_source_url": null,
@@ -1154,7 +1154,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": true
     },
     {
@@ -1163,8 +1163,8 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 213.4499969482422,
-      "price_asof": "2026-11-13",
+      "price": 212.5500030517578,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/SAP.DE/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
@@ -1256,7 +1256,7 @@
               "cumulative_pv": 29.8552473601727
             }
           ],
-          "irr": -0.08770663984750088
+          "irr": -0.08724966359023606
         },
         "central": {
           "value": 70.89616673632011,
@@ -1339,7 +1339,7 @@
               "cumulative_pv": 36.70072136015546
             }
           ],
-          "irr": -0.041185111559310206
+          "irr": -0.04071176672194304
         },
         "optimiste": {
           "value": 106.28647112817049,
@@ -1422,7 +1422,7 @@
               "cumulative_pv": 44.539328352774405
             }
           ],
-          "irr": 0.0027027899917336784
+          "irr": 0.0031926961575962087
         }
       },
       "warnings": [
@@ -1496,12 +1496,12 @@
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
       "sbc_to_fcf": 0.20137816324105975,
-      "reverse_growth": 0.1816670909674606,
+      "reverse_growth": 0.1810840169782334,
       "theoretical_fair_price": 70.89616673632011,
       "theoretical_safety_price": 56.716933389056095,
-      "margin_safety_at_price": -2.010741014279574,
-      "upside_to_model": -0.6678558550014355,
-      "world_spread": -0.11118511155931021,
+      "margin_safety_at_price": -1.9980464789060086,
+      "upside_to_model": -0.6664494673328409,
+      "world_spread": -0.11071176672194305,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -1522,11 +1522,11 @@
       "screening_evidence": {
         "why_examined": "Moat et avenir économique à examiner",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/SAP.DE/",
-        "return_5d": 0.012811373419891803,
-        "return_1m": 0.06062110284840849,
+        "return_5d": -0.014831967315143357,
+        "return_1m": 0.07926272172661242,
         "fcf_yield": 0.034164769790372626,
         "quality_grade": null,
         "quality_source_url": null,
@@ -1538,7 +1538,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -1547,8 +1547,8 @@
       "model": "utility",
       "region": "Europe",
       "currency": "EUR",
-      "price": 34.939998626708984,
-      "price_asof": "2026-11-13",
+      "price": 34.65999984741211,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/VIE.PA/",
       "status": "modèle_sectoriel_requis",
       "validation": "Aucune recommandation",
@@ -1572,11 +1572,11 @@
       "screening_evidence": {
         "why_examined": "Étude économique spécifique requise",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/VIE.PA/",
-        "return_5d": 0.03433984278658553,
-        "return_1m": 0.07906107085075398,
+        "return_5d": 0.026962958441840268,
+        "return_1m": 0.08008724470563644,
         "fcf_yield": null,
         "quality_grade": null,
         "quality_source_url": null,
@@ -1588,7 +1588,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -1597,15 +1597,15 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 136.39999389648438,
-      "price_asof": "2026-11-13",
+      "price": 138.14999389648438,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/LR.PA/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
       "source_url": "https://finance.yahoo.com/quote/LR.PA/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-13T02:39:21+00:00",
+      "last_fetch": "2026-11-14T02:28:38+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -1690,7 +1690,7 @@
               "cumulative_pv": 28.750613172098888
             }
           ],
-          "irr": -0.0412754795271178
+          "irr": -0.042787206335493655
         },
         "central": {
           "value": 68.27303222882335,
@@ -1773,7 +1773,7 @@
               "cumulative_pv": 35.342806918773846
             }
           ],
-          "irr": 0.006834132588402153
+          "irr": 0.00527315158848618
         },
         "optimiste": {
           "value": 102.35390716976494,
@@ -1856,7 +1856,7 @@
               "cumulative_pv": 42.89138806881772
             }
           ],
-          "irr": 0.05234418421483211
+          "irr": 0.05073237168379163
         }
       },
       "warnings": [
@@ -1928,12 +1928,12 @@
         "normalization_adjustments": null,
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
-      "reverse_growth": 0.12530948577125278,
+      "reverse_growth": 0.1270568583371453,
       "theoretical_fair_price": 68.27303222882335,
       "theoretical_safety_price": 54.61842578305868,
-      "margin_safety_at_price": -0.9978604940136133,
-      "upside_to_model": -0.49946455070491724,
-      "world_spread": -0.06316586741159785,
+      "margin_safety_at_price": -1.0234928695339316,
+      "upside_to_model": -0.5058050289891416,
+      "world_spread": -0.06472684841151383,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -1956,11 +1956,11 @@
         "signals": [
           "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
         ],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/LR.PA/",
-        "return_5d": 0.05206324965498532,
-        "return_1m": 0.020194442856175998,
+        "return_5d": 0.08310459107104262,
+        "return_1m": 0.020687016377578304,
         "fcf_yield": 0.037149660325503195,
         "quality_grade": null,
         "quality_source_url": null,
@@ -1972,8 +1972,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-14T02:28:36+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "EL.PA",
@@ -1981,15 +1981,15 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 182.35000610351562,
-      "price_asof": "2026-11-13",
+      "price": 179.89999389648438,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/EL.PA/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
       "source_url": "https://finance.yahoo.com/quote/EL.PA/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-13T02:39:21+00:00",
+      "last_fetch": "2026-11-14T02:28:39+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -2074,7 +2074,7 @@
               "cumulative_pv": 43.79442877275458
             }
           ],
-          "irr": -0.025516512578873718
+          "irr": -0.023852679713286917
         },
         "central": {
           "value": 103.99703231188181,
@@ -2157,7 +2157,7 @@
               "cumulative_pv": 53.836001026077035
             }
           ],
-          "irr": 0.02309639226124538
+          "irr": 0.024812271307187106
         },
         "optimiste": {
           "value": 155.91079293952208,
@@ -2240,7 +2240,7 @@
               "cumulative_pv": 65.33439229627686
             }
           ],
-          "irr": 0.06912809049253055
+          "irr": 0.07089815788619325
         }
       },
       "warnings": [
@@ -2313,12 +2313,12 @@
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
       "sbc_to_fcf": 0.07434944237918216,
-      "reverse_growth": 0.10742253473873176,
+      "reverse_growth": 0.10556833843803937,
       "theoretical_fair_price": 103.99703231188181,
       "theoretical_safety_price": 83.19762584950546,
-      "margin_safety_at_price": -0.753415477824956,
-      "upside_to_model": -0.4296845142256521,
-      "world_spread": -0.04690360773875463,
+      "margin_safety_at_price": -0.7298569958897811,
+      "upside_to_model": -0.42191753285037703,
+      "world_spread": -0.0451877286928129,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -2342,11 +2342,11 @@
           "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
           "Hausse ≥15 % sur un mois"
         ],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/EL.PA/",
-        "return_5d": -0.05908151067048362,
-        "return_1m": 0.22629461900383196,
+        "return_5d": -0.0627767816792777,
+        "return_1m": 0.21471969265647362,
         "fcf_yield": 0.04505598880462802,
         "quality_grade": null,
         "quality_source_url": null,
@@ -2358,8 +2358,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-14T02:28:36+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "OR.PA",
@@ -2367,8 +2367,8 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 451.20001220703125,
-      "price_asof": "2026-11-13",
+      "price": 446.8500061035156,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/OR.PA/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
@@ -2460,7 +2460,7 @@
               "cumulative_pv": 71.44313888840284
             }
           ],
-          "irr": -0.074117183866724
+          "irr": -0.07304012029534374
         },
         "central": {
           "value": 169.65341555183772,
@@ -2543,7 +2543,7 @@
               "cumulative_pv": 87.82425085299955
             }
           ],
-          "irr": -0.02711503647022734
+          "irr": -0.026000429411289272
         },
         "optimiste": {
           "value": 254.34185914325576,
@@ -2626,7 +2626,7 @@
               "cumulative_pv": 106.58191449950303
             }
           ],
-          "irr": 0.017260411055008418
+          "irr": 0.018413217028352524
         }
       },
       "warnings": [
@@ -2699,12 +2699,12 @@
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
       "sbc_to_fcf": 0.03467102323503128,
-      "reverse_growth": 0.1645775630957499,
+      "reverse_growth": 0.16324486602718447,
       "theoretical_fair_price": 169.65341555183772,
       "theoretical_safety_price": 135.72273244147019,
-      "margin_safety_at_price": -1.6595398079042316,
-      "upside_to_model": -0.6239950998184083,
-      "world_spread": -0.09711503647022734,
+      "margin_safety_at_price": -1.6338992625054476,
+      "upside_to_model": -0.6203347583427437,
+      "world_spread": -0.09600042941128928,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -2725,11 +2725,11 @@
       "screening_evidence": {
         "why_examined": "Moat et avenir économique à examiner",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/OR.PA/",
-        "return_5d": 0.00311254880404066,
-        "return_1m": 0.10900824735942516,
+        "return_5d": -0.01920544311408967,
+        "return_1m": 0.13356162421637108,
         "fcf_yield": 0.029761661592449647,
         "quality_grade": null,
         "quality_source_url": null,
@@ -2741,7 +2741,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -2750,8 +2750,8 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 403.45001220703125,
-      "price_asof": "2026-11-13",
+      "price": 404.70001220703125,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/MC.PA/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
@@ -2843,7 +2843,7 @@
               "cumulative_pv": 147.01595122690162
             }
           ],
-          "irr": 0.028763422020584017
+          "irr": 0.028335463745017386
         },
         "central": {
           "value": 349.11341598815113,
@@ -2926,7 +2926,7 @@
               "cumulative_pv": 180.72506304786182
             }
           ],
-          "irr": 0.07896369323558694
+          "irr": 0.07852412665626363
         },
         "optimiste": {
           "value": 523.3856034401387,
@@ -3009,7 +3009,7 @@
               "cumulative_pv": 219.3246515694774
             }
           ],
-          "irr": 0.12667294073723012
+          "irr": 0.12622089093449784
         }
       },
       "warnings": [
@@ -3081,12 +3081,12 @@
         "normalization_adjustments": null,
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
-      "reverse_growth": 0.05008167290816756,
+      "reverse_growth": 0.050509647394377244,
       "theoretical_fair_price": 349.11341598815113,
       "theoretical_safety_price": 279.2907327905209,
-      "margin_safety_at_price": -0.1556416732513204,
-      "upside_to_model": -0.13467987253646974,
-      "world_spread": 0.008963693235586934,
+      "margin_safety_at_price": -0.15922217157293872,
+      "upside_to_model": -0.13735259338327832,
+      "world_spread": 0.00852412665626362,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -3109,11 +3109,11 @@
         "signals": [
           "FCF yield historique ≥6 % (non normalisé)"
         ],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/MC.PA/",
-        "return_5d": -0.01296633099197253,
-        "return_1m": 0.012930013989203015,
+        "return_5d": -0.033321346931399654,
+        "return_1m": 0.03889109200053209,
         "fcf_yield": 0.07176244735119279,
         "quality_grade": null,
         "quality_source_url": null,
@@ -3125,7 +3125,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -3134,8 +3134,8 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 1341.5,
-      "price_asof": "2026-11-13",
+      "price": 1352.5,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/RMS.PA/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
@@ -3227,7 +3227,7 @@
               "cumulative_pv": 215.33752735644984
             }
           ],
-          "irr": -0.0725964974914744
+          "irr": -0.07350537486423386
         },
         "central": {
           "value": 511.35417033642204,
@@ -3310,7 +3310,7 @@
               "cumulative_pv": 264.71201174627294
             }
           ],
-          "irr": -0.025541366807149635
+          "irr": -0.02648189149647623
         },
         "optimiste": {
           "value": 766.6145119505898,
@@ -3393,7 +3393,7 @@
               "cumulative_pv": 321.24968592281596
             }
           ],
-          "irr": 0.018887993964553762
+          "irr": 0.017915262375893914
         }
       },
       "warnings": [
@@ -3466,12 +3466,12 @@
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
       "sbc_to_fcf": 0.031331592689295036,
-      "reverse_growth": 0.1626968671699106,
+      "reverse_growth": 0.16382015917672998,
       "theoretical_fair_price": 511.35417033642204,
       "theoretical_safety_price": 409.08333626913765,
-      "margin_safety_at_price": -1.6234263409202696,
-      "upside_to_model": -0.618819105228161,
-      "world_spread": -0.09554136680714964,
+      "margin_safety_at_price": -1.6449378502382892,
+      "upside_to_model": -0.6219192825608709,
+      "world_spread": -0.09648189149647624,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -3492,11 +3492,11 @@
       "screening_evidence": {
         "why_examined": "Moat et avenir économique à examiner",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/RMS.PA/",
-        "return_5d": -0.015412844036697293,
-        "return_1m": 0.0022413149047442182,
+        "return_5d": -0.024873828406632992,
+        "return_1m": 0.043998456194519475,
         "fcf_yield": 0.029985179274335916,
         "quality_grade": null,
         "quality_source_url": null,
@@ -3508,7 +3508,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -3517,8 +3517,8 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 105.69999694824219,
-      "price_asof": "2026-11-13",
+      "price": 105.19999694824219,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/PUB.PA/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
@@ -3610,7 +3610,7 @@
               "cumulative_pv": 50.21835402731308
             }
           ],
-          "irr": 0.06713765410894734
+          "irr": 0.06785602439987903
         },
         "central": {
           "value": 119.25169325823154,
@@ -3693,7 +3693,7 @@
               "cumulative_pv": 61.732860427768934
             }
           ],
-          "irr": 0.11831911008832019
+          "irr": 0.11905471845958304
         },
         "optimiste": {
           "value": 178.78035211152175,
@@ -3776,7 +3776,7 @@
               "cumulative_pv": 74.91787732906695
             }
           ],
-          "irr": 0.167098445091736
+          "irr": 0.16785315044952231
         }
       },
       "warnings": [
@@ -3849,12 +3849,12 @@
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
       "sbc_to_fcf": 0.03304864463423691,
-      "reverse_growth": 0.013127639310858474,
+      "reverse_growth": 0.012461661892291587,
       "theoretical_fair_price": 119.25169325823154,
       "theoretical_safety_price": 95.40135460658524,
-      "margin_safety_at_price": 0.11363944561058825,
-      "upside_to_model": 0.12820905109983283,
-      "world_spread": 0.04831911008832018,
+      "margin_safety_at_price": 0.11783225819327658,
+      "upside_to_model": 0.13357126157430121,
+      "world_spread": 0.049054718459583035,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -3877,11 +3877,11 @@
         "signals": [
           "FCF yield historique ≥6 % (non normalisé)"
         ],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/PUB.PA/",
-        "return_5d": 0.026711996906445323,
-        "return_1m": 0.018795151308358404,
+        "return_5d": 0.0028598228598621933,
+        "return_1m": 0.051474200293828876,
         "fcf_yield": 0.10202490094608842,
         "quality_grade": null,
         "quality_source_url": null,
@@ -3893,7 +3893,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -3945,7 +3945,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -3954,8 +3954,8 @@
       "model": "bank",
       "region": "Europe",
       "currency": "EUR",
-      "price": 95.56999969482422,
-      "price_asof": "2026-11-13",
+      "price": 95.68000030517578,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/BNP.PA/",
       "status": "modèle_sectoriel_requis",
       "validation": "Aucune recommandation",
@@ -3979,11 +3979,11 @@
       "screening_evidence": {
         "why_examined": "Étude économique spécifique requise",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/BNP.PA/",
-        "return_5d": 0.03959533751294364,
-        "return_1m": 0.07454460390627737,
+        "return_5d": 0.040678679187038824,
+        "return_1m": 0.06797638370601744,
         "fcf_yield": null,
         "quality_grade": null,
         "quality_source_url": null,
@@ -3995,7 +3995,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -4004,8 +4004,8 @@
       "model": "bank",
       "region": "Europe",
       "currency": "EUR",
-      "price": 67.08999633789062,
-      "price_asof": "2026-11-13",
+      "price": 67.41999816894531,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/GLE.PA/",
       "status": "modèle_sectoriel_requis",
       "validation": "Aucune recommandation",
@@ -4029,11 +4029,11 @@
       "screening_evidence": {
         "why_examined": "Étude économique spécifique requise",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/GLE.PA/",
-        "return_5d": 0.04160832981535467,
-        "return_1m": 0.03854485948272934,
+        "return_5d": 0.044947329150094584,
+        "return_1m": 0.046569389712373566,
         "fcf_yield": null,
         "quality_grade": null,
         "quality_source_url": null,
@@ -4045,7 +4045,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -4054,8 +4054,8 @@
       "model": "insurance",
       "region": "Europe",
       "currency": "EUR",
-      "price": 47.099998474121094,
-      "price_asof": "2026-11-13",
+      "price": 46.58000183105469,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/CS.PA/",
       "status": "modèle_sectoriel_requis",
       "validation": "Aucune recommandation",
@@ -4078,14 +4078,12 @@
       "normalization": "non réalisée",
       "screening_evidence": {
         "why_examined": "Étude économique spécifique requise",
-        "signals": [
-          "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
-        ],
-        "market_asof": "2026-11-13",
+        "signals": [],
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/CS.PA/",
-        "return_5d": 0.054162895085409835,
-        "return_1m": 0.09918320073142484,
+        "return_5d": 0.01903309481529969,
+        "return_1m": 0.09729095391962606,
         "fcf_yield": null,
         "quality_grade": null,
         "quality_source_url": null,
@@ -4097,7 +4095,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -4106,8 +4104,8 @@
       "model": "utility",
       "region": "Europe",
       "currency": "EUR",
-      "price": 25.280000686645508,
-      "price_asof": "2026-11-13",
+      "price": 25.139999389648438,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/ENGI.PA/",
       "status": "modèle_sectoriel_requis",
       "validation": "Aucune recommandation",
@@ -4131,11 +4129,11 @@
       "screening_evidence": {
         "why_examined": "Étude économique spécifique requise",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/ENGI.PA/",
-        "return_5d": 0.04462809461394723,
-        "return_1m": 0.08918576836815428,
+        "return_5d": 0.04706368804642147,
+        "return_1m": 0.07896996621618846,
         "fcf_yield": -0.13612746200411152,
         "quality_grade": null,
         "quality_source_url": null,
@@ -4147,7 +4145,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -4156,15 +4154,15 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 87.5999984741211,
-      "price_asof": "2026-11-13",
+      "price": 87.9800033569336,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/SAN.PA/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
       "source_url": "https://finance.yahoo.com/quote/SAN.PA/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-13T02:39:22+00:00",
+      "last_fetch": "2026-11-14T02:28:40+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -4249,7 +4247,7 @@
               "cumulative_pv": 31.697133604617317
             }
           ],
-          "irr": 0.027789656962610265
+          "irr": 0.02719227829407156
         },
         "central": {
           "value": 75.2700268058796,
@@ -4332,7 +4330,7 @@
               "cumulative_pv": 38.964931501138665
             }
           ],
-          "irr": 0.07796349374802591
+          "irr": 0.0773498608400992
         },
         "optimiste": {
           "value": 112.84369662289855,
@@ -4415,7 +4413,7 @@
               "cumulative_pv": 47.28713262450237
             }
           ],
-          "irr": 0.12564431981594748
+          "irr": 0.12501322034523887
         }
       },
       "warnings": [
@@ -4487,12 +4485,12 @@
         "normalization_adjustments": null,
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
-      "reverse_growth": 0.051056001962195174,
+      "reverse_growth": 0.051654658512236495,
       "theoretical_fair_price": 75.2700268058796,
       "theoretical_safety_price": 60.21602144470368,
-      "margin_safety_at_price": -0.16380984824198785,
-      "upside_to_model": -0.14075310368737093,
-      "world_spread": 0.007963493748025907,
+      "margin_safety_at_price": -0.16885840340980418,
+      "upside_to_model": -0.1444643790190574,
+      "world_spread": 0.007349860840099198,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -4516,11 +4514,11 @@
           "Hausse ≥15 % sur un mois",
           "FCF yield historique ≥6 % (non normalisé)"
         ],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/SAN.PA/",
-        "return_5d": 0.0460950645906526,
-        "return_1m": 0.21396887511688334,
+        "return_5d": 0.04081396696389983,
+        "return_1m": 0.22500701379526689,
         "fcf_yield": 0.0687179025575623,
         "quality_grade": null,
         "quality_source_url": null,
@@ -4532,8 +4530,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-14T02:28:36+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "ASML.AS",
@@ -4541,15 +4539,15 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 1338.800048828125,
-      "price_asof": "2026-11-13",
+      "price": 1376.800048828125,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/ASML.AS/",
       "status": "non_modélisable",
       "validation": "Aucune recommandation",
       "source_url": "https://finance.yahoo.com/quote/ASML.AS/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-12T22:50:21+00:00",
+      "last_fetch": "2026-11-14T02:28:40+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 0,
       "scenarios": {},
@@ -4611,12 +4609,14 @@
       ],
       "screening_evidence": {
         "why_examined": "Données financières insuffisantes",
-        "signals": [],
-        "market_asof": "2026-11-13",
+        "signals": [
+          "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
+        ],
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/ASML.AS/",
-        "return_5d": 0.04300410898417928,
-        "return_1m": -0.08564397385984468,
+        "return_5d": 0.1014400390625001,
+        "return_1m": -0.09907074151366868,
         "fcf_yield": null,
         "quality_grade": null,
         "quality_source_url": null,
@@ -4628,8 +4628,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-14T02:28:36+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "ADYEN.AS",
@@ -4637,8 +4637,8 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "EUR",
-      "price": 867.0999755859375,
-      "price_asof": "2026-11-13",
+      "price": 868.0,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/ADYEN.AS/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
@@ -4730,7 +4730,7 @@
               "cumulative_pv": 165.06041245793585
             }
           ],
-          "irr": -0.053229678045175255
+          "irr": -0.05334986475896425
         },
         "central": {
           "value": 391.96293978104563,
@@ -4813,7 +4813,7 @@
               "cumulative_pv": 202.9069172373454
             }
           ],
-          "irr": -0.005514144524445153
+          "irr": -0.005638346385075488
         },
         "optimiste": {
           "value": 587.6249676134933,
@@ -4896,7 +4896,7 @@
               "cumulative_pv": 246.24414662581626
             }
           ],
-          "irr": 0.03959022582129712
+          "irr": 0.039461902248633884
         }
       },
       "warnings": [
@@ -4969,12 +4969,12 @@
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
       "sbc_to_fcf": 0.04488690944022356,
-      "reverse_growth": 0.139282166520316,
+      "reverse_growth": 0.1394244698405923,
       "theoretical_fair_price": 391.96293978104563,
       "theoretical_safety_price": 313.5703518248365,
-      "margin_safety_at_price": -1.212198877961034,
-      "upside_to_model": -0.547961076211334,
-      "world_spread": -0.07551414452444516,
+      "margin_safety_at_price": -1.2144950756948436,
+      "upside_to_model": -0.5484297928789796,
+      "world_spread": -0.0756383463850755,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -4995,11 +4995,11 @@
       "screening_evidence": {
         "why_examined": "Moat et avenir économique à examiner",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/ADYEN.AS/",
-        "return_5d": -0.03783847776209304,
-        "return_1m": -0.08009760445099501,
+        "return_5d": -0.027450980392156876,
+        "return_1m": -0.060097455332972394,
         "fcf_yield": 0.03305007641289286,
         "quality_grade": null,
         "quality_source_url": null,
@@ -5011,7 +5011,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -5020,8 +5020,8 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "CHF",
-      "price": 87.72000122070312,
-      "price_asof": "2026-11-13",
+      "price": 86.56999969482422,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/NESN.SW/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
@@ -5113,7 +5113,7 @@
               "cumulative_pv": 23.199024834287435
             }
           ],
-          "irr": -0.013529767129374204
+          "irr": -0.011864172435943676
         },
         "central": {
           "value": 55.089877934347804,
@@ -5196,7 +5196,7 @@
               "cumulative_pv": 28.518301523313344
             }
           ],
-          "irr": 0.035453377359565885
+          "irr": 0.037169546963175315
         },
         "optimiste": {
           "value": 82.58991973854938,
@@ -5279,7 +5279,7 @@
               "cumulative_pv": 34.60929236636943
             }
           ],
-          "irr": 0.08187162464921538
+          "irr": 0.08364079676018854
         }
       },
       "warnings": [
@@ -5352,12 +5352,12 @@
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
       "sbc_to_fcf": 0.012189575184208132,
-      "reverse_growth": 0.09420667774456504,
+      "reverse_growth": 0.09239613071692643,
       "theoretical_fair_price": 55.089877934347804,
       "theoretical_safety_price": 44.07190234747824,
-      "margin_safety_at_price": -0.5923070536703963,
-      "upside_to_model": -0.3719804244445697,
-      "world_spread": -0.03454662264043412,
+      "margin_safety_at_price": -0.571432047789109,
+      "upside_to_model": -0.3636377714156157,
+      "world_spread": -0.03283045303682469,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -5378,11 +5378,11 @@
       "screening_evidence": {
         "why_examined": "Moat et avenir économique à examiner",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/NESN.SW/",
-        "return_5d": 0.02178221059777563,
-        "return_1m": 0.08202789627373663,
+        "return_5d": -0.007566245978562258,
+        "return_1m": 0.09735074616039996,
         "fcf_yield": 0.04872024818593249,
         "quality_grade": null,
         "quality_source_url": null,
@@ -5394,7 +5394,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -5446,7 +5446,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -5455,8 +5455,8 @@
       "model": "corporate",
       "region": "Europe",
       "currency": "DKK",
-      "price": 278.45001220703125,
-      "price_asof": "2026-11-13",
+      "price": 275.75,
+      "price_asof": "2026-11-12",
       "market_url": "https://finance.yahoo.com/quote/NOVO-B.CO/",
       "status": "prévalorisation_indicative",
       "validation": "Aucune recommandation",
@@ -5548,7 +5548,7 @@
               "cumulative_pv": 37.59289205056155
             }
           ],
-          "irr": -0.09151719370623884
+          "irr": -0.0904706280123842
         },
         "central": {
           "value": 89.27046930023083,
@@ -5631,7 +5631,7 @@
               "cumulative_pv": 46.21252135765529
             }
           ],
-          "irr": -0.045132710418465616
+          "irr": -0.0440484071702027
         },
         "optimiste": {
           "value": 133.83295028017903,
@@ -5714,7 +5714,7 @@
               "cumulative_pv": 56.08267593870232
             }
           ],
-          "irr": -0.0013833530882662592
+          "irr": -0.00026091971503178213
         }
       },
       "warnings": [
@@ -5786,12 +5786,12 @@
         "normalization_adjustments": null,
         "normalization_status": "Non réalisée : FCF brut historique uniquement"
       },
-      "reverse_growth": 0.18655232236149943,
+      "reverse_growth": 0.18520645658019774,
       "theoretical_fair_price": 89.27046930023083,
       "theoretical_safety_price": 71.41637544018467,
-      "margin_safety_at_price": -2.11917271623788,
-      "upside_to_model": -0.6794021713532659,
-      "world_spread": -0.11513271041846562,
+      "margin_safety_at_price": -2.0889274153203874,
+      "upside_to_model": -0.6762630306428619,
+      "world_spread": -0.1140484071702027,
       "assumptions": {
         "prudent": {
           "growth": 0.0,
@@ -5812,11 +5812,11 @@
       "screening_evidence": {
         "why_examined": "Moat et avenir économique à examiner",
         "signals": [],
-        "market_asof": "2026-11-13",
+        "market_asof": "2026-11-12",
         "market_source": "Yahoo Finance via yfinance",
         "market_url": "https://finance.yahoo.com/quote/NOVO-B.CO/",
-        "return_5d": 0.03340137165436419,
-        "return_1m": 0.05693679751364855,
+        "return_5d": 0.01658986175115218,
+        "return_1m": 0.07735887199780556,
         "fcf_yield": 0.023616166655889767,
         "quality_grade": null,
         "quality_source_url": null,
@@ -5828,7 +5828,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -6212,7 +6212,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -6229,7 +6229,7 @@
       "source_url": "https://finance.yahoo.com/quote/GOOGL/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-13T02:39:22+00:00",
+      "last_fetch": "2026-11-14T02:28:41+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -6598,8 +6598,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-14T02:28:36+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "AMZN",
@@ -6982,7 +6982,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -7365,7 +7365,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false,
       "deep_research": {
         "ticker": "V",
@@ -7756,7 +7756,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -8139,7 +8139,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -8189,7 +8189,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -8583,7 +8583,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -8969,7 +8969,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -9352,7 +9352,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     },
     {
@@ -9369,7 +9369,7 @@
       "source_url": "https://finance.yahoo.com/quote/TSM/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-13T02:39:23+00:00",
+      "last_fetch": "2026-11-14T02:28:42+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {},
@@ -9450,8 +9450,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-14T02:28:36+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "005930.KS",
@@ -9467,7 +9467,7 @@
       "source_url": "https://finance.yahoo.com/quote/005930.KS/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-13T02:39:23+00:00",
+      "last_fetch": "2026-11-14T02:28:42+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {},
@@ -9548,8 +9548,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-14T02:28:36+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "6758.T",
@@ -9565,7 +9565,7 @@
       "source_url": "https://finance.yahoo.com/quote/6758.T/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-13T22:51:37+00:00",
+      "last_fetch": "2026-11-14T02:28:43+00:00",
       "financial_asof": "2026-03-31",
       "coverage_years": 4,
       "scenarios": {
@@ -9932,7 +9932,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": true
     },
     {
@@ -9984,7 +9984,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-13T22:51:35+00:00",
+      "computed_at": "2026-11-14T02:28:36+00:00",
       "financial_update_applied": false
     }
   ]

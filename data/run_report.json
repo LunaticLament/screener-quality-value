@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T22:51:35+00:00",
+  "generated_at": "2026-11-14T02:28:36+00:00",
   "universe_count": 36,
   "updated_price_count": 34,
   "failed_price_count": 2,
@@ -9,21 +9,21 @@
       "triggers": [
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-13"
+      "date": "2026-11-12"
     },
     {
       "ticker": "SU.PA",
       "triggers": [
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
       ],
-      "date": "2026-11-13"
+      "date": "2026-11-12"
     },
     {
       "ticker": "LR.PA",
       "triggers": [
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
       ],
-      "date": "2026-11-13"
+      "date": "2026-11-12"
     },
     {
       "ticker": "EL.PA",
@@ -31,28 +31,21 @@
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Hausse ≥15 % sur un mois"
       ],
-      "date": "2026-11-13"
+      "date": "2026-11-12"
     },
     {
       "ticker": "MC.PA",
       "triggers": [
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-13"
+      "date": "2026-11-12"
     },
     {
       "ticker": "PUB.PA",
       "triggers": [
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-13"
-    },
-    {
-      "ticker": "CS.PA",
-      "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
-      ],
-      "date": "2026-11-13"
+      "date": "2026-11-12"
     },
     {
       "ticker": "SAN.PA",
@@ -60,7 +53,14 @@
         "Hausse ≥15 % sur un mois",
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-13"
+      "date": "2026-11-12"
+    },
+    {
+      "ticker": "ASML.AS",
+      "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
+      ],
+      "date": "2026-11-12"
     },
     {
       "ticker": "GOOGL",
