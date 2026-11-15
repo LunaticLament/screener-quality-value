@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-15T01:57:26+00:00",
+  "generated_at": "2026-11-15T22:51:10+00:00",
   "methodology": "Sélection préliminaire, sans recommandation de transaction",
   "universe_scope": "Liste initiale limitée de sociétés mondiales; non exhaustive",
   "data_feed": "Yahoo Finance via yfinance, source secondaire non rapprochée aux émetteurs",
@@ -825,7 +825,7 @@
       "price_asof": "2026-11-13",
       "market_source": "Yahoo Finance via yfinance",
       "market_url": "https://finance.yahoo.com/quote/RMS.PA/",
-      "market_cap": 140502745088.0,
+      "market_cap": 140324896768.0,
       "return_5d": -0.015412844036697293,
       "return_1m": 0.0022413149047442182,
       "return_3m": -0.14033963473245759,
@@ -835,7 +835,7 @@
       "financial_url": "https://finance.yahoo.com/quote/RMS.PA/",
       "fcf_latest": 4213000000.0,
       "fcf_previous": 4072000000.0,
-      "fcf_yield": 0.029985179274335916,
+      "fcf_yield": 0.030023182607184656,
       "fcfps_cagr_3y": 0.04710440289818707,
       "fcf_margin": 0.26329604399725015,
       "operating_margin": 0.4184113492906693,
@@ -895,7 +895,7 @@
           "currency": "EUR"
         }
       ],
-      "shares_outstanding": 104735548.0,
+      "shares_outstanding": 104602982.0,
       "shares_source": "Yahoo Finance / sharesOutstanding, agrégé",
       "triage": {
         "status": "À analyser",
