@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
   "rotation_next": "V",
-  "last_update": "2026-11-14",
+  "last_update": "2026-11-15",
   "cases": [
     {
       "ticker": "V",
       "status": "en_cours",
-      "updated_at": "2026-11-14",
+      "updated_at": "2026-11-15",
       "dossier_path": "research/dossiers/V.md",
       "latest_publication": "2026-11-05",
-      "notes": "Contrôle 14/11 du 10-K FY2026 : liquidité de règlement réservée 9,9 Md$, escrow 628 M$, dépôts 1,3 Md$, provisions litiges 1,6 Md$ ; montants non cumulables avec CFO. Cours snapshot 425,76 $ au 13/11. FCF normalisé, cash excédentaire, risque juridique et CAPEX maintenance non déterminés ; pas de DCF fondamental."
+      "notes": "Contrôle 15/11 SEC FY2026 et snapshot 13/11 : FCF brut 22 057 MUSD (11,57 USD/action SEC), solde analytique après SBC et acquisitions 20 424 MUSD (10,71 USD/action), distributions 25 563 MUSD soit 115,9 % du FCF brut. Réserve de règlement 9,9 MdUSD et risques juridiques non normalisés ; pas de DCF fondamental. Prochaine étape : CAPEX maintenance/croissance, fiscalité, escrow, cash excédentaire et guidance primaire."
     },
     {
       "ticker": "REL.L",

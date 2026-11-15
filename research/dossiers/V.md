@@ -238,3 +238,42 @@ Le règlement marchand américain annoncé en 2026 fait l'objet d'une **approbat
 Le pont vérifié FY2026 demeure **CFO 23 728 − CAPEX 1 671 = FCF brut 22 057 MUSD** ; la sensibilité **− SBC 928 − acquisitions cash nettes 705 = 20 424 MUSD** ne change pas. Les nouvelles données ne justifient **aucun ajustement automatique supplémentaire** du FCF : les provisions et mouvements d'escrow doivent d'abord être réconciliés au tableau des flux, et la liquidité de règlement concerne le bilan. Le calcul d'un FCF normalisé exige toujours : (1) trajectoire cash des litiges et protection des classes d'actions ; (2) cash mobilisable net des exigences de règlement ; (3) maintenance/growth CAPEX et besoins d'investissement ; (4) coûts économiques d'acquisition et fiscalité ; (5) cohérence SBC/dilution/rachats. Le cours de référence le plus récent **dans le snapshot GitHub** est **425,76 USD au 13/11/2026** (Yahoo Finance/yfinance, donnée secondaire non vérifiée sur une place de marché primaire), contre 420,31 USD dans la note du 12/11 ; les rendements historiques doivent être datés, mais ce cours ne permet pas de valider une opportunité.
 
 **Décision :** qualité du réseau plausible, conformité globale non validée, **aucun DCF fondamental, aucun prix intrinsèque ni ordre**. Rotation : V demeure prioritaire, puis REL.L (prospection hors univers initial). Les DCF génériques de `data/models.json` ne sont pas des modèles fondamentaux.
+
+---
+
+## 11. Contrôle du 15 novembre 2026 — discipline de normalisation et risque de financement
+
+**État : en_cours, aucune valeur intrinsèque approuvée.** Vérification croisée avec la source primaire **Visa, Form 10-K FY2026 déposé le 5 novembre 2026**, [SEC EDGAR](https://www.sec.gov/Archives/edgar/data/1403161/000140316126000134/v-20260930.htm), *Item 7 — Liquidity and Capital Resources* et *Item 8 — Consolidated Statements of Cash Flows*, Notes 5, 10, 12 et 20. Ce contrôle n'est **pas** une nouvelle publication de résultats. Les six fichiers d'état du dépôt étaient présents : `data/snapshot.json`, `data/models.json`, `data/financial_history.json`, `data/valuation_run_report.json`, `research/PROTOCOLE.md` et `research/registre.json`.
+
+### 11.1. Couverture des sources et divergence de dénominateur
+
+Le snapshot du **15/11/2026 01:57 UTC** contient **36 sociétés**, dont Visa à **425,76 USD, clôture datée du 13/11/2026** ; le modèle mécanique associé fournit **128,31 USD** en scénario central (croissance générique 3 %, taux exigé 10 %, croissance terminale 2 %), **strictement indicatif et non comparable à une valeur intrinsèque vérifiée**. Le rapport d'exécution du screener constate **24 prévalorisations indicatives**, **7 méthodes sectorielles bloquées**, **5 non calculables**, **0 opportunité validée**, et des échecs de collecte sur EF.PA et ROG.SW. Le cache `data/financial_history.json` ne conserve pour Visa que **quatre exercices agrégés 2023–2026**, tandis que le présent dossier contient les **cinq exercices 2022–2026** reconstitués à partir des 10-K SEC. Le dénominateur agrégé de **2 105,56 millions** d'actions FY2026 ne remplace pas les **1 907 millions** d'équivalents A dilués SEC utilisés dans le pont analytique.
+
+### 11.2. Pont de flux 2026 et sensibilité à la couverture des besoins
+
+Montants en millions USD ; **calculs arithmétiques de contrôle, non normalisation économique**.
+
+| Étape | MUSD | USD/action (1 907 M actions équivalentes A) | Traitement |
+|---|---:|---:|---|
+| CFO FY2026 publié | 23 728 | 12,44 | Cash opérationnel après mouvements de BFR et litiges compris |
+| CAPEX FY2026 | −1 671 | −0,88 | Investissement cash, maintenance/croissance non ventilées |
+| **FCF brut historique** | **22 057** | **11,57** | 23 728 − 1 671 |
+| SBC comptabilisée | −928 | −0,49 | Sensibilité au coût économique, sans double comptage futur de dilution |
+| Acquisitions cash nettes FY2026 | −705 | −0,37 | Décaissement historique, non budget normatif d'acquisitions |
+| **Solde analytique historique** | **20 424** | **10,71** | Pas un FCFE durable démontré |
+
+Au cours du **13/11/2026 de 425,76 USD** du snapshot, le rendement historique du FCF brut est **11,57 / 425,76 = 2,72 %**, et celui du solde analytique est **10,71 / 425,76 = 2,52 %**. Les deux sont des **ratios de flux passés** ; ni le rendement futur total ni le rendement attendu à dix ans n'en découlent sans projection spécifique. L'écart entre le flux brut et le solde analytique est de **1 633 MUSD (7,40 % du FCF brut)** ; cela ne constitue pas une « décote de sécurité » ni un ajustement normatif confirmé.
+
+Les **25 563 MUSD** de rachats et dividendes cash FY2026 représentent **115,9 %** du FCF brut, soit un excédent de distributions de **3 506 MUSD**. Une telle allocation est possible ponctuellement grâce aux ressources financières et aux mouvements de bilan, mais ne peut être extrapolée comme distribution annuelle soutenable. Le 10-K indique une émission obligataire de **3,0 MdUSD en février 2026** : elle n'est pas une ressource opérationnelle à incorporer au CFO ni une preuve que cette émission a directement financé les rachats.
+
+### 11.3. Deux réserves fondamentales supplémentaires
+
+**Réserve de règlement :** le 10-K, *Liquidity and Capital Resources*, mentionne **9,9 MdUSD de liquidité disponible affectée aux besoins potentiels de règlement** au 30/09/2026. Il ne s'agit pas nécessairement de 9,9 MdUSD de cash restreint au bilan. Les **628 MUSD d'escrow** sont, eux, des fonds affectés aux litiges ; leur traitement ne doit pas être confondu avec les garanties de règlement. Aucun calcul de trésorerie excédentaire disponible aux actionnaires n'est défendable sans un pont explicite cash libre / cash restreint / autres sources de liquidité / exigences prudentielles.
+
+**Risque juridique non éteint :** le règlement marchand américain a reçu une **approbation préliminaire** le 9 juin 2026, selon [Reuters, 9 juin 2026](https://www.reuters.com/world/us-judge-oks-visa-mastercard-38-billion-swipe-fee-settlement-2026-06-09/). Ce n'est ni un jugement définitif ni une preuve que l'ensemble des procédures d'interchange est soldé. Les estimations de réclamations et provisions ne peuvent être converties mécaniquement en sorties de trésorerie additionnelles : risque de double comptage avec le résultat, le CFO et les mécanismes d'escrow.
+
+### 11.4. Conclusion et recherches restantes
+
+**Visa n'est pas classée « conforme » de manière définitive :** effet de réseau et dynamique de volumes documentés, mais pricing power net des incitations, rendement du capital après acquisitions, risque de substitution et flux réellement distribuable à dix ans insuffisamment établis. **Aucun modèle `research/modeles/V.json` n'est créé.** La valorisation mécanique de `data/models.json` demeure inchangée, indicative et non actionnable.
+
+**Blocages quantifiés ou à résoudre :** (i) ventilation maintenance/croissance du CAPEX de 1 671 MUSD ; (ii) niveau structurel des flux de litiges, taxes et incitations déjà inclus dans le CFO ; (iii) cash excédentaire après réserve de liquidité de règlement ; (iv) trajectoire de SBC, dilution et acquisitions sans doubles comptes ; (v) ROIC économique et guidance FY2027 recoupée en source primaire. Les variations boursières du screener ne sont pas des opportunités validées. **Rotation suivante : V, puis REL.L** (prospection hors des 36 sociétés, étude encore partielle). Aucun ordre d'achat ou de vente.
