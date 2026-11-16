@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
   "rotation_next": "V",
-  "last_update": "2026-11-15",
+  "last_update": "2026-11-16",
   "cases": [
     {
       "ticker": "V",
       "status": "en_cours",
-      "updated_at": "2026-11-15",
+      "updated_at": "2026-11-16",
       "dossier_path": "research/dossiers/V.md",
       "latest_publication": "2026-11-05",
-      "notes": "Contrôle 15/11 SEC FY2026 et snapshot 13/11 : FCF brut 22 057 MUSD (11,57 USD/action SEC), solde analytique après SBC et acquisitions 20 424 MUSD (10,71 USD/action), distributions 25 563 MUSD soit 115,9 % du FCF brut. Réserve de règlement 9,9 MdUSD et risques juridiques non normalisés ; pas de DCF fondamental. Prochaine étape : CAPEX maintenance/croissance, fiscalité, escrow, cash excédentaire et guidance primaire."
+      "notes": "Contrôle SEC du 16/11 : cash taxes FY2026 5 684 MUSD contre charge 4 589 MUSD (écart 1 095 déjà incorporé au CFO), crédits d'impôt fédéraux 1 900 MUSD ; CAPEX 1 671 MUSD contre D&A corporelle/technologique 1 300 MUSD, sans preuve de ventilation maintenance/croissance. Avantage fiscal Singapour 498 MUSD sous conditions jusqu'à FY2028. Pas de FCF normalisé ni de DCF validé ; poursuivre fiscalité prospective, CAPEX, litiges, ROIC et guidance. REL.L ensuite."
     },
     {
       "ticker": "REL.L",

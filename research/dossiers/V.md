@@ -277,3 +277,46 @@ Les **25 563 MUSD** de rachats et dividendes cash FY2026 représentent **115,9 %
 **Visa n'est pas classée « conforme » de manière définitive :** effet de réseau et dynamique de volumes documentés, mais pricing power net des incitations, rendement du capital après acquisitions, risque de substitution et flux réellement distribuable à dix ans insuffisamment établis. **Aucun modèle `research/modeles/V.json` n'est créé.** La valorisation mécanique de `data/models.json` demeure inchangée, indicative et non actionnable.
 
 **Blocages quantifiés ou à résoudre :** (i) ventilation maintenance/croissance du CAPEX de 1 671 MUSD ; (ii) niveau structurel des flux de litiges, taxes et incitations déjà inclus dans le CFO ; (iii) cash excédentaire après réserve de liquidité de règlement ; (iv) trajectoire de SBC, dilution et acquisitions sans doubles comptes ; (v) ROIC économique et guidance FY2027 recoupée en source primaire. Les variations boursières du screener ne sont pas des opportunités validées. **Rotation suivante : V, puis REL.L** (prospection hors des 36 sociétés, étude encore partielle). Aucun ordre d'achat ou de vente.
+
+---
+
+## 12. Contrôle du 16 novembre 2026 — fiscalité en trésorerie et investissement technologique
+
+**Statut maintenu : en_cours ; aucun modèle fondamental validé.** Source primaire consultée directement : **Visa Inc., Form 10-K FY2026, déposé le 5 novembre 2026**, https://www.sec.gov/Archives/edgar/data/1403161/000140316126000134/v-20260930.htm, **Note 19 — Income Taxes, pp. 96–98 ; Note 7 — Property, Equipment and Technology, p. 80 ; états des flux, p. 64 ; Item 7 — Effective Income Tax Rate, p. 46**. Les chiffres sont en millions USD sauf mention contraire.
+
+### Fiscalité : un écart chiffré à ne pas extrapoler
+
+| FY2026, source SEC | MUSD | Nature |
+|---|---:|---|
+| Charge d'impôt GAAP | 4 589 | Charge comptable, taux effectif précis 16,3 % |
+| Impôt effectivement payé, net des remboursements | 5 684 | Trésorerie, Note 19 p. 98 |
+| **Excédent des impôts cash sur la charge** | **1 095** | **Écart historique**, non ajustement de normalisation |
+| Impôts cash fédéraux américains | 2 955 | Incluent 1 900 liés aux achats de crédits d'impôt énergie propre |
+| Impôts cash des États et collectivités | 392 | Paiements nets |
+| Impôts cash au Royaume-Uni | 1 556 | Paiements nets |
+| Autres impôts cash hors États-Unis | 781 | Paiements nets |
+| Avantage fiscal différé lié à certaines recettes étrangères | 314 | Avantage non cash comptabilisé en FY2026 |
+| Avantage fiscal lié à certains règlements juridiques | 284 | Réduction de charge d'impôt FY2026 |
+| Avantage de régime fiscal singapourien | 498 | Avantage FY2026 ; régime soumis à conditions jusqu'au 30/09/2028 |
+
+**Contrôles :** 2 955 + 392 + 1 556 + 781 = **5 684** ; 5 684 − 4 589 = **1 095**. Le 10-K précise que les impôts payés diffèrent de la charge du fait du calendrier des acomptes, de l'achat de crédits d'impôt et des attributs fiscaux. **Le CFO de 23 728 MUSD incorpore déjà les impôts décaissés** : ne pas soustraire 5 684 MUSD une seconde fois, ni rajouter mécaniquement 1 095 MUSD au FCF. Les 1 900 MUSD de crédits d'impôt achetés sont compris dans la ligne fédérale, non un décaissement supplémentaire à additionner. Les avantages de 314 et 284 MUSD sont de natures différentes et ne constituent pas deux corrections de cash indépendantes.
+
+**Enjeu prospectif :** la fiscalité future ne peut pas être projetée au taux GAAP ponctuel de 16,3 % sans examiner le régime singapourien après septembre 2028, la récurrence des crédits d'impôt et le calendrier des règlements. Les bénéfices fiscaux non reconnus bruts sont de **1 774 MUSD au 30/09/2026** (Note 19 p. 98), mais ils ne constituent pas une sortie cash certaine à déduire intégralement de la valeur.
+
+### CAPEX : rapprochement de l'actif technologique, sans faux CAPEX de maintenance
+
+| FY | CAPEX cash | D&A des immobilisations corporelles et technologiques | Écart CAPEX − D&A |
+|---|---:|---:|---:|
+| 2024 | 1 257 | 955 | +302 |
+| 2025 | 1 482 | 1 100 | +382 |
+| 2026 | 1 671 | 1 300 | +371 |
+
+La **Note 7, p. 80** indique que l'actif technologique brut passe de **6 599 à 7 462 MUSD** en 2026 (+863), tandis que l'ensemble des immobilisations corporelles et technologiques brutes passe de **10 106 à 11 212 MUSD** (+1 106). La D&A de 1 300 MUSD ne couvre **pas** l'amortissement des incorporels acquis, indiqué séparément à 105 MUSD en FY2026 (Note 8). Le flux CAPEX cash de 1 671 MUSD n'est pas directement égal aux additions de bilan : acquisitions, cessions, change, mise en service et décalages de règlement peuvent intervenir. Les **187 MUSD d'engagements courus liés aux acquisitions d'immobilisations** figurent dans les informations complémentaires du tableau de flux ; ils ne doivent pas être additionnés automatiquement aux CAPEX cash sans rapprochement des variations de dettes fournisseurs d'investissement.
+
+**Conclusion méthodologique :** l'écart CAPEX–D&A (371 MUSD en FY2026) n'est ni un CAPEX de croissance certifié ni une estimation fiable du CAPEX de maintenance. Le remplacement des systèmes, la cybersécurité, la capacité de VisaNet et les développements produits doivent être évalués séparément. **Aucun retraitement normatif du FCF 2026 n'est autorisé par ces seules données.**
+
+### Vérification du périmètre et priorités
+
+Les six fichiers de contrôle ont été lus au début du run : `data/snapshot.json` (36 titres ; Visa **425,76 USD**, cours daté du 13/11), `data/models.json` (24 DCF indicatifs), `data/financial_history.json` (Visa : quatre exercices agrégés), `data/valuation_run_report.json` (7 modèles sectoriels requis, 5 non calculables, échecs EF.PA et ROG.SW), `research/PROTOCOLE.md` et `research/registre.json` (rotation V). **Aucun de ces six fichiers n'est manquant.** Les cinq exercices SEC 2022–2026 restent dans le présent dossier ; les données 2026 constituent le dernier exercice annuel et il n'existe pas encore de trimestre FY2027 publié à la date de ce contrôle.
+
+**Blocages persistants :** maintenance/croissance des CAPEX ; taux de cash tax durable et échéance de l'avantage singapourien ; calendrier des litiges et mécanismes d'escrow ; acquisition et dilution normalisées ; cash réellement excédentaire ; ROIC économique et guidance 2027 primaire. Aucun `research/modeles/V.json` ne peut être produit sans hypothèses défendables. Prochaine rotation **V**, puis **REL.L** hors univers quantitatif ; les variations du snapshot ne valent pas validation qualitative.
