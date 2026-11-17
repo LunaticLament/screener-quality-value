@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T04:30:49+00:00",
+  "generated_at": "2026-11-17T22:54:49+00:00",
   "companies": {
     "AI.PA": {
       "ticker": "AI.PA",
@@ -499,7 +499,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/ASML.AS/financials/",
-      "fetched_at": "2026-11-16T22:53:56+00:00",
+      "fetched_at": "2026-11-17T22:54:50+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -667,7 +667,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/MSFT/financials/",
-      "fetched_at": "2026-11-11T23:16:12+00:00",
+      "fetched_at": "2026-11-17T22:54:51+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -1043,7 +1043,7 @@
         "2025-12-31": {
           "cfo": 2274975600000.0,
           "capex": -1282597200000.0,
-          "diluted_shares": 5186111400.0,
+          "diluted_shares": 5186120000.0,
           "revenue": 3809054300000.0,
           "sbc": 1246100000.0
         }
@@ -1052,7 +1052,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/TSM/financials/",
-      "fetched_at": "2026-11-16T02:11:50+00:00",
+      "fetched_at": "2026-11-17T22:54:51+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
