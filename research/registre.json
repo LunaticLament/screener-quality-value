@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "rotation_next": "V",
-  "last_update": "2026-11-16",
+  "rotation_next": "SAP.DE",
+  "last_update": "2026-11-17",
   "cases": [
     {
       "ticker": "V",
-      "status": "en_cours",
-      "updated_at": "2026-11-16",
+      "status": "en_attente_de_sources",
+      "updated_at": "2026-11-17",
       "dossier_path": "research/dossiers/V.md",
       "latest_publication": "2026-11-05",
-      "notes": "Contrôle SEC du 16/11 : cash taxes FY2026 5 684 MUSD contre charge 4 589 MUSD (écart 1 095 déjà incorporé au CFO), crédits d'impôt fédéraux 1 900 MUSD ; CAPEX 1 671 MUSD contre D&A corporelle/technologique 1 300 MUSD, sans preuve de ventilation maintenance/croissance. Avantage fiscal Singapour 498 MUSD sous conditions jusqu'à FY2028. Pas de FCF normalisé ni de DCF validé ; poursuivre fiscalité prospective, CAPEX, litiges, ROIC et guidance. REL.L ensuite."
+      "notes": "Revue de clôture du 17/11 : sources SEC cinq ans disponibles mais normalisation CAPEX maintenance/croissance, litiges/escrow et fiscalité prospective non défendable. Pas de DCF validé. Ne pas reprendre automatiquement."
     },
     {
       "ticker": "REL.L",
-      "status": "en_cours",
-      "updated_at": "2026-11-12",
+      "status": "en_attente_de_sources",
+      "updated_at": "2026-11-17",
       "dossier_path": "research/dossiers/REL.L.md",
       "latest_publication": "2026-07-23",
-      "notes": "Prospection mondiale HORS des 36 tickers ; 6-K H1 2026 et rapport annuel 2025 consultés. Pas de cours ni cinq exercices rapprochés ; non validée, pas de modèle. Visa reste prioritaire."
+      "notes": "Cinq exercices 2021-2025 du pont EBITDA ajusté vers cash-flow ajusté vérifiés, H1 2026 et cours 16/11 documentés. CFO IFRS, cash tax, acquisitions, SBC/dilution, maintenance logiciels et risque IA non normalisés ; aucun DCF validé. Prochain SAP.DE."
     }
   ]
 }
