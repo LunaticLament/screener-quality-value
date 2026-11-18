@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "rotation_next": "SAP.DE",
-  "last_update": "2026-11-17",
+  "rotation_next": "DG.PA",
+  "last_update": "2026-11-18",
   "cases": [
     {
       "ticker": "V",
@@ -18,6 +18,14 @@
       "dossier_path": "research/dossiers/REL.L.md",
       "latest_publication": "2026-07-23",
       "notes": "Cinq exercices 2021-2025 du pont EBITDA ajusté vers cash-flow ajusté vérifiés, H1 2026 et cours 16/11 documentés. CFO IFRS, cash tax, acquisitions, SBC/dilution, maintenance logiciels et risque IA non normalisés ; aucun DCF validé. Prochain SAP.DE."
+    },
+    {
+      "ticker": "SAP.DE",
+      "status": "en_attente_de_sources",
+      "updated_at": "2026-11-18",
+      "dossier_path": "research/dossiers/SAP.DE.md",
+      "latest_publication": "2026-10-21",
+      "notes": "Cinq exercices audités 2021-2025 et Q3 2026 documentés. FCF SAP 2025 8239 M€ et guidance 2026 ~10000 M€ ; absence de normalisation défendable acquisitions/SBC/FCFE et projections par action. Pas de DCF validé. Rotation vers DG.PA."
     }
   ]
 }
