@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "rotation_next": "DG.PA",
-  "last_update": "2026-11-18",
+  "rotation_next": "AI.PA",
+  "last_update": "2026-11-19",
   "cases": [
     {
       "ticker": "V",
@@ -26,6 +26,14 @@
       "dossier_path": "research/dossiers/SAP.DE.md",
       "latest_publication": "2026-10-21",
       "notes": "Cinq exercices audités 2021-2025 et Q3 2026 documentés. FCF SAP 2025 8239 M€ et guidance 2026 ~10000 M€ ; absence de normalisation défendable acquisitions/SBC/FCFE et projections par action. Pas de DCF validé. Rotation vers DG.PA."
+    },
+    {
+      "ticker": "DG.PA",
+      "status": "en_attente_de_sources",
+      "updated_at": "2026-11-19",
+      "dossier_path": "research/dossiers/DG.PA.md",
+      "latest_publication": "2026-07-30",
+      "notes": "Revue 2024-2025 et S1 2026 sourcée. Manquent rapprochement primaire 2021-2023, CFO-CAPEX par segment, maintenance/concessions, acquisitions, dette et minoritaires. SOTP non calculable sans hypothèses arbitraires. Aucune valeur validée; ne pas reprendre automatiquement."
     }
   ]
 }
