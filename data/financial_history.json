@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T03:32:34+00:00",
+  "generated_at": "2026-11-19T22:57:00+00:00",
   "companies": {
     "AI.PA": {
       "ticker": "AI.PA",
@@ -163,7 +163,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/SAP.DE/financials/",
-      "fetched_at": "2026-11-18T03:43:31+00:00",
+      "fetched_at": "2026-11-19T22:57:01+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -373,7 +373,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/RMS.PA/financials/",
-      "fetched_at": "2026-11-18T03:43:32+00:00",
+      "fetched_at": "2026-11-19T22:57:02+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -541,7 +541,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/ADYEN.AS/financials/",
-      "fetched_at": "2026-11-18T03:43:34+00:00",
+      "fetched_at": "2026-11-19T22:57:03+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
