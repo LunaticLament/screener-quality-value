@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "rotation_next": "AI.PA",
-  "last_update": "2026-11-19",
+  "rotation_next": "SU.PA",
+  "last_update": "2026-11-20",
   "cases": [
     {
       "ticker": "V",
@@ -34,6 +34,14 @@
       "dossier_path": "research/dossiers/DG.PA.md",
       "latest_publication": "2026-07-30",
       "notes": "Revue 2024-2025 et S1 2026 sourcée. Manquent rapprochement primaire 2021-2023, CFO-CAPEX par segment, maintenance/concessions, acquisitions, dette et minoritaires. SOTP non calculable sans hypothèses arbitraires. Aucune valeur validée; ne pas reprendre automatiquement."
+    },
+    {
+      "ticker": "AI.PA",
+      "status": "en_attente_de_sources",
+      "updated_at": "2026-11-20",
+      "dossier_path": "research/dossiers/AI.PA.md",
+      "latest_publication": "2026-10-29",
+      "notes": "Cinq CFO et CAPEX 2021-2025 rapprochés aux publications Air Liquide, T3 2026 examiné. Blocage: maintenance/croissance, fiscalité cash, dette pro forma DIG, acquisitions, SBC et nombre d'actions comparable. Aucun DCF fondamental validé. Ne pas reprendre automatiquement."
     }
   ]
 }
