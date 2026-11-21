@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T22:50:45+00:00",
+  "generated_at": "2026-11-21T03:14:47+00:00",
   "universe_count": 36,
   "updated_price_count": 34,
   "failed_price_count": 2,
@@ -9,14 +9,7 @@
       "triggers": [
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-20"
-    },
-    {
-      "ticker": "SU.PA",
-      "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
-      ],
-      "date": "2026-11-20"
+      "date": "2026-11-19"
     },
     {
       "ticker": "SAP.DE",
@@ -24,58 +17,35 @@
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-20"
-    },
-    {
-      "ticker": "LR.PA",
-      "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
-      ],
-      "date": "2026-11-20"
+      "date": "2026-11-19"
     },
     {
       "ticker": "MC.PA",
       "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-19"
     },
     {
       "ticker": "RMS.PA",
       "triggers": [
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-19"
     },
     {
       "ticker": "PUB.PA",
       "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-20"
-    },
-    {
-      "ticker": "BNP.PA",
-      "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "ticker": "GLE.PA",
-      "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
-      ],
-      "date": "2026-11-20"
+      "date": "2026-11-19"
     },
     {
       "ticker": "SAN.PA",
       "triggers": [
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-19"
     },
     {
       "ticker": "ASML.AS",
@@ -83,7 +53,7 @@
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-19"
     },
     {
       "ticker": "ADYEN.AS",
@@ -91,14 +61,7 @@
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-20"
-    },
-    {
-      "ticker": "NOVO-B.CO",
-      "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
-      ],
-      "date": "2026-11-20"
+      "date": "2026-11-19"
     },
     {
       "ticker": "MSFT",
