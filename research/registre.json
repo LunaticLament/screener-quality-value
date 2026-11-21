@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "rotation_next": "SU.PA",
-  "last_update": "2026-11-20",
+  "rotation_next": "OR.PA",
+  "last_update": "2026-11-21",
   "cases": [
     {
       "ticker": "V",
@@ -42,6 +42,14 @@
       "dossier_path": "research/dossiers/AI.PA.md",
       "latest_publication": "2026-10-29",
       "notes": "Cinq CFO et CAPEX 2021-2025 rapprochés aux publications Air Liquide, T3 2026 examiné. Blocage: maintenance/croissance, fiscalité cash, dette pro forma DIG, acquisitions, SBC et nombre d'actions comparable. Aucun DCF fondamental validé. Ne pas reprendre automatiquement."
+    },
+    {
+      "ticker": "SU.PA",
+      "status": "en_attente_de_sources",
+      "updated_at": "2026-11-21",
+      "dossier_path": "research/dossiers/SU.PA.md",
+      "latest_publication": "2026-11-18",
+      "notes": "CFO/CAPEX 2022-2025 secondaires rapprochés partiellement au DEU 2024 (écarts CAPEX nets); 2021 non extrait. Acquisition PTC et financement obligataire 10 Md$ du 18/11 rendent dette/FCFE pro forma indispensables. Pas de DCF validé; ne pas reprendre automatiquement."
     }
   ]
 }
