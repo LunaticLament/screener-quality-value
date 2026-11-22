@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-21T22:48:23+00:00",
+  "generated_at": "2026-11-22T02:16:44+00:00",
   "universe_count": 36,
   "objective": "PRE-VALORISATIONS AUTOMATIQUES; aucune valeur intrinsèque validée et aucun ordre de bourse",
   "benchmark_world_assumption": 0.07,
@@ -385,7 +385,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false,
       "deep_research": {
         "ticker": "AI.PA",
@@ -778,7 +778,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false,
       "deep_research": {
         "ticker": "DG.PA",
@@ -803,7 +803,7 @@
       "source_url": "https://finance.yahoo.com/quote/SU.PA/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T22:48:24+00:00",
+      "last_fetch": "2026-11-22T02:16:45+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -1170,7 +1170,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": true,
       "deep_research": {
         "ticker": "SU.PA",
@@ -1195,7 +1195,7 @@
       "source_url": "https://finance.yahoo.com/quote/SAP.DE/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:49+00:00",
+      "last_fetch": "2026-11-22T02:16:46+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -1565,8 +1565,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false,
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true,
       "deep_research": {
         "ticker": "SAP.DE",
         "status": "en_attente_de_sources",
@@ -1623,7 +1623,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -1640,7 +1640,7 @@
       "source_url": "https://finance.yahoo.com/quote/LR.PA/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T22:48:24+00:00",
+      "last_fetch": "2026-11-22T02:16:46+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -2007,7 +2007,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": true
     },
     {
@@ -2390,7 +2390,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -2773,7 +2773,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -2790,7 +2790,7 @@
       "source_url": "https://finance.yahoo.com/quote/MC.PA/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T22:48:25+00:00",
+      "last_fetch": "2026-11-22T02:16:47+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -3158,7 +3158,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": true
     },
     {
@@ -3175,7 +3175,7 @@
       "source_url": "https://finance.yahoo.com/quote/RMS.PA/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:49+00:00",
+      "last_fetch": "2026-11-22T02:16:47+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -3543,8 +3543,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "PUB.PA",
@@ -3560,7 +3560,7 @@
       "source_url": "https://finance.yahoo.com/quote/PUB.PA/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T22:48:26+00:00",
+      "last_fetch": "2026-11-22T02:16:48+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -3929,7 +3929,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": true
     },
     {
@@ -3981,7 +3981,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -4033,7 +4033,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -4085,7 +4085,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -4135,7 +4135,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -4185,7 +4185,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -4569,7 +4569,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -4586,7 +4586,7 @@
       "source_url": "https://finance.yahoo.com/quote/ASML.AS/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:49+00:00",
+      "last_fetch": "2026-11-22T02:16:49+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 0,
       "scenarios": {},
@@ -4668,8 +4668,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "ADYEN.AS",
@@ -4685,7 +4685,7 @@
       "source_url": "https://finance.yahoo.com/quote/ADYEN.AS/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:50+00:00",
+      "last_fetch": "2026-11-22T02:16:50+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -5054,8 +5054,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "NESN.SW",
@@ -5437,7 +5437,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -5489,7 +5489,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -5506,7 +5506,7 @@
       "source_url": "https://finance.yahoo.com/quote/NOVO-B.CO/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T22:48:26+00:00",
+      "last_fetch": "2026-11-22T02:16:51+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -5873,7 +5873,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": true
     },
     {
@@ -5890,7 +5890,7 @@
       "source_url": "https://finance.yahoo.com/quote/MSFT/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:50+00:00",
+      "last_fetch": "2026-11-22T02:16:52+00:00",
       "financial_asof": "2026-06-30",
       "coverage_years": 4,
       "scenarios": {
@@ -6259,8 +6259,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "GOOGL",
@@ -6276,7 +6276,7 @@
       "source_url": "https://finance.yahoo.com/quote/GOOGL/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:50+00:00",
+      "last_fetch": "2026-11-22T02:16:52+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -6646,8 +6646,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "AMZN",
@@ -6663,7 +6663,7 @@
       "source_url": "https://finance.yahoo.com/quote/AMZN/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:51+00:00",
+      "last_fetch": "2026-11-22T02:16:53+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -7032,8 +7032,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "V",
@@ -7049,7 +7049,7 @@
       "source_url": "https://finance.yahoo.com/quote/V/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:51+00:00",
+      "last_fetch": "2026-11-22T02:16:54+00:00",
       "financial_asof": "2026-09-30",
       "coverage_years": 4,
       "scenarios": {
@@ -7417,8 +7417,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false,
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true,
       "deep_research": {
         "ticker": "V",
         "status": "en_attente_de_sources",
@@ -7442,7 +7442,7 @@
       "source_url": "https://finance.yahoo.com/quote/MA/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:51+00:00",
+      "last_fetch": "2026-11-22T02:16:54+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -7810,8 +7810,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "SPGI",
@@ -7827,7 +7827,7 @@
       "source_url": "https://finance.yahoo.com/quote/SPGI/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:52+00:00",
+      "last_fetch": "2026-11-22T02:16:55+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -8195,8 +8195,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "BRK-B",
@@ -8245,7 +8245,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -8639,7 +8639,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     },
     {
@@ -8656,7 +8656,7 @@
       "source_url": "https://finance.yahoo.com/quote/ADBE/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:52+00:00",
+      "last_fetch": "2026-11-22T02:16:56+00:00",
       "financial_asof": "2025-11-30",
       "coverage_years": 4,
       "scenarios": {
@@ -9027,8 +9027,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "DHR",
@@ -9044,7 +9044,7 @@
       "source_url": "https://finance.yahoo.com/quote/DHR/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:52+00:00",
+      "last_fetch": "2026-11-22T02:16:56+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {
@@ -9412,8 +9412,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "TSM",
@@ -9429,7 +9429,7 @@
       "source_url": "https://finance.yahoo.com/quote/TSM/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:53+00:00",
+      "last_fetch": "2026-11-22T02:16:57+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {},
@@ -9511,8 +9511,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "005930.KS",
@@ -9528,7 +9528,7 @@
       "source_url": "https://finance.yahoo.com/quote/005930.KS/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-21T03:14:53+00:00",
+      "last_fetch": "2026-11-22T02:16:58+00:00",
       "financial_asof": "2025-12-31",
       "coverage_years": 4,
       "scenarios": {},
@@ -9610,8 +9610,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "6758.T",
@@ -9627,7 +9627,7 @@
       "source_url": "https://finance.yahoo.com/quote/6758.T/financials/",
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
-      "last_fetch": "2026-11-15T01:57:32+00:00",
+      "last_fetch": "2026-11-22T02:16:58+00:00",
       "financial_asof": "2026-03-31",
       "coverage_years": 4,
       "scenarios": {
@@ -9992,8 +9992,8 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
-      "financial_update_applied": false
+      "computed_at": "2026-11-22T02:16:44+00:00",
+      "financial_update_applied": true
     },
     {
       "ticker": "9984.T",
@@ -10045,7 +10045,7 @@
           "La durabilité du moat, le bilan, les besoins de CAPEX et la création de FCF/action restent à examiner."
         ]
       },
-      "computed_at": "2026-11-21T22:48:23+00:00",
+      "computed_at": "2026-11-22T02:16:44+00:00",
       "financial_update_applied": false
     }
   ]
