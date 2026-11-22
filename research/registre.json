@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "rotation_next": "OR.PA",
-  "last_update": "2026-11-21",
+  "rotation_next": "MC.PA",
+  "last_update": "2026-11-22",
   "cases": [
     {
       "ticker": "V",
@@ -50,6 +50,14 @@
       "dossier_path": "research/dossiers/SU.PA.md",
       "latest_publication": "2026-11-18",
       "notes": "CFO/CAPEX 2022-2025 secondaires rapprochés partiellement au DEU 2024 (écarts CAPEX nets); 2021 non extrait. Acquisition PTC et financement obligataire 10 Md$ du 18/11 rendent dette/FCFE pro forma indispensables. Pas de DCF validé; ne pas reprendre automatiquement."
+    },
+    {
+      "ticker": "OR.PA",
+      "status": "en_attente_de_sources",
+      "updated_at": "2026-11-22",
+      "dossier_path": "research/dossiers/OR.PA.md",
+      "latest_publication": "2026-10-22",
+      "notes": "CFO, CAPEX, BFR, acquisitions, loyers 2021-2025 sourcés DEU consolidés; 9M 2026 examiné. Manquent SBC 2024-25, dette/participations pro forma 2026, dilution, maintenance/croissance, coût des acquisitions et flux distribuable par action. Aucune valeur validée; rotation suivante MC.PA."
     }
   ]
 }
