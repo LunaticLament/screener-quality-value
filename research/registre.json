@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "rotation_next": "MC.PA",
-  "last_update": "2026-11-22",
+  "rotation_next": "RMS.PA",
+  "last_update": "2026-11-23",
   "cases": [
     {
       "ticker": "V",
@@ -58,6 +58,14 @@
       "dossier_path": "research/dossiers/OR.PA.md",
       "latest_publication": "2026-10-22",
       "notes": "CFO, CAPEX, BFR, acquisitions, loyers 2021-2025 sourcés DEU consolidés; 9M 2026 examiné. Manquent SBC 2024-25, dette/participations pro forma 2026, dilution, maintenance/croissance, coût des acquisitions et flux distribuable par action. Aucune valeur validée; rotation suivante MC.PA."
+    },
+    {
+      "ticker": "MC.PA",
+      "status": "en_attente_de_sources",
+      "updated_at": "2026-11-23",
+      "dossier_path": "research/dossiers/MC.PA.md",
+      "latest_publication": "2026-10-12",
+      "notes": "2021–2025 chiffre d'affaires et ROC sourcés LVMH; CFO/CAPEX 2022–2025 seulement secondaires, 2021 absent, fiscalité cash, acquisitions, maintenance, dette/loyers, SBC, dilution et minoritaires non réconciliés. Pas de modèle ni valeur validée. Rotation vers RMS.PA; autres mouvements >=5% et nouveaux dossiers non examinés."
     }
   ]
 }
