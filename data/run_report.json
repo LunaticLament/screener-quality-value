@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T22:54:33+00:00",
+  "generated_at": "2026-11-23T02:47:43+00:00",
   "universe_count": 36,
   "updated_price_count": 34,
   "failed_price_count": 2,
@@ -173,7 +173,7 @@
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "ticker": "9984.T",
