@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T02:47:43+00:00",
+  "generated_at": "2026-11-23T22:55:58+00:00",
   "companies": {
     "AI.PA": {
       "ticker": "AI.PA",
@@ -247,7 +247,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/EL.PA/financials/",
-      "fetched_at": "2026-11-20T03:20:14+00:00",
+      "fetched_at": "2026-11-23T22:55:59+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -457,7 +457,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/SAN.PA/financials/",
-      "fetched_at": "2026-11-20T03:20:16+00:00",
+      "fetched_at": "2026-11-23T22:55:59+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
