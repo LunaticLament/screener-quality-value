@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T06:05:22+00:00",
+  "generated_at": "2026-11-25T04:54:31+00:00",
   "companies": {
     "AI.PA": {
       "ticker": "AI.PA",
@@ -37,7 +37,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/AI.PA/financials/",
-      "fetched_at": "2026-11-18T03:43:30+00:00",
+      "fetched_at": "2026-11-25T04:54:31+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -79,7 +79,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/DG.PA/financials/",
-      "fetched_at": "2026-11-18T03:43:31+00:00",
+      "fetched_at": "2026-11-25T04:54:32+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -163,7 +163,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/SAP.DE/financials/",
-      "fetched_at": "2026-11-24T06:05:23+00:00",
+      "fetched_at": "2026-11-25T04:54:32+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -247,7 +247,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/EL.PA/financials/",
-      "fetched_at": "2026-11-23T22:55:59+00:00",
+      "fetched_at": "2026-11-25T04:54:32+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -373,7 +373,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/RMS.PA/financials/",
-      "fetched_at": "2026-11-24T06:05:25+00:00",
+      "fetched_at": "2026-11-25T04:54:33+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -457,7 +457,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/SAN.PA/financials/",
-      "fetched_at": "2026-11-23T22:55:59+00:00",
+      "fetched_at": "2026-11-25T04:54:34+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -541,7 +541,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/ADYEN.AS/financials/",
-      "fetched_at": "2026-11-24T06:05:27+00:00",
+      "fetched_at": "2026-11-25T04:54:34+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -583,7 +583,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/NESN.SW/financials/",
-      "fetched_at": "2026-11-18T03:43:35+00:00",
+      "fetched_at": "2026-11-25T04:54:34+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -625,7 +625,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/NOVO-B.CO/financials/",
-      "fetched_at": "2026-11-24T06:05:28+00:00",
+      "fetched_at": "2026-11-25T04:54:35+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -709,7 +709,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/GOOGL/financials/",
-      "fetched_at": "2026-11-24T06:05:29+00:00",
+      "fetched_at": "2026-11-25T04:54:36+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -926,7 +926,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/COST/financials/",
-      "fetched_at": "2026-11-18T03:43:39+00:00",
+      "fetched_at": "2026-11-25T04:54:36+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -968,7 +968,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/ADBE/financials/",
-      "fetched_at": "2026-11-24T06:05:29+00:00",
+      "fetched_at": "2026-11-25T04:54:37+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -1052,7 +1052,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/TSM/financials/",
-      "fetched_at": "2026-11-24T06:05:30+00:00",
+      "fetched_at": "2026-11-25T04:54:37+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -1094,7 +1094,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/005930.KS/financials/",
-      "fetched_at": "2026-11-23T02:47:53+00:00",
+      "fetched_at": "2026-11-25T04:54:37+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"
@@ -1136,7 +1136,7 @@
       "source_type": "secondary",
       "source_name": "Yahoo Finance, séries agrégées via yfinance",
       "source_url": "https://finance.yahoo.com/quote/6758.T/financials/",
-      "fetched_at": "2026-11-22T02:16:58+00:00",
+      "fetched_at": "2026-11-25T04:54:38+00:00",
       "limitations": [
         "États non rapprochés aux documents réglementaires",
         "Historique potentiellement limité à 4 exercices"

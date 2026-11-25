@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T06:05:21+00:00",
+  "generated_at": "2026-11-25T04:54:30+00:00",
   "universe_count": 36,
   "updated_price_count": 34,
   "failed_price_count": 2,
@@ -9,14 +9,7 @@
       "triggers": [
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-20"
-    },
-    {
-      "ticker": "SU.PA",
-      "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
-      ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "ticker": "SAP.DE",
@@ -24,66 +17,43 @@
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
-      "ticker": "LR.PA",
+      "ticker": "EL.PA",
       "triggers": [
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "ticker": "MC.PA",
       "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "ticker": "RMS.PA",
       "triggers": [
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "ticker": "PUB.PA",
       "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-20"
-    },
-    {
-      "ticker": "BNP.PA",
-      "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
-      ],
-      "date": "2026-11-20"
-    },
-    {
-      "ticker": "GLE.PA",
-      "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
-      ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "ticker": "SAN.PA",
       "triggers": [
+        "Hausse ≥15 % sur un mois",
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-20"
-    },
-    {
-      "ticker": "ASML.AS",
-      "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
-        "Baisse ≥10 % sur un mois"
-      ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "ticker": "ADYEN.AS",
@@ -91,37 +61,51 @@
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "ticker": "NOVO-B.CO",
       "triggers": [
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
       ],
-      "date": "2026-11-20"
+      "date": "2026-11-23"
     },
     {
       "ticker": "GOOGL",
       "triggers": [
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "ticker": "ADBE",
       "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois",
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-23"
+      "date": "2026-11-24"
     },
     {
       "ticker": "TSM",
       "triggers": [
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-23"
+      "date": "2026-11-24"
+    },
+    {
+      "ticker": "005930.KS",
+      "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
+        "Baisse ≥10 % sur un mois"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "ticker": "6758.T",
+      "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
+      ],
+      "date": "2026-11-25"
     },
     {
       "ticker": "9984.T",
@@ -129,7 +113,7 @@
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-24"
+      "date": "2026-11-25"
     }
   ],
   "status": "partial",
