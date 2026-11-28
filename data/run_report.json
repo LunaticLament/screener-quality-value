@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T04:17:01+00:00",
+  "generated_at": "2026-11-28T03:56:09+00:00",
   "universe_count": 36,
   "updated_price_count": 34,
   "failed_price_count": 2,
@@ -9,7 +9,7 @@
       "triggers": [
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-26"
     },
     {
       "ticker": "SU.PA",
@@ -17,35 +17,28 @@
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-25"
-    },
-    {
-      "ticker": "SAP.DE",
-      "triggers": [
-        "Baisse ≥10 % sur un mois"
-      ],
-      "date": "2026-11-25"
+      "date": "2026-11-26"
     },
     {
       "ticker": "LR.PA",
       "triggers": [
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-26"
     },
     {
       "ticker": "MC.PA",
       "triggers": [
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-26"
     },
     {
       "ticker": "PUB.PA",
       "triggers": [
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-26"
     },
     {
       "ticker": "SAN.PA",
@@ -54,7 +47,7 @@
         "Hausse ≥15 % sur un mois",
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-26"
     },
     {
       "ticker": "ASML.AS",
@@ -62,43 +55,50 @@
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-26"
     },
     {
       "ticker": "ADYEN.AS",
       "triggers": [
-        "Baisse ≥10 % sur un mois"
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-26"
     },
     {
       "ticker": "GOOGL",
       "triggers": [
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-27"
     },
     {
-      "ticker": "AMZN",
+      "ticker": "V",
       "triggers": [
         "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-27"
+    },
+    {
+      "ticker": "MA",
+      "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause"
+      ],
+      "date": "2026-11-27"
     },
     {
       "ticker": "ADBE",
       "triggers": [
+        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "FCF yield historique ≥6 % (non normalisé)"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-27"
     },
     {
       "ticker": "TSM",
       "triggers": [
-        "Variation sur cinq séances ≥5 % en valeur absolue — analyser la cause",
         "Baisse ≥10 % sur un mois"
       ],
-      "date": "2026-11-25"
+      "date": "2026-11-27"
     },
     {
       "ticker": "005930.KS",
